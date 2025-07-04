@@ -1,43 +1,43 @@
 /* Font Face */
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("../font/PlusJakartaSans-ExtraBold.woff2") format("woff2");
+  src: url("/font/PlusJakartaSans-ExtraBold.woff2") format("woff2");
   font-weight: 800;
 }
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("../font/PlusJakartaSans-Bold.woff2") format("woff2");
+  src: url("/font/PlusJakartaSans-Bold.woff2") format("woff2");
   font-weight: 700;
 }
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("../font/PlusJakartaSans-SemiBold.woff2") format("woff2");
+  src: url("/font/PlusJakartaSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
 }
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("../font/PlusJakartaSans-Medium.woff2") format("woff2");
+  src: url("/font/PlusJakartaSans-Medium.woff2") format("woff2");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Nunito";
-  src: url("../font/Nunito-Regular.woff2") format("woff2");
+  src: url("/font/Nunito-Regular.woff2") format("woff2");
   font-weight: 400;
 }
 @font-face {
   font-family: "Nunito";
-  src: url("../font/Nunito-Medium.woff2") format("woff2");
+  src: url("/font/Nunito-Medium.woff2") format("woff2");
   font-weight: 500;
 }
 @font-face {
   font-family: "Nunito";
-  src: url("../font/Nunito-SemiBold.woff2") format("woff2");
+  src: url("/font/Nunito-SemiBold.woff2") format("woff2");
   font-weight: 600;
 }
 @font-face {
   font-family: "Nunito";
-  src: url("../font/Nunito-Bold.woff2") format("woff2");
+  src: url("/font/Nunito-Bold.woff2") format("woff2");
   font-weight: 700;
 }
 
