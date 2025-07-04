@@ -18,6 +18,8 @@ section.hero {
   max-width: 900px;
   margin: 0 auto;
   line-height: 1.6;
+  padding: 2rem 1rem; /* Tambahan ini untuk ruang kiri-kanan dan atas-bawah */
+  text-align: center;
 }
 
 .hero-text h1 {
@@ -73,14 +75,14 @@ section.hero {
 .about-text h2 {
   font-weight: bold;
   color: #D94A2B;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 /* Features Section */
 .features-section {
   width: 100%;
   margin: 0 auto;
-  background-color: var(--secondary-color-dark);
+  background-color: #D94A2B;
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -100,7 +102,7 @@ section.hero {
 .features-section h2 {
   text-align: center;
   margin-bottom: 16px;
-  color: #EBAC0E;
+  color: #fff;
 }
 
 .features {
