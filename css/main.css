@@ -1,4 +1,4 @@
-/* Font Face */
+/* Font Face 
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url("/font/PlusJakartaSans-ExtraBold.woff2") format("woff2");
@@ -75,6 +75,7 @@ h4 {
   font-size: 32px;
 }
 p {
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
