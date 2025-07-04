@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
+    <title>Class of Click | Website Belajar UI/UX Dasar</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pengenalan-ui-ux.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="../css/bootstrap-icons.css" />
+    <!-- Logo Title (Favicon) -->
+    <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #EBAC0E; font-weight: 600;">
+                            Materi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- Pengenalan UI-UX -->
+                            <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- User Interface -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
+                                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
+                                    <li><a class="dropdown-item sub-item" href="tahapan-ui.html">3) Tahapan Khusus Desain UI</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- User Experience -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Figma -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
+                                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
+                                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Studi Kasus -->
+                            <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Pengenalan <span style="color: #EBAC0E;">UI/UX</span></h1>
+        <div class="image-hero">
+            <img src="../img/aset_pengenalan-uiux.png" alt="UI UX Besar">
+        </div>
+
+        <p class="pengenalan-desc">
+            Apakah sebelumnya kamu pernah mendengar istilah UI/UX?<br>
+            UI (User Interface) dan UX (User Experience) adalah dua istilah yang sering digunakan dalam dunia desain produk digital.<br>
+            Untuk mengenal UI/UX lebih dalam, mari kita pelajari pada halaman ini!
+        </p>
+        <p style="text-align: center; margin-bottom: 20px;">Klik salah satu tombol untuk melihat penjelasan singkat tentang UI/UX</p>
+        <div class="button-group">
+            <button id="btnUI"><i class="bi bi-display"></i> User Interface (UI)</button>
+            <button id="btnUX"><i class="bi bi-emoji-smile"></i> User Experience (UX)</button>
+        </div>
+    </section>
+
+    <!-- Panel UI -->
+    <aside id="uiPanel" class="side-panel left-panel">
+        <button class="close-btn" onclick="closePanel('uiPanel')">&times;</button>
+        <h3>User Interface <span style="color: #EBAC0E;">(UI)</span></h3>
+        <p>Antarmuka pengguna, mengacu pada <b>semua elemen visual atau grafis</b> yang berinteraksi dengan pengguna dalam suatu produk.<br><br>Ini mencakup <b>elemen-elemen visual</b> seperti tata letak, warna, tipografi, ikon, dan elemen grafis lainnya.</p>
+    </aside>
+    <aside id="uxPanel" class="side-panel right-panel">
+        <button class="close-btn" onclick="closePanel('uxPanel')">&times;</button>
+        <h3>User Experience <span style="color: #EBAC0E;">(UX)</span></h3>
+        <p>Pengalaman pengguna, mengacu pada <b>keseluruhan pengalaman pengguna</b> saat menggunakan suatu produk.<br><br>Ini melibatkan aspek <b>emosional, kognitif, dan fungsional.</b></p>
+    </aside>
+
+    <!-- Yellow Box -->
+    <section class="yellow-box">
+        <img src="../img/icon-uiux-illustration.png" alt="Ilustrasi UIUX" class="illustration">
+        <div class="shortcut-yellow-box">
+            <h3>"UI adalah bagian dari UX, dan menciptakan UX yang efektif tidak akan berhasil tanpa memperhatikan desain tampilan dan estetika UI."</h3>
+            <p><b>Desain UI memastikan antarmuka terlihat menarik dan estetis, sedangkan desain UX memastikan pengalaman pengguna positif dan memuaskan. Dalam kombinasi yang baik, keduanya dapat meningkatkan kepuasan pengguna, efektivitas penggunaan produk, dan kesuksesan produk secara keseluruhan.</b></p>
+        </div>
+    </section>
+
+    <!-- Perbedaan -->
+    <section class="perbedaan">
+        <h2 style="text-align: center;"><span style="color: #EBAC0E;">Perbedaan</span> UI & UX</h2>
+        <div class="containers">
+            <div class="brain-left">
+                <img src="../img/otak-kiri-01.png" alt="Otak Kiri" />
+            </div>
+            <div class="buttons">
+                <button onclick="tampilJawaban('tujuan')">Tujuan</button>
+                <button onclick="tampilJawaban('fokus')">Fokus</button>
+                <button onclick="tampilJawaban('aspek')">Aspek</button>
+                <button onclick="tampilJawaban('tools')">Tools</button>
+                <button onclick="tampilJawaban('skill')">Skill</button>
+            </div>
+            <div class="brain-right">
+                <img src="../img/otak-kanan-02.png" alt="Otak Kanan" />
+            </div>
+            <!-- Kotak jawaban per kategori -->
+            <div id="jawaban-tujuan" class="jawaban-pair">
+                <div class="jawaban-left ui-box">Membuat tampilan produk lebih menarik</div>
+                <div class="jawaban-right ux-box">Memberikan kenyamanan saat menggunakan produk</div>
+            </div>
+            <div id="jawaban-fokus" class="jawaban-pair">
+                <div class="jawaban-left ui-box">Pada keindahan dan estetika tampilan</div>
+                <div class="jawaban-right ux-box">Pada pengalaman dan kenyamanan pengguna</div>
+            </div>
+            <div id="jawaban-aspek" class="jawaban-pair">
+                <div class="jawaban-left ui-box">Didasarkan pada riset visual dan konsep produk</div>
+                <div class="jawaban-right ux-box">Didasarkan pada riset pengguna dan user journey</div>
+            </div>
+            <div id="jawaban-tools" class="jawaban-pair">
+                <div class="jawaban-left ui-box">Software desain grafis seperti Adobe Illustrator dan CorelDRAW</div>
+                <div class="jawaban-right ux-box">Tools prototyping seperti Figma, Sketch, dan Adobe XD</div>
+            </div>
+            <div id="jawaban-skill" class="jawaban-pair">
+                <div class="jawaban-left ui-box">Desain grafis, berpikir kreatif, berpikir konvergen, dan branding</div>
+                <div class="jawaban-right ux-box">Riset, berpikir kritis, berpikir kreatif, analisis, problem solving, dan wireframing</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mengapa UI/UX Penting -->
+    <section class="importance-section">
+        <h2>Mengapa <span style="color: #EBAC0E;">UI/UX</span> Penting?</h2>
+        <div class="card-container">
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <h3>1</h3>
+                        <p>Memahami Pengguna</p>
+                    </div>
+                    <div class="flip-back">
+                        <p>UI/UX membantu memahami kebutuhan, harapan, dan perilaku pengguna secara lebih baik.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <h3>2</h3>
+                        <p>Meningkatkan Kepuasan Pengguna</p>
+                    </div>
+                    <div class="flip-back">
+                        <p>Desain yang baik meningkatkan kepuasan pengguna dan membuat mereka ingin kembali.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <h3>3</h3>
+                        <p>Efisien dan Minim Error</p>
+                    </div>
+                    <div class="flip-back">
+                        <p>Tugas jadi cepat selesai, lebih sedikit kesalahan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <h3>4</h3>
+                        <p>Hemat Biaya Jangka Panjang</p>
+                    </div>
+                    <div class="flip-back">
+                        <p>Desain yang matang mengurangi revisi besar di kemudian hari.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <h3>5</h3>
+                        <p>Diferensiasi Produk di Pasar Kompetitif</p>
+                    </div>
+                    <div class="flip-back">
+                        <p>UI/UX yang bagus menjadi pembeda di tengah banyaknya produk digital.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Before / Next Page -->
+        <div class="navigation-buttons">
+            <a href="../index.html" class="nav-button prev">◀ Sebelumnya</a>
+            <a href="elemen-ui.html" class="nav-button next">Berikutnya ▶</a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Class of Click. All rights reserved.</p>
+    </footer>
+
+    <!-- Dropdown di dalam Menu Materi -->
+    <script>
+    let jawabanAktif = null;
+
+function tampilJawaban(id) {
+  const semuaJawaban = document.querySelectorAll(".jawaban-pair");
+  const semuaTombol = document.querySelectorAll(".buttons button");
+  const elemenJawaban = document.getElementById("jawaban-" + id);
+
+  // Jika tombol yang sama diklik lagi → sembunyikan
+  if (jawabanAktif === id) {
+    elemenJawaban.classList.remove("show");
+    semuaTombol.forEach((btn) => btn.classList.remove("active"));
+    jawabanAktif = null;
+  } else {
+    // Sembunyikan semua jawaban
+    semuaJawaban.forEach((el) => el.classList.remove("show"));
+    elemenJawaban.classList.add("show");
+
+    // Atur tombol aktif
+    semuaTombol.forEach((btn) => btn.classList.remove("active"));
+    const tombolKlik = Array.from(semuaTombol).find(btn =>
+      btn.innerText.toLowerCase().includes(id)
+    );
+    if (tombolKlik) tombolKlik.classList.add("active");
+
+    jawabanAktif = id;
+  }
+}
+    </script>
+    
+
+    <!-- JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/pengenalan-ui-ux.js"></script>
+</body>
+</html>

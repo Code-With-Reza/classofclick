@@ -1,0 +1,185 @@
+/* Hero Section */
+section.hero {
+  background-image: url("../img/bg-kuning2.png");
+  background-repeat: repeat;
+  background-size: 500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 4rem 2rem;
+  padding-top: 168px;
+  margin-top: -16px;
+  gap: 1.5rem;
+}
+
+/* Judul */
+section.hero h1 {
+  text-align: center;
+}
+
+/* Deskripsi */
+.latihan-desc {
+  text-align: center;
+  padding: 0 10px;
+  color: var(--text-color);
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+}
+
+/* Gambar tambahan di bawah deskripsi */
+.hero-image-bawah img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+/* Card */
+.card-container {
+  display: flex;
+  margin: 200px auto 120px auto;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: none;
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #000;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.card.easy {
+  background-color: #F1F5F9;
+  border-color: #1E2A38;
+  color: #1E2A38;
+}
+
+.card.medium {
+  background-color: #FFF3D0;
+  border: 2px solid #EDB427;
+  color: #EDB427;
+}
+
+.card.hard {
+  background-color: #FBE3E3;
+  border: 2px solid #9C2B2E;
+  color: #9C2B2E;
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+}
+
+.icon {
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.card .description {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+  text-align: justify;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* Form & Button */
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #09203b;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a324f;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section.hero {
+    height: auto;
+    padding-bottom: 20px;
+    background-size: 400px;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+    gap: 1rem;
+  }
+  .card {
+    margin-bottom: 16px;
+    width: 300px;
+  }
+}

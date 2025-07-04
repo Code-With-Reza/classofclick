@@ -1,0 +1,202 @@
+/* Global Styles */
+
+/*
+body {
+  background-image: url("../img/bg-kuning2.png");
+  background-repeat: repeat;
+  background-size: 500px;
+  background-position: top left;
+  background-attachment: fixed;
+}
+*/
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tools-desc {
+  text-align: center;
+  margin: 10px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--text-color);
+  max-width: 1400px;
+  line-height: 1.6;
+}
+
+.main-image img {
+  max-width: 100%;
+  width: 900px;
+  height: auto;
+  display: block;
+  margin: 100px auto 40px auto;
+}
+
+.toolbar-desc {
+  text-align: center;
+  margin: 20px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--text-color);
+  max-width: 1200px;
+}
+
+.toolbar-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tool-btn {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.tool-btn img {
+  width: 50px;
+  height: 50px;
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+/* Modal Styles */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #EA5937;
+  margin-bottom: 10px;
+}
+
+.tool-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+
+.tool-info img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Shortcut Yellow Box */
+
+.shortcut-yellow-box {
+  background-color: #ffcd3c;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 140px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.shortcut-yellow-box h3 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 80px;
+}
+
+.shortcut-yellow-box img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 1rem auto;
+}
+
+.close-btn {
+  float: right;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 600px) {
+  .tools-desc {
+    text-align: justify;
+  }
+
+  .toolbar-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    max-width: 100%;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .tool-btn {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .tool-btn img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .modal-content {
+    padding: 15px;
+  }
+
+  .tool-info img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .shortcut-yellow-box {
+    padding: 1.5rem;
+    margin: 80px auto;
+  }
+
+  .shortcut-yellow-box img {
+    width: 100%;
+    max-width: none;
+    margin: 1rem auto;
+    padding: 0;
+  }
+}

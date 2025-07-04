@@ -1,0 +1,115 @@
+/* Hero Section */
+section.hero {
+  background-image: url("../img/bg-kuning2.png");
+  background-repeat: repeat;
+  background-size: 500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  padding-top: 168px;
+  margin-top: -16px;
+  gap: 1.5rem;
+}
+
+/* Judul */
+section.hero h1 {
+  text-align: center;
+}
+
+/* Deskripsi */
+.video-desc {
+  text-align: center;
+  padding: 0 10px;
+  color: var(--text-color);
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+/* Gambar tambahan di bawah deskripsi */
+.hero-image-bawah img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Video Container */
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 250px auto 120px auto;
+}
+
+/* Video Card */
+.video-card {
+  width: 320px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 180px;
+}
+
+/* Video Info */
+.video-info {
+  padding: 15px;
+}
+
+.video-title {
+  color: var(--secondary-color-dark);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Channel Info */
+.channel-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.channel-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.channel-name {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.channel-name:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: Media query untuk layar kecil */
+@media (max-width: 768px) {
+  section.hero {
+    height: auto;
+    padding-bottom: 20px;
+    background-size: 400px;
+  }
+
+  .video-desc {
+    margin-bottom: 0px;
+  }
+
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+  }
+}

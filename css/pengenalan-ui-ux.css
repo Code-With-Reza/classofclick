@@ -1,0 +1,389 @@
+/* Subheading */
+.subheading {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--Acc-color); /* oranye */
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Hero Icons */
+.hero .image-hero {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.hero .image-hero img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+
+
+/* Deskripsi Pengenalan */
+.pengenalan-desc {
+  text-align: center;
+  margin: 100px auto;
+  padding: 0 20px;
+  color: var(--text-color);
+  max-width: 1200px;
+  line-height: 1.6;
+}
+
+/* Button Group */
+.button-group {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+.button-group button {
+  transition: all 0.3s ease;
+}
+.button-group #btnUI {
+  background-color: #063559; /* biru tua */
+}
+.button-group #btnUX {
+  background-color: #EA5937; /* oranye */
+}
+.button-group #btnUI:hover {
+  background-color: #031e30;
+}
+.button-group #btnUX:hover {
+  background-color: #c14424;
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px; /* jarak kiri-kanan biar ga mentok */
+    margin-bottom: 40px;
+  }
+
+  .button-group button {
+    width: 100%;         /* biar penuh tapi dalam padding */
+    max-width: 300px;    /* batasi lebarnya agar tetap rapi */
+    font-size: 14px;     /* optional, bisa dikecilkan */
+  }
+}
+
+
+
+/* Button Umum */
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #1A3E66;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #1a324f;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  display: none;
+}
+.overlay.show {
+  display: block;
+}
+
+/* Side Panel */
+.side-panel {
+  position: fixed;
+  bottom: 80px;
+  width: 500px;
+  max-height: 200px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 30px 20px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 999;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+  visibility: hidden;
+}
+.left-panel {
+  left: 0;
+  transform: translateX(-100%);
+}
+.right-panel {
+  right: 0;
+  transform: translateX(100%);
+}
+.side-panel.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+/* Tombol Close Panel */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+/* Responsive Side Panel */
+@media (max-width: 768px) {
+  .side-panel {
+    top: 100px;
+    bottom: auto;
+    width: 90%;
+    max-width: 320px;
+    max-height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+  .left-panel {
+    transform: translateX(-150%);
+  }
+  .left-panel.show,
+  .right-panel.show {
+    transform: translateX(-50%);
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .right-panel {
+    transform: translateX(150%);
+  }
+}
+
+/* Yellow Box */
+.yellow-box {
+  padding: 60px 20px;
+  background-image: url('../img/bg-biru2.png');
+  background-repeat: repeat;
+  background-size: 500px;
+}
+.shortcut-yellow-box {
+  background-color: #ebac0e;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 60px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.shortcut-yellow-box h3,
+.shortcut-yellow-box p {
+  text-align: justify;
+  color: white;
+}
+.shortcut-yellow-box h3 {
+  margin-bottom: 80px;
+}
+.yellow-box .illustration {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 100px;
+  opacity: 0.2;
+}
+
+/* Perbedaan UI-UX */
+.perbedaan {
+  margin: 150px auto;
+}
+.containers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 50px;
+  gap: 0;
+}
+.brain-left img,
+.brain-right img {
+  width: 400px;
+  height: auto;
+  display: block;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 20px;
+}
+.jawaban-pair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+.jawaban-pair.show {
+  display: flex;
+}
+.jawaban-left,
+.jawaban-right {
+  position: absolute;
+  width: 300px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ccc;
+  text-align: center;
+}
+.jawaban-left {
+  left: 350px;
+  transform: translateX(-100%);
+}
+.jawaban-right {
+  right: 350px;
+  transform: translateX(100%);
+}
+.ui-box {
+  background-color: #fff9e5; /* kuning muda */
+  border-left: 8px solid #EBAC0E;
+}
+.ux-box {
+  background-color: #e6f0f8; /* biru muda */
+  border-right: 8px solid #063559;
+}
+
+/* Responsive Perbedaan UI-UX */
+@media (max-width: 768px) {
+  .containers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .brain-left img,
+  .brain-right img {
+    width: 200px;
+  }
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .buttons button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .jawaban-pair {
+    position: static;
+    transform: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+  .jawaban-pair.show {
+    display: flex;
+  }
+  .jawaban-left,
+  .jawaban-right {
+    position: static;
+    transform: none;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .jawaban-left {
+    margin-bottom: 12px;
+  }
+  .jawaban-right {
+    margin-top: 0;
+  }
+}
+
+/* Section Mengapa UI dan UX Penting */
+.importance-section {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url('../img/bg-kuning2.png');
+  background-repeat: repeat;
+  background-size: 500px;
+}
+.importance-section h2 {
+  margin-bottom: 50px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.flip-card {
+  background: transparent;
+  width: 240px;
+  height: 200px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flip-front {
+  z-index: 2;
+  background: #fff;
+}
+.flip-front h3 {
+  margin-bottom: 10px;
+  color: #ebac0e;
+}
+.flip-back {
+  background: #ebac0e;
+  color: white;
+  transform: rotateY(180deg);
+}

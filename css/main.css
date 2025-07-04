@@ -1,0 +1,306 @@
+/* Font Face */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../font/PlusJakartaSans-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../font/PlusJakartaSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../font/PlusJakartaSans-Bold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../font/PlusJakartaSans-SemiBold.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+/* Root Variables */
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #EDB427;
+  --secondary-color-dark: #063559;
+  --Acc-color: #EA5937;
+  --text-color: #333333;
+  --textp-color: #797979;
+  --gray-bg: #e6e6e6;
+}
+
+/* Typography */
+h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+}
+h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+h4 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+p {
+  font-weight: 500;
+  font-size: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary-color-dark);
+}
+.highlight {
+  color: #EBAC0E;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 100);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 10px 10px;
+  z-index: 1000;
+}
+.nav-link {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text-color);
+}
+.nav-link:hover {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.navbar .nav-item .nav-link {
+  padding: 12px 28px;
+  position: relative;
+}
+.navbar .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: all 0.5s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.navbar .nav-item .nav-link.active::before {
+  transform: scaleX(1);
+}
+.dropdown-item {
+  font-size: 16px;
+  color: var(--text-color);
+}
+.dropdown-item.active,
+.dropdown-item.active:focus,
+.dropdown-item.active:hover {
+  background-color: #EBAC0E !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  padding-top: 100px;
+}
+
+/* Dropdown */
+.dropdown-header {
+  font-weight: bold;
+  color: var(--secondary-color);
+  padding: 6px 16px;
+  pointer-events: none;
+  cursor: default;
+  font-size: 14px;
+}
+.sub-item {
+  padding-left: 32px;
+}
+.dropdown-submenu .submenu {
+  display: none;
+  margin-left: 1rem;
+}
+.submenu.show {
+  display: block !important;
+}
+.submenu-list {
+  display: none;
+  padding-left: 1rem;
+}
+.submenu-list.show {
+  display: block;
+}
+.submenu-toggle {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+}
+.dropdown-menu li {
+  list-style: none;
+}
+.arrow {
+  font-size: 10px;
+  margin-left: 6px;
+}
+
+/* Link Next Page */
+.link-next {
+  text-align: center;
+  margin: 60px auto 80px auto;
+  padding: 0 20px;
+  max-width: 90%;
+}
+.link-next a {
+  color: #EA5937;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 40px auto 60px;
+  padding: 10px 0;
+}
+.nav-button {
+  text-decoration: none;
+  background-color: #f1b600;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.nav-button:hover {
+  background-color: #d49900;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color-dark);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 20px 16px;
+  text-align: center;
+}
+footer p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Scroll to Top Button */
+#toTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  background: #ffbf00;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+#toTopBtn:hover {
+  background: #EBAC0E;
+  transform: scale(1.1);
+}
+#toTopBtn.show {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 { font-size: 40px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 28px; }
+  h4 { font-size: 24px; }
+  p  { font-size: 18px; }
+}
+@media (max-width: 480px) {
+  h1 { font-size: 32px; }
+  h2 { font-size: 26px; }
+  h3 { font-size: 22px; }
+  h4 { font-size: 20px; }
+  p  { font-size: 16px; }
+  .navigation-buttons {
+    padding: 0 16px;
+  }
+}
+@media (min-width: 768px) {
+  .dropdown-submenu:hover .submenu {
+    display: block;
+    position: static;
+  }
+}
+@media (max-width: 600px) {
+  footer,
+  footer p {
+    font-size: 14px;
+  }
+}

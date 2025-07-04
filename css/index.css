@@ -1,0 +1,289 @@
+/* Hero Section */
+section.hero {
+  background: url('../img/aset4_beranda.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 168px 2rem 3rem;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  color: var(--text-color);
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hero-text h1 {
+  margin: 1rem 0 20px 0;
+}
+
+.hero-text p {
+  margin-bottom: 40px;
+}
+
+.hero-text .cta {
+  background-color: #EA5937;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text .cta:hover {
+  background-color: #D94A2B;
+}
+
+.hero-image-bawah img {
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  margin-top: 3rem;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../img");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+}
+
+.about-text {
+  max-width: 1100px;
+  margin: 10px auto;
+}
+
+.about-text h2 {
+  font-weight: bold;
+  color: #D94A2B;
+  margin-bottom: 16px;
+}
+
+/* Features Section */
+.features-section {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--secondary-color-dark);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+}
+
+.features-container {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.features-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.features-section h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #EBAC0E;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.05) translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 144px;
+  height: 144px;
+  margin: 0 auto 1rem;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.feature-card h4 {
+  margin: 20px auto;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Carousel Section */
+.carousel-section {
+  text-align: center;
+  padding: 140px 32px;
+  background-image: url("../img/bg-kuning2.png");
+  background-repeat: repeat;
+  background-size: 500px;
+  background-position: center top;
+}
+
+.carousel-box {
+  min-height: 300px;
+  padding: 3rem 2rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 220px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-heading {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.carousel-box h3 {
+  color: #ea5937;
+  margin-bottom: 1rem;
+}
+
+.carousel-box p {
+  color: #444;
+  font-size: 1rem;
+}
+
+/* Carousel Buttons */
+.custom-carousel-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-btn {
+  background-color: #EBAC0E;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #D99404;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  padding: 40px 32px;
+  max-width: 700px;
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero-yellow {
+    border-radius: 0;
+    margin-top: 0;
+  }
+  .hero-text {
+    margin-top: 80px;
+  }
+  .about-text p {
+    text-align: justify;
+  }
+  .features {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .feature-card {
+    padding: 1.5rem;
+  }
+  .testimonial-section {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.hero {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-position: center top;
+  }
+  .hero-image-bawah img {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(-50vw + 50%);
+  }
+  .hero-text a.cta {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+  .carousel-section {
+    padding: 64px 16px;
+  }
+  .carousel-box {
+    padding: 1.5rem 1rem;
+    min-height: auto;
+  }
+  .carousel-box h3 {
+    font-size: 1.1rem;
+  }
+  .carousel-box p {
+    font-size: 0.95rem;
+  }
+  .custom-carousel-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .carousel-btn {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    font-size: 1.2rem;
+    border-radius: 8px;
+  }
+}

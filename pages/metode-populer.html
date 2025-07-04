@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
+    <title>Class of Click | Website Belajar UI/UX Dasar</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/metode-populer.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="../css/bootstrap-icons.css" />
+    <!-- Logo Title (Favicon) -->
+    <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #EBAC0E; font-weight: 600;">
+                            Materi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- Pengenalan UI-UX -->
+                            <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- User Interface -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
+                                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
+                                    <li><a class="dropdown-item sub-item" href="tahapan-ui.html">3) Tahapan Khusus Desain UI</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- User Experience -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill" style="color: #EBAC0E; font-weight: 600;"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
+                                    <li><a class="dropdown-item sub-item active" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Figma -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
+                                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
+                                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Studi Kasus -->
+                            <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Metode <span style="color: #EBAC0E;">Populer</span> Desain <strong style="color: #EBAC0E;">UX</strong></h1>
+        <p class="metode-desc">
+            Desain UI-UX bukan hanya tentang tampilan, tetapi juga bagaimana pengguna merasa nyaman saat menggunakannya.
+            Desainer mengikuti metode populer yang bisa membantu membuat desain lebih terarah dan fokus pada pengguna.
+            Metode-metode ini membantu mereka memahami pengguna dan membuat tampilan yang menarik sekaligus fungsional.<br>
+            <br><b>Yuk, kita cari tahu metode apa saja yang sering digunakan, dan bagaimana kamu bisa mulai belajar menerapkannya!</b>
+        </p>
+    </section>
+
+    <section class="design-methods">
+        <!-- User Centered Design -->
+        <div class="method">
+            <h3>1) <span style="color: #EBAC0E;">User  Centered Design (UCD)</span></h3>
+            <p>
+                UCD atau User-Centered Design adalah metode desain yang mengutamakan kebutuhan, tujuan, dan pengalaman pengguna. 
+                Jadi, saat kita merancang antarmuka UI atau pengalaman pengguna (UX), kita tidak hanya memikirkan bagaimana desain yang estetik, 
+                tetapi juga memastikan bahwa pengguna dapat merasa nyaman, mudah paham, dan puas saat menggunakannya.
+            </p>
+            <p>
+                Dengan UCD, kita diajak untuk benar-benar memahami siapa pengguna kita, apa kebutuhan dan masalah mereka, 
+                lalu menciptakan solusi desain yang sesuai.
+                <img src="../img/ucd.png" alt="Tahapan User Centered Design" class="method-image">
+            </p>
+        </div>
+
+        <!-- Design Thinking -->
+        <div class="method">
+            <h3>2) <span style="color: #EBAC0E;">Design Thinking</span></h3>
+            <p>
+                Design Thinking merupakan suatu pendekatan kreatif yang digunakan untuk inovasi dan pemecahan masalah, 
+                dengan mengambil perspektif serta proses desain dan menekankan pada pemahaman yang utamanya harus didasari 
+                pada empati dan observasi. Dalam Design Thinking, kita akan mempelajari cara untuk merancang solusi yang tepat bagi pengguna.
+            </p>
+            <p>
+                Metode Design Thinking memiliki lima tahapan yang terarah, yaitu Empathize (berempati), Define (mendefinisikan), 
+                Ideate (mengideakan), Prototype (membuat prototipe), dan Test (menguji).
+            </p>
+            <img src="../img/dt.png" alt="Tahapan Design Thinking" class="method-image">
+        </div>
+
+        <!-- Design Sprint -->
+        <div class="method">
+            <h3>3) <span style="color: #EBAC0E;">Design Sprint</span></h3>
+            <p>
+                Design Sprint adalah metode inovatif yang dirancang untuk menyelesaikan masalah dan menciptakan solusi produk secara cepat hanya dalam waktu lima hari. 
+                Dikembangkan oleh Jake Knapp dari Google Ventures pada tahun 2010, dan kini banyak digunakan karena efisien dalam waktu dan biaya dibanding metode konvensional. 
+                Dengan pendekatan terstruktur, Design Sprint membantu tim mendapatkan umpan balik nyata dari pengguna lebih awal sebelum mengembangkan produk secara penuh.
+                <img src="../img/ds.png" alt="Tahapan Design Sprint" class="method-image">
+            </p>
+        </div>
+    </section>
+
+    <!-- Before / Next Page -->
+    <div class="navigation-buttons">
+        <a href="prinsip-ux.html" class="nav-button prev">◀ Sebelumnya</a>
+        <a href="pengantar-figma.html" class="nav-button next">Berikutnya ▶</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 UEDIA. All rights reserved.</p>
+    </footer>
+
+    <!-- Dropdown di dalam Menu Materi -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggles = document.querySelectorAll('.submenu-toggle');
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const submenu = this.nextElementSibling;
+                    submenu.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+
+    <!-- Tombol Kembali ke Atas -->
+    <button id="toTopBtn" title="Kembali ke atas">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
+    <script>
+        const toTopBtn = document.getElementById("toTopBtn");
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollTop > 100) {
+                toTopBtn.classList.add('show');
+            } else {
+                toTopBtn.classList.remove('show');
+            }
+        });
+        toTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <!-- JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

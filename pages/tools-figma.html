@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
+    <title>Class of Click | Website Belajar UI/UX Dasar</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/tools-figma.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="../css/bootstrap-icons.css" />
+    <!-- Logo Title (Favicon) -->
+    <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #EBAC0E; font-weight: 600;">
+                            Materi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- Pengenalan UI-UX -->
+                            <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- User Interface -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
+                                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
+                                    <li><a class="dropdown-item sub-item" href="tahapan-ui.html">3) Tahapan Khusus Desain UI</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- User Experience -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Figma -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill" style="color: #EBAC0E; font-weight: 600;"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
+                                    <li><a class="dropdown-item sub-item active" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
+                                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Studi Kasus -->
+                            <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Toolbar & Shortcut <span style="color: #EBAC0E;">Figma</span></h1>
+        <p class="tools-desc">
+            <b>Toolbar</b> adalah pusat utama untuk berinteraksi serta menambahkan berbagai objek ke dalam kanvas.<br>
+            Sedangkan <b>shortcut</b> adalah tombol pintas keyboard untuk mengakses fitur dengan cepat.<br>
+            <strong style="color: #EBAC0E;">Yuk kenali beberapa tools pada toolbar beserta shortcutnya!</strong>
+        </p>
+    </section>
+    
+    <!-- Toolbar Buttons (8 tombol) -->
+    <div class="main-image">
+        <img src="../img/ini toolbar (1).png" alt="toolbar figma" />
+    </div>
+    <div>
+        <p class="toolbar-desc">
+            Klik tombol di bawah ini untuk mengetahui informasi lebih lanjut tentang masing-masing tools:
+        </p>
+    </div>
+    <div class="toolbar-buttons">
+        <button class="tool-btn" onclick="openModal(1)">
+            <img src="../img/tool1.png" alt="Tool 1" />
+        </button>
+        <button class="tool-btn" onclick="openModal(2)">
+            <img src="../img/tool2.png" alt="Tool 2" />
+        </button>
+        <button class="tool-btn" onclick="openModal(3)">
+            <img src="../img/tool3.png" alt="Tool 3" />
+        </button>
+        <button class="tool-btn" onclick="openModal(4)">
+            <img src="../img/tool4.png" alt="Tool 4" />
+        </button>
+        <button class="tool-btn" onclick="openModal(5)">
+            <img src="../img/tool5.png" alt="Tool 5" />
+        </button>
+        <button class="tool-btn" onclick="openModal(6)">
+            <img src="../img/tool6.png" alt="Tool 6" />
+        </button>
+        <button class="tool-btn" onclick="openModal(7)">
+            <img src="../img/tool7.png" alt="Tool 7" />
+        </button>
+        <button class="tool-btn" onclick="openModal(8)">
+            <img src="../img/tool8.png" alt="Tool 8" />
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div id="toolModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-header" id="modalTitle">Tool Info</div>
+            <div id="modalBody">
+                <!-- Konten modal akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Yellow Box -->
+    <div class="shortcut-yellow-box">
+        <h3>Shortcut yang perlu kamu ketahui</h3>
+        <img src="../img/shortcut.png" alt="Shortcut Gambar Figma" />
+    </div>
+
+    <!-- Before / Next Page -->
+    <div class="navigation-buttons">
+        <a href="pengantar-figma.html" class="nav-button prev">◀ Sebelumnya</a>
+        <a href="plugins.html" class="nav-button next">Berikutnya ▶</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Class of Click. All rights reserved.</p>
+    </footer>
+
+    <!-- Dropdown di dalam Menu Materi -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggles = document.querySelectorAll('.submenu-toggle');
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const submenu = this.nextElementSibling;
+                    submenu.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+    
+    <!-- Tombol Kembali ke Atas -->
+    <button id="toTopBtn" title="Kembali ke atas">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
+    <script>
+        const toTopBtn = document.getElementById("toTopBtn");
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollTop > 100) {
+                toTopBtn.classList.add('show');
+            } else {
+                toTopBtn.classList.remove('show');
+            }
+        });
+        toTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <!-- JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tools-figma.js"></script>
+</body>
+</html>

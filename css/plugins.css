@@ -1,0 +1,118 @@
+/* Body background (optional) */
+/*
+body {
+  background-image: url("../img/bg-kuning2.png");
+  background-repeat: repeat;
+  background-size: 500px;
+  background-position: top left;
+  background-attachment: fixed;
+}
+*/
+
+.hero {
+  margin-bottom: 140px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.plugins-desc {
+  text-align: justify;
+  margin: 10px auto;
+  color: var(--text-color);
+  max-width: 1300px;
+  line-height: 1.6;
+}
+
+h3 {
+  text-align: center;
+  margin: 80px auto 40px auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+  padding: 20px;
+}
+
+.card {
+  border: 2px solid #EBAC0E;
+  border-radius: 20px 0 20px 0; /* kiri atas & kanan bawah membulat */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card p {
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #000;
+  margin: 10px 0;
+  padding-top: 10px;
+}
+
+.card a {
+  align-self: center; /* link rata tengah */
+  font-weight: bold;
+  text-decoration: underline;
+  color: #EA5937;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.icon-img {
+  display: block;
+  margin: 0 auto 10px auto; /* gambar di tengah */
+  width: clamp(30px, 10vw, 60px);
+  max-width: 60px;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .icon-img {
+    width: clamp(40px, 10vw, 60px);
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .plugins-desc {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .icon-img {
+    width: clamp(35px, 12vw, 50px);
+    max-width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .icon-img {
+    width: clamp(30px, 16vw, 45px);
+    max-width: 45px;
+  }
+}

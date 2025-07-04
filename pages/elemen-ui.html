@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
+    <title>Class of Click | Website Belajar UI/UX Dasar</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/elemen-ui.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="../css/bootstrap-icons.css" />
+    <!-- Logo Title (Favicon) -->
+    <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
+        <div class="container">
+            <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #EBAC0E; font-weight: 600;">
+                            Materi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- Pengenalan UI-UX -->
+                            <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- User Interface -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill" style="color: #EBAC0E; font-weight: 600;"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item active" href="elemen-ui.html">1) Elemen UI</a></li>
+                                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
+                                    <li><a class="dropdown-item sub-item" href="tahapan-ui.html">3) Tahapan Khusus Desain UI</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- User Experience -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Figma -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
+                                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
+                                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Studi Kasus -->
+                            <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="ui-section">
+                <div class="ui-text">
+                    <h1>Elemen<strong style="color: #EBAC0E;"> UI</strong></h1>
+                    <p>
+                        Dalam dunia desain UI, elemen-elemen visual seperti tombol, teks, warna, dan ikon sangat penting untuk membantu pengguna 
+                        dalam berinteraksi dengan aplikasi atau website.<br>
+                        Elemen UI dibagi menjadi 5 bagian utama, yaitu: Input, Navigasi, Informasi, Wadah, dan Visual.<br><br>
+                        <strong style="color: #EBAC0E;">Yuk pelajari elemen-elemen UI!</strong>
+                    </p>
+                </div>
+                <div class="ui-image">
+                    <img src="../img/aset_elemen-ui.png" alt="UI Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elemen Input -->
+    <section class="elemen-input">
+        <div class="containers">
+            <div class="ui-subsection">
+                <h3>1) <span style="color: #EBAC0E;">Elemen UI:</span> Input</h3>
+                <p>
+                    Elemen UI: Input adalah elemen yang digunakan untuk <b>menerima masukan dari pengguna</b>. 
+                    Melalui elemen ini, pengguna dapat berinteraksi langsung dengan antarmuka, 
+                    seperti <b>mengisi data, memilih opsi, atau mengirim perintah</b>. 
+                    Elemen input sangat penting dalam sebuah antarmuka karena <b>berfungsi sebagai jembatan antara pengguna dan sistem</b>. 
+                    Di bawah ini adalah lima contoh elemen UI input:
+                </p>
+            </div>
+        </div>
+        <div class="containers">
+            <section id="slider">
+                <input type="radio" name="slider" id="s1">
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3" checked>
+                <input type="radio" name="slider" id="s4">
+                <input type="radio" name="slider" id="s5">
+                <label for="s1" id="slide1" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-check2-square"></i>
+                        <h2>Checkbox</h2>
+                        <p>Untuk memilih satu atau lebih opsi dalam sebuah form.</p>
+                    </div>
+                </label>
+                <label for="s2" id="slide2" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/radiobutton.png" alt="Icon" class="icon-img">
+                        <h2>Radio Buttons</h2>
+                        <p>Untuk memilih satu opsi dari beberapa pilihan yang tersedia.</p>
+                    </div>
+                </label>
+                <label for="s3" id="slide3" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-toggle-on"></i>
+                        <h2>Toggles</h2>
+                        <p>Untuk mengaktifkan atau menonaktifkan suatu fitur atau pengaturan secara cepat.</p>
+                    </div>
+                </label>
+                <label for="s4" id="slide4" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-calendar-event"></i>
+                        <h2>Date Picker</h2>
+                        <p>Untuk memudahkan pemilihan tanggal dari kalender.</p>
+                    </div>
+                </label>
+                <label for="s5" id="slide5" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-input-cursor-text"></i>
+                        <h2>Text Field</h2>
+                        <p>Untuk memasukkan teks atau informasi dari pengguna.</p>
+                    </div>
+                </label>
+            </section>
+        </div>
+    </section>
+
+    <!-- Elemen Navigasi -->
+    <section class="elemen-nav">
+        <div class="containers">
+            <div class="ui-subsection">
+                <h3>2) <span style="color: #EBAC0E;">Elemen UI:</span> Navigasi</h3>
+                <p>
+                    Elemen UI: Navigasi adalah elemen yang <b>membantu pengguna berpindah dari satu halaman atau bagian ke bagian lainnya</b>
+                    dalam sebuah aplikasi atau website. Elemen ini penting <b>supaya pengguna tidak kebingungan saat menjelajahi isi yang ada</b>.
+                    Dengan navigasi yang jelas dan mudah dipahami, pengguna bisa menemukan informasi atau fitur yang mereka butuhkan dengan cepat.
+                    Berikut lima contoh diantaranya:
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <section id="slider">
+                <input type="radio" name="slidern" id="n1">
+                <input type="radio" name="slidern" id="n2">
+                <input type="radio" name="slidern" id="n3" checked>
+                <input type="radio" name="slidern" id="n4">
+                <input type="radio" name="slidern" id="n5">
+                <label for="n1" id="sliden1" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/breadcrumb.png" alt="Icon" class="icon-img">
+                        <h2>Breadcrumb</h2>
+                        <p>Untuk menunjukkan lokasi pengguna dalam struktur navigasi sebuah website atau aplikasi.</p>
+                    </div>
+                </label>
+                <label for="n2" id="sliden2" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/sidebar.png" alt="Icon" class="icon-img">
+                        <h2>Sidebar</h2>
+                        <p>Untuk menampilkan menu navigasi atau informasi tambahan di sisi layar.</p>
+                    </div>
+                </label>
+                <label for="n3" id="sliden3" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/pagination.png" alt="Icon" class="icon-img">
+                        <h2>Pagination</h2>
+                        <p>Untuk membagi konten yang panjang menjadi beberapa halaman agar lebih mudah dinavigasi.</p>
+                    </div>
+                </label>
+                <label for="n4" id="sliden4" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/hamburger.png" alt="Icon" class="icon-img">
+                        <h2>Hamburger</h2>
+                        <p>Untuk menyembunyikan atau menampilkan menu navigasi, terutama pada tampilan layar kecil seperti di perangkat mobile.</p>
+                    </div>
+                </label>
+                <label for="n5" id="sliden5" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-house-door"></i>
+                        <h2>Tabs</h2>
+                        <p>Untuk memudahkan pengguna berpindah antar bagian konten dalam satu halaman tanpa memuat ulang halaman.</p>
+                    </div>
+                </label>
+            </section>
+        </div>
+    </section>
+
+    <!-- Elemen Informasi -->
+    <section class="elemen-informasi">
+        <div class="containers">
+            <div class="ui-subsection">
+                <h3>3) <span style="color: #EBAC0E;">Elemen UI:</span> Informasi</h3>
+                <p>
+                    Elemen UI: Informasi adalah elemen yang berfungsi untuk <b>menyampaikan data, pesan, atau petunjuk kepada pengguna</b>. 
+                    Elemen ini <b>membantu pengguna memahami apa yang sedang terjadi dalam sistem, apa yang harus dilakukan,atau memberikan umpan balik setelah pengguna melakukan suatu tindakan</b>. 
+                    Elemen informasi sangat penting agar pengguna merasa terbantu dan tidak bingung saat menggunakan antarmuka. Berikut adalah contoh elemen UI Informasi:
+                </p>
+            </div>
+        </div>
+        <div class="containers">
+            <section id="slider">
+                <input type="radio" name="sliderf" id="f1">
+                <input type="radio" name="sliderf" id="f2">
+                <input type="radio" name="sliderf" id="f3" checked>
+                <input type="radio" name="sliderf" id="f4">
+                <input type="radio" name="sliderf" id="f5">
+                <label for="f1" id="slidef1" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-bell"></i>
+                        <h2>Notifikasi</h2>
+                        <p>Untuk memberitahu pengguna tentang informasi penting, pesan, atau peringatan secara cepat.</p>
+                    </div>
+                </label>
+                <label for="f2" id="slidef2" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/tooltip.png" alt="Icon" class="icon-img">
+                        <h2>Tooltips</h2>
+                        <p>Untuk memberikan informasi tambahan atau penjelasan singkat saat pengguna mengarahkan kursor ke sebuah elemen.</p>
+                    </div>
+                </label>
+                <label for="f3" id="slidef3" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/load.png" alt="Icon" class="icon-img">
+                        <h2>Progress bar</h2>
+                        <p>Untuk menunjukkan seberapa jauh suatu proses atau tugas telah berjalan atau selesai.</p>
+                    </div>
+                </label>
+                <label for="f4" id="slidef4" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-chat-right-text"></i>
+                        <h2>Message Box</h2>
+                        <p>Untuk menampilkan pesan penting, formulir, atau konfirmasi yang memerlukan respons dari pengguna sebelum melanjutkan.</p>
+                    </div>
+                </label>
+                <label for="f5" id="slidef5" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/icon.png" alt="Icon" class="icon-img">
+                        <h2>Icon</h2>
+                        <p>Visual kecil yang merepresentasikan aksi, objek, atau fungsi tertentu secara intuitif dan cepat dikenali pengguna.</p>
+                    </div>
+                </label>
+            </section>
+        </div>
+    </section>
+
+    <!-- Elemen Wadah -->
+    <section class="elemen-wadah">
+        <div class="containers">
+            <div class="ui-subsection">
+                <h3>4) <span style="color: #EBAC0E;">Elemen UI:</span> Wadah</h3>
+                <p>
+                    Elemen UI: Wadah (Container) adalah elemen yang berfungsi sebagai <b>tempat untuk mengelompokkan atau membungkus elemen-elemen UI lainnya agar tampilan lebih rapi dan terstruktur</b>. Dengan adanya wadah, antarmuka menjadi lebih mudah dibaca dan digunakan, karena elemen-elemen yang berkaitan bisa disusun dalam satu bagian. 
+                    Wadah juga membantu desainer mengatur tata letak agar tampilan terlihat lebih terorganisir.
+                </p>
+            </div>
+        </div>
+        <div class="containers">
+            <section id="slider">
+                <input type="radio" name="sliderw" id="w1">
+                <input type="radio" name="sliderw" id="w2">
+                <input type="radio" name="sliderw" id="w3" checked>
+                <input type="radio" name="sliderw" id="w4">
+                <input type="radio" name="sliderw" id="w5">
+                <label for="w1" id="slidew1" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-card-heading"></i>
+                        <h2>Card</h2>
+                        <p>Wadah berbentuk kotak yang digunakan untuk menampilkan informasi secara ringkas dan terpisah dari elemen lain.</p>
+                    </div>
+                </label>
+                <label for="w2" id="slidew2" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/panel.png" alt="Icon" class="icon-img">
+                        <h2>Panel</h2>
+                        <p>Area berbatas yang biasanya berisi kumpulan elemen UI terkait, seperti tombol atau formulir.</p>
+                    </div>
+                </label>
+                <label for="w3" id="slidew3" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/modal.png" alt="Icon" class="icon-img">
+                        <h2>Modal</h2>
+                        <p>Kotak dialog sementara yang muncul di atas tampilan utama untuk menampilkan informasi atau meminta tindakan pengguna.</p>
+                    </div>
+                </label>
+                <label for="w4" id="slidew4" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/sections.png" alt="Icon" class="icon-img">
+                        <h2>Section</h2>
+                        <p>Bagian dalam halaman yang membagi konten menjadi kelompok-kelompok agar lebih terstruktur.</p>
+                    </div>
+                </label>
+                <label for="w5" id="slidew5" class="slide">
+                    <div class="slide-content">
+                        <img src="../icon/accordion.png" alt="Icon" class="icon-img">
+                        <h2>Accordion</h2>
+                        <p>Wadah berbentuk daftar yang bisa dibuka dan ditutup untuk mengatur tampilan informasi dalam ruang terbatas.</p>
+                    </div>
+                </label>
+            </section>
+        </div>
+    </section>
+
+    <!-- Elemen Visual -->
+    <section class="elemen-visual"> 
+        <div class="containers">
+            <div class="ui-subsection">
+                <h3>5) <span style="color: #EBAC0E;">Elemen UI:</span> Visual</h3>
+                <p>
+                    Elemen UI: Visual adalah elemen yang berfungsi untuk <b>memperkuat tampilan antarmuka secara estetis sekaligus membantu menyampaikan pesan dengan cara yang lebih menarik dan mudah dipahami</b>. Elemen ini tidak selalu memiliki fungsi langsung seperti input atau navigasi, tapi berperan besar dalam menciptakan pengalaman pengguna yang menyenangkan dan jelas. 
+                </p>
+            </div>
+        </div>
+        <div class="containers">
+            <section id="slider">
+                <input type="radio" name="sliderv" id="v1">
+                <input type="radio" name="sliderv" id="v2">
+                <input type="radio" name="sliderv" id="v3" checked>
+                <input type="radio" name="sliderv" id="v4">
+                <input type="radio" name="sliderv" id="v5">
+                <label for="v1" id="slidev1" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-bag"></i>
+                        <h2>Ikon</h2>
+                        <p>Gambar kecil yang mewakili fungsi atau tindakan tertentu, seperti ikon pencarian atau ikon keranjang.</p>
+                    </div>
+                </label>
+                <label for="v2" id="slidev2" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-image"></i>
+                        <h2>Ilustrasi</h2>
+                        <p>Gambar atau desain visual yang digunakan untuk memperkuat pesan, menarik perhatian, atau memperjelas isi konten.</p>
+                    </div>
+                </label>
+                <label for="v3" id="slidev3" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-camera"></i>
+                        <h2>Gambar</h2>
+                        <p>Elemen visual yang menampilkan foto atau grafik untuk mendukung informasi atau memperindah tampilan.</p>
+                    </div>
+                </label>
+                <label for="v4" id="slidev4" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-palette"></i>
+                        <h2>Warna</h2>
+                        <p>Digunakan untuk memberikan suasana, menandai prioritas, atau menunjukkan status tertentu seperti hijau untuk sukses dan merah untuk kesalahan.</p>
+                    </div>
+                </label>
+                <label for="v5" id="slidev5" class="slide">
+                    <div class="slide-content">
+                        <i class="bi bi-alphabet"></i>
+                        <h2>Tipografi</h2>
+                        <p>Penggunaan gaya huruf (font), ukuran, dan penataan teks untuk meningkatkan keterbacaan dan menciptakan hirarki informasi.</p>
+                    </div>
+                </label>
+            </section>
+        </div>
+    </section>
+
+    <!-- Before / Next Page -->
+    <div class="navigation-buttons">
+        <a href="pengenalan-ui-ux.html" class="nav-button prev">◀ Sebelumnya</a>
+        <a href="prinsip-ui.html" class="nav-button next">Berikutnya ▶</a>
+    </div>
+
+    <!-- Footer-->
+    <footer>
+        <p>© 2025 Class of Click. All rights reserved.</p>
+    </footer>
+
+    <!-- Dropdown di dalam Menu Materi -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggles = document.querySelectorAll('.submenu-toggle');
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const submenu = this.nextElementSibling;
+                    submenu.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+
+    <!-- Tombol Kembali ke Atas -->
+    <button id="toTopBtn" title="Kembali ke atas">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
+
+    <script>
+        const toTopBtn = document.getElementById("toTopBtn");
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollTop > 100) {
+                toTopBtn.classList.add('show');
+            } else {
+                toTopBtn.classList.remove('show');
+            }
+        });
+        toTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <!-- JS -->    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

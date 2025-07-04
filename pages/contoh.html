@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
+    <title>Class of Click | Website Belajar UI/UX Dasar</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/contoh.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="../css/bootstrap-icons.css" />
+    <!-- Logo Title (Favicon) -->
+    <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #EBAC0E; font-weight: 600;">
+                            Materi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- Pengenalan UI-UX -->
+                            <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- User Interface -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
+                                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
+                                    <li><a class="dropdown-item sub-item" href="tahapan-ui.html">3) Tahapan Khusus Desain UI</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- User Experience -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Figma -->
+                            <li>
+                                <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
+                                <ul class="submenu-list">
+                                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
+                                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
+                                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <!-- Studi Kasus -->
+                            <li><a class="dropdown-item active" href="contoh.html">Contoh Studi Kasus</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Contoh <span class="highlight">Studi Kasus</span></h1>
+        <p class="studikasus-desc">
+            Halaman ini berisi beberapa contoh studi kasus UI/UX yang bisa kamu pelajari sebagai referensi dan inspirasi. 
+            Setiap contoh dibuat untuk membantu kamu memahami proses desain secara nyata sebelum mencoba latihan sungguhan.<br><br>
+            Selamat mempelajari, semoga kamu menjadi lebih memahami proses desain UI/UX!<br>
+        </p>
+    </section>
+
+    <main class="case-grid">
+        <div class="case-card">
+            <img src="../img/contohartikel1.webp" alt="Cover Artikel Farmagym">
+            <h2>Studi Kasus UI/UX: Farmagym</h2>
+            <p class="author"><i class="bi bi-pen"></i> oleh Wendri Tri Pambudi</p>
+            <p class="excerpt">Merancang aplikasi Farmagym untuk mendukung gaya hidup sehat melalui fitur-fitur seperti pemesanan gym, booking personal trainer, kelas olahraga, dan video workout.</p>
+            <a href="https://medium.com/@wendritp/studi-kasus-ui-ux-farmagym-aplikasi-olahraga-dan-hidup-sehat-pt-farmagym-sehat-selalu-01b1417b90f0" class="read-more" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="case-card">
+            <img src="../img/contohartikel2.webp" alt="Cover Artikel Ruangbelajar">
+            <h2>Studi Kasus UX: Ruangbelajar</h2>
+            <p class="author"><i class="bi bi-pen"></i> oleh Aliumar</p>
+            <p class="excerpt">Merancang aplikasi Ruangbelajar untuk memfasilitasi pembelajaran online yang fleksibel bagi mahasiswa dan karyawan, dengan pendekatan Design Thinking dan fitur-fitur yang mendukung kebutuhan pengguna.</p>
+            <a href="https://medium.com/@aliumar131/studi-kasus-ux-desain-case-study-ruangbelajar-pembelajaran-kursus-online-7e0dc696405a" class="read-more" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="case-card">
+            <img src="../img/contohartikel3.webp" alt="Cover Artikel Siaga Bencana">
+            <h2>Studi Kasus UI/UX: Aplikasi Siaga Bencana Alam</h2>
+            <p class="author"><i class="bi bi-pen"></i> oleh Gian Pratama</p>
+            <p class="excerpt">Merancang aplikasi mobile yang memberikan informasi bencana secara real-time dan panduan kesiapsiagaan kepada masyarakat Indonesia yang rawan bencana.</p>
+            <a href="https://medium.com/@pratamagian/studi-kasus-ui-ux-tentang-aplikasi-siaga-bencana-alam-8529567d5855" class="read-more" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="case-card">
+            <img src="../img/contohartikel4.webp" alt="Cover Artikel Jalanjitu">
+            <h2>Studi Kasus UI/UX: Aplikasi Jalanjitu</h2>
+            <p class="author"><i class="bi bi-pen"></i> oleh Muhammad Ilham Pratama</p>
+            <p class="excerpt">Merancang aplikasi travel berbasis AI yang membantu wisatawan merencanakan perjalanan dengan rekomendasi yang dipersonalisasi dan informasi terkini tentang destinasi wisata.</p>
+            <a href="https://medium.com/@work.ilham27/studi-kasus-ui-ux-merancang-kecerdasan-buatan-ai-pada-aplikasi-travel-jalanjitu-7105f490553f" class="read-more" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="case-card">
+            <img src="../img/contohartikel5.webp" alt="Cover Artikel Kelas Kita">
+            <h2>Studi Kasus UI/UX: Aplikasi Kelas Kita</h2>
+            <p class="author"><i class="bi bi-pen"></i> oleh Septiana Faza</p>
+            <p class="excerpt">Merancang aplikasi yang membantu siswa SMA/SMK dalam merencanakan masa depan akademis mereka, mulai dari menentukan minat dan bakat, memilih jurusan kuliah, hingga mempersiapkan ujian tes masuk universitas.</p>
+            <a href="https://septianafaza.medium.com/ui-ux-case-study-kelas-kita-app-2b45799eb865" class="read-more" target="_blank">Baca Selengkapnya</a>
+        </div>
+        <div class="case-card">
+            <img src="../img/contohartikel6.webp" alt="Cover Artikel Poshmark">
+            <h2>Studi Kasus UX: Poshmark</h2>
+            <p class="author"><i class="bi bi-pen"></i> oleh Emily Liu</p>
+            <p class="excerpt">Meningkatkan pengalaman pengguna dalam proses pembelian di aplikasi Poshmark melalui desain yang iteratif dan fokus pada kebutuhan pengguna.</p>
+            <a href="https://medium.com/usabilitygeek/ux-design-process-a-poshmark-case-study-252d382dee75" class="read-more" target="_blank">Baca Selengkapnya</a>
+        </div>
+    </main>
+
+    <div class="link-next">
+        <p>
+            Sudah lihat contoh-contohnya? <br>
+            Selanjutnya, kamu dapat mencoba tantangannya dengan menyelesaikan studi kasus!<br>
+            Lanjut ke halaman latihan <b>Hard Level</b> untuk mengerjakan mini studi kasus dan ciptakan solusi desain versi kamu!
+        </p>
+        <a href="latihan.html">Mulai Tantangan Studi Kasus >></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Class of Click. All rights reserved.</p>
+    </footer>
+
+    <!-- Dropdown di dalam Menu Materi -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggles = document.querySelectorAll('.submenu-toggle');
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const submenu = this.nextElementSibling;
+                    submenu.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+
+    <!-- Tombol Kembali ke Atas -->
+    <button id="toTopBtn" title="Kembali ke atas">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
+    <script>
+        const toTopBtn = document.getElementById("toTopBtn");
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollTop > 100) {
+                toTopBtn.classList.add('show');
+            } else {
+                toTopBtn.classList.remove('show');
+            }
+        });
+        toTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <!-- JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
