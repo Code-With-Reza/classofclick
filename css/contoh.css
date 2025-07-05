@@ -91,5 +91,7 @@ h1 {
   .case-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .read-more {
+    margin: 0 auto 24px 32px;
+  }
 }
