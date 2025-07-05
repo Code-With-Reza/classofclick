@@ -16,6 +16,8 @@
     
     <!-- Icon -->
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Logo Title (Favicon) -->
     <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
 </head>
@@ -157,35 +159,66 @@
 
     <!-- SECTION 4: Kenapa Belajar UI/UX Itu Asik Banget? -->
     <section class="carousel-section">
-        <h2 class="carousel-heading">Kenapa Belajar UI/UX Itu Asik Banget?</h2>
-        <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+        <div class="carousel-heading">
+            <h2 >Kenapa Belajar <span style="color: #EBAC0E;">UI/UX</span> Itu Asik Banget?</h2>
+        </div>
+        
+        <div class="carousel-wrapper position-relative">
+            <button class="carousel-nav left" data-bs-target="#customCarousel" data-bs-slide="prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+                <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="carousel-box">
-                        <h3>🧠 Bikin Otak Kanan & Kiri Kompak!</h3>
-                        <p>UI/UX itu gabungan antara seni dan logika — kreatif iya, mikir juga iya!</p>
+                        <img src="./img/brain.png" alt="Otak" class="carousel-img-icon">
+                        <h3> Asah Otak Kanan & Kiri Biar Makin Kompak!</h3>
+                        <p>Di UI/UX, kamu bakal belajar gabungin seni visual yang keren sama logika berpikir yang jitu.</p>
                     </div>
                 </div>
+
                 <div class="carousel-item">
                     <div class="carousel-box">
-                        <h3>🕵️‍♀️ Belajar Jadi Detektif User</h3>
-                        <p>Kamu bakal diajarin mikir kayak pengguna. Seru, kayak nebak-nebak isi kepala orang!</p>
+                        <img src="./img/kaca-pembesar.png" alt="Kaca Pembesar" class="carousel-img-icon">
+                        <h3>Belajar Jadi Detektif User</h3>
+                        <p>Di UI/UX, kamu diajak berpikir seperti pengguna. Kamu akan mencari tau apa yang mereka butuh, suka, dan rasakan.</p>
                     </div>
                 </div>
+
                 <div class="carousel-item">
                     <div class="carousel-box">
-                        <h3>✨ Desain Kamu Jadi Lebih Bermakna</h3>
-                        <p>Gak cuma estetik, tapi juga fungsional dan bikin orang betah pakai.</p>
+                        <img src="./img/sparkle.png" alt="Sparkle" class="carousel-img-icon">
+                        <h3> Desain Kamu Jadi Lebih Bermakna</h3>
+                        <p>Gak cukup cuma estetik. Dengan UI/UX, kamu belajar bikin desain yang enak dilihat dan nyaman dipakai.</p>
                     </div>
                 </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-box">
+                        <img src="./img/desain-digital.png" alt="Desain Digital" class="carousel-img-icon">
+                        <h3>Buka Jalan ke Dunia Desain Digital</h3>
+                        <p>UI/UX jadi langkah awal kamu buat terjun ke dunia kreatif digital. Banyak profesi seru yang bisa kamu jelajahi, dari desainer, researcher, sampai UI developer!</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-box">
+                        <img src="./img/lamp.png" alt="Lampu" class="carousel-img-icon">
+                        <h3>Ciptakan Solusi Keren yang Bikin Hidup Orang Lebih Mudah!</h3>
+                        <p>Di UI/UX, kamu tidak hanya mendesain tampilan, tapi juga pecahin masalah nyata lewat aplikasi atau website.</p>
+                    </div>
+                </div>
+                </div>
+
             </div>
-            <!-- Custom button bawah -->
-            <div class="custom-carousel-buttons">
-                <button class="carousel-btn" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">←</button>
-                <button class="carousel-btn" type="button" data-bs-target="#customCarousel" data-bs-slide="next">→</button>
-            </div>
+
+            <button class="carousel-nav right" data-bs-target="#customCarousel" data-bs-slide="next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
     </section>
+
 
     <footer>
         <p>© 2025 Class of Click. All rights reserved.</p>

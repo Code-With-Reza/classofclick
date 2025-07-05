@@ -23,7 +23,8 @@ section.hero {
 }
 
 .hero-text h1 {
-  margin: 1rem 0 20px 0;
+  margin: 24px 0;
+  color: var(--secondary-color);
 }
 
 .hero-text p {
@@ -60,7 +61,7 @@ section.hero {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  background-image: url("../img/bg-kuning2.png");
+  background-image: url("../img/bg-kuning3.png");
   background-repeat: repeat;
   background-size: 700px;
   background-position: center;
@@ -146,146 +147,194 @@ section.hero {
 
 /* Carousel Section */
 .carousel-section {
+  padding: 160px 0;
   text-align: center;
-  padding: 140px 32px;
-  background-color: #fff;
-  background-image: url("../img/bg-");
+  position: relative;
+  background-image: url("../img/bg-kuning3.png");
   background-repeat: repeat;
-  background-size: 500px;
-  background-position: center top;
-}
-
-.carousel-box {
-  min-height: 300px;
-  padding: 3rem 2rem;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  border-radius: 10px;
-  max-width: 700px;
-  margin: 0 auto;
-  min-height: 220px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background-size: 700px;
 }
 
 .carousel-heading {
-  text-align: center;
-  line-height: 1.6;
+  color: #063559;
+  margin-bottom: 48px;
+  font-size: 2.25rem;
+  font-weight: 800;
 }
 
+.carousel-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.carousel-box {
+  background-color: #ffffff; /* putih */
+  border: 1.5px solid #FFEBA9; /* warna soft dari palet kamu */
+  border-radius: 20px;
+  padding: 48px 32px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); /* lembut aja */
+}
+
+.carousel-img-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .carousel-box h3 {
-  color: #ea5937;
-  margin-bottom: 1rem;
+  color: #EA5937;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 
 .carousel-box p {
-  color: #444;
+  color: #333;
   font-size: 1rem;
+  line-height: 1.6;
 }
 
-/* Carousel Buttons */
-.custom-carousel-buttons {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.carousel-btn {
-  background-color: #EBAC0E;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-size: 18px;
+/* Tombol Panah */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff; /* soft yellow, beda dari box putih */
+  border: 1.5px solid #FFEBA9; /* kasih tepi halus */
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-size: 1.4rem;
+  color: #063559;
   cursor: pointer;
+  z-index: 10;
   transition: background-color 0.3s ease;
 }
 
-.carousel-btn:hover {
-  background-color: #D99404;
-}
-
-/* Card */
-.card {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-  padding: 40px 32px;
-  max-width: 700px;
-  margin: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+.carousel-nav:hover {
+  background-color: #FFEB99; /* lebih cerah waktu hover */
 }
 
 
-/* Responsive */
-@media (max-width: 600px) {
-  .hero-yellow {
-    border-radius: 0;
-    margin-top: 0;
-  }
-  .hero-text {
-    margin-top: 80px;
-  }
-  .about-text p {
-    text-align: justify;
-  }
-  .features {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-  .feature-card {
-    padding: 1.5rem;
-  }
-  .testimonial-section {
-    padding: 0 20px;
-  }
+.carousel-nav.left {
+  left: -24px;
 }
 
+.carousel-nav.right {
+  right: -24px;
+}
+
+/* ---------- Responsive (max-width: 768px) ---------- */
 @media (max-width: 768px) {
+  .carousel-box {
+    padding: 32px 20px;
+  }
+
+  .carousel-nav.left {
+    left: -12px;
+  }
+
+  .carousel-nav.right {
+    right: -12px;
+  }
+
   section.hero {
     height: auto;
     padding-top: 60px;
     padding-bottom: 40px;
     background-position: center top;
   }
+
   .hero-image-bawah img {
     width: 100vw;
     max-width: none;
     margin-left: calc(-50vw + 50%);
   }
+
   .hero-text a.cta {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
   }
+
   .carousel-section {
     padding: 64px 16px;
   }
+
   .carousel-box {
     padding: 1.5rem 1rem;
     min-height: auto;
   }
+
   .carousel-box h3 {
     font-size: 1.1rem;
   }
+
   .carousel-box p {
     font-size: 0.95rem;
   }
+
   .custom-carousel-buttons {
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
   }
+
   .carousel-btn {
     width: 48px;
     height: 48px;
     padding: 0;
     font-size: 1.2rem;
     border-radius: 8px;
+  }
+
+  /* Icon responsive */
+  .carousel-img-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 12px;
+  }
+}
+
+/* ---------- Responsive (max-width: 600px) ---------- */
+@media (max-width: 600px) {
+  .hero-yellow {
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+  .hero-text {
+    margin-top: 80px;
+  }
+
+  .about-text p {
+    text-align: justify;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-section {
+    padding: 0 20px;
+  }
+
+  /* Icon responsive */
+  .carousel-img-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 10px;
   }
 }
