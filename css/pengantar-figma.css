@@ -145,9 +145,13 @@ h1 {
 }
 
 .icon {
-  font-size: 48px;
-  margin-bottom: 10px;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto 10px; /* auto untuk rata tengah, 10px jarak ke teks */
+  object-fit: contain; /* biar tidak pecah */
 }
+
 
 .text {
   font-weight: bold;
@@ -188,7 +192,7 @@ h1 {
   transform: rotateY(0deg);
 }
 
-/* Subab Bisa Tidak Bisa */
+/* Bisa Tidak Bisa */
 .bisa-tidak-bisa {
   padding: 60px 20px;
   text-align: center;
@@ -225,6 +229,18 @@ td {
   padding: 10px;
   border-top: 1px solid #ddd;
 }
+
+.tabel-bisa td b {
+  color: #E5B004; 
+  font-weight: bold;
+}
+
+.tabel-tidak-bisa td b {
+  color: #1A3E66;
+  font-weight: bold;
+}
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
