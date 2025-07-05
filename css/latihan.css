@@ -38,6 +38,7 @@ section.hero h1 {
   height: auto;
 }
 
+
 /* Card */
 .card-container {
   display: flex;
@@ -63,6 +64,14 @@ section.hero h1 {
   box-shadow: 0 10px 15px rgba(0,0,0,0.15);
   transition: all 0.3s ease;
 }
+
+.icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 
 .card.easy {
   background-color: #F1F5F9;
