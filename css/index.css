@@ -1,6 +1,6 @@
 /* Hero Section */
 section.hero {
-  background: url('../img/aset4_beranda.png') no-repeat center center;
+  background: url('../img/aset6_beranda.png') no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -56,25 +56,24 @@ section.hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 80vh;
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  background-image: url("../img");
+  background-image: url("../img/bg-kuning2.png");
   background-repeat: repeat;
-  background-size: cover;
+  background-size: 700px;
   background-position: center;
   padding: 60px 20px;
 }
 
 .about-text {
   max-width: 1100px;
-  margin: 10px auto;
+  margin: 50px auto;
+  line-height: 1.6;
 }
 
 .about-text h2 {
-  font-weight: bold;
-  color: #D94A2B;
   margin-bottom: 32px;
 }
 
@@ -82,7 +81,7 @@ section.hero {
 .features-section {
   width: 100%;
   margin: 0 auto;
-  background-color: #D94A2B;
+  background-color:  #063559;
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -102,7 +101,7 @@ section.hero {
 .features-section h2 {
   text-align: center;
   margin-bottom: 16px;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .features {
@@ -149,7 +148,8 @@ section.hero {
 .carousel-section {
   text-align: center;
   padding: 140px 32px;
-  background-image: url("../img/bg-kuning2.png");
+  background-color: #fff;
+  background-image: url("../img/bg-");
   background-repeat: repeat;
   background-size: 500px;
   background-position: center top;

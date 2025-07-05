@@ -1,15 +1,13 @@
 /* Heading */
 h1 {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0px;
 }
 
 /* Description */
 .tahapan-desc {
   text-align: center;
   margin: 10px auto;
-  padding: 0 20px;
   color: var(--text-color);
   max-width: 1200px;
   line-height: 1.6;
@@ -132,10 +130,6 @@ h1 {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  h1 {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
   .tahapan-desc {
     text-align: justify;
   }
