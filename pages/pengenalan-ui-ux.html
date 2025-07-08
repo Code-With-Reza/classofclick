@@ -6,21 +6,16 @@
     <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
     <title>Class of Click | Website Belajar UI/UX Dasar</title>
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Link CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/pengenalan-ui-ux.css" />
     
-    <!-- Icon -->
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
-    <!-- Logo Title (Favicon) -->
     <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
@@ -39,10 +34,8 @@
                             Materi
                         </a>
                         <ul class="dropdown-menu">
-                            <!-- Pengenalan UI-UX -->
                             <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <!-- User Interface -->
                             <li>
                                 <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
                                 <ul class="submenu-list">
@@ -52,7 +45,6 @@
                                 </ul>
                             </li>
                             <li><hr class="dropdown-divider"></li>
-                            <!-- User Experience -->
                             <li>
                                 <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
                                 <ul class="submenu-list">
@@ -62,7 +54,6 @@
                                 </ul>
                             </li>
                             <li><hr class="dropdown-divider"></li>
-                            <!-- Figma -->
                             <li>
                                 <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
                                 <ul class="submenu-list">
@@ -72,7 +63,6 @@
                                 </ul>
                             </li>
                             <li><hr class="dropdown-divider"></li>
-                            <!-- Studi Kasus -->
                             <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
                         </ul>
                     </li>
@@ -90,7 +80,6 @@
         </div>
     </nav>
 
-    <!-- Hero -->
     <section class="hero">
         <h1>Pengenalan <span style="color: #EBAC0E;">UI/UX</span></h1>
         <div class="image-hero">
@@ -109,7 +98,6 @@
         </div>
     </section>
 
-    <!-- Panel UI -->
     <aside id="uiPanel" class="side-panel left-panel">
         <button class="close-btn" onclick="closePanel('uiPanel')">&times;</button>
         <h3>User Interface <span style="color: #EBAC0E;">(UI)</span></h3>
@@ -121,7 +109,6 @@
         <p>Pengalaman pengguna, mengacu pada <b>keseluruhan pengalaman pengguna</b> saat menggunakan suatu produk.<br><br>Ini melibatkan aspek <b>emosional, kognitif, dan fungsional.</b></p>
     </aside>
 
-    <!-- Yellow Box -->
     <section class="yellow-box">
         <img src="../img/icon-uiux-illustration.png" alt="Ilustrasi UIUX" class="illustration">
         <div class="shortcut-yellow-box">
@@ -130,7 +117,6 @@
         </div>
     </section>
 
-    <!-- Perbedaan -->
     <section class="perbedaan">
         <h2 style="text-align: center;"><span style="color: #EBAC0E;">Perbedaan</span> UI & UX</h2>
         <div class="containers">
@@ -147,7 +133,6 @@
             <div class="brain-right">
                 <img src="../img/otak-kanan-02.png" alt="Otak Kanan" />
             </div>
-            <!-- Kotak jawaban per kategori -->
             <div id="jawaban-tujuan" class="jawaban-pair">
                 <div class="jawaban-left ui-box">Membuat tampilan produk lebih menarik</div>
                 <div class="jawaban-right ux-box">Memberikan kenyamanan saat menggunakan produk</div>
@@ -171,7 +156,6 @@
         </div>
     </section>
     
-    <!-- Mengapa UI/UX Penting -->
     <section class="importance-section">
         <h2>Mengapa <span style="color: #EBAC0E;">UI/UX</span> Penting?</h2>
         <div class="card-container">
@@ -235,52 +219,58 @@
                 </div>
             </div>
         </div>
-        <!-- Before / Next Page -->
         <div class="navigation-buttons">
             <a href="../index.html" class="nav-button prev">◀ Sebelumnya</a>
             <a href="elemen-ui.html" class="nav-button next">Berikutnya ▶</a>
         </div>
     </section>
 
-
-    <!-- Footer -->
     <footer>
         <p>© 2025 Class of Click. All rights reserved.</p>
     </footer>
 
-    <!-- Dropdown di dalam Menu Materi -->
     <script>
-    let jawabanAktif = null;
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggles = document.querySelectorAll('.submenu-toggle');
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const submenu = this.nextElementSibling;
+                    submenu.classList.toggle('show');
+                });
+            });
+        });
 
-function tampilJawaban(id) {
-  const semuaJawaban = document.querySelectorAll(".jawaban-pair");
-  const semuaTombol = document.querySelectorAll(".buttons button");
-  const elemenJawaban = document.getElementById("jawaban-" + id);
+        // Script untuk menampilkan/menyembunyikan jawaban pada bagian "Perbedaan UI & UX"
+        let jawabanAktif = null;
+        function tampilJawaban(id) {
+            const elemenJawaban = document.getElementById(`jawaban-${id}`);
+            const semuaJawaban = document.querySelectorAll(".jawaban-pair");
+            const semuaTombol = document.querySelectorAll(".perbedaan .buttons button");
 
-  // Jika tombol yang sama diklik lagi → sembunyikan
-  if (jawabanAktif === id) {
-    elemenJawaban.classList.remove("show");
-    semuaTombol.forEach((btn) => btn.classList.remove("active"));
-    jawabanAktif = null;
-  } else {
-    // Sembunyikan semua jawaban
-    semuaJawaban.forEach((el) => el.classList.remove("show"));
-    elemenJawaban.classList.add("show");
+            // Jika tombol yang sama diklik lagi -> sembunyikan
+            if (jawabanAktif === id) {
+                elemenJawaban.classList.remove("show");
+                semuaTombol.forEach((btn) => btn.classList.remove("active"));
+                jawabanAktif = null;
+            } else {
+                // Sembunyikan semua jawaban
+                semuaJawaban.forEach((el) => el.classList.remove("show"));
+                elemenJawaban.classList.add("show");
 
-    // Atur tombol aktif
-    semuaTombol.forEach((btn) => btn.classList.remove("active"));
-    const tombolKlik = Array.from(semuaTombol).find(btn =>
-      btn.innerText.toLowerCase().includes(id)
-    );
-    if (tombolKlik) tombolKlik.classList.add("active");
+                // Atur tombol aktif
+                semuaTombol.forEach((btn) => btn.classList.remove("active"));
+                const tombolKlik = Array.from(semuaTombol).find(btn =>
+                    btn.innerText.toLowerCase().includes(id)
+                );
+                if (tombolKlik) tombolKlik.classList.add("active");
 
-    jawabanAktif = id;
-  }
-}
+                jawabanAktif = id;
+            }
+        }
     </script>
     
-
-    <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/pengenalan-ui-ux.js"></script>
 </body>
