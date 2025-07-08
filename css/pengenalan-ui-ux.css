@@ -83,7 +83,7 @@ h1 {
 /* Button Umum */
 button {
   padding: 0.75rem 1.5rem;
-  background-color: #1A3E66;
+  background-color: #EA5937;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -91,7 +91,7 @@ button {
   font-size: 1rem;
 }
 button:hover {
-  background-color: #1a324f;
+  background-color: #C8462C;
 }
 
 /* Overlay */
