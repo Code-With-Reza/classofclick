@@ -1,19 +1,10 @@
 // Button Pengenalan
-const btnUI = document.getElementById('btnUI');
-const btnUX = document.getElementById('btnUX');
-const uiPanel = document.getElementById('uiPanel');
-const uxPanel = document.getElementById('uxPanel');
+function openModal(id) {
+  document.getElementById(id).style.display = 'block';
+}
 
-btnUI.addEventListener('click', () => {
-    uiPanel.classList.toggle('show');
-});
-
-btnUX.addEventListener('click', () => {
-    uxPanel.classList.toggle('show');
-});
-
-function closePanel(id) {
-    document.getElementById(id).classList.remove('show');
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
 }
 
 // Perbedaan UI dan UX

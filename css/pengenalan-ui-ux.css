@@ -46,21 +46,33 @@ h1 {
   gap: 32px;
   justify-content: center;
 }
+
 .button-group button {
   transition: all 0.3s ease;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
 }
-.button-group #btnUI {
-  background-color: #063559; /* biru tua */
+
+/* UI = Kuning */
+.button-group .btn-ui {
+  background-color: #EBAC0E;
 }
-.button-group #btnUX {
-  background-color: #EA5937; /* oranye */
+.button-group .btn-ui:hover {
+  background-color: #d49900;
 }
-.button-group #btnUI:hover {
+
+/* UX = Biru */
+.button-group .btn-ux {
+  background-color: #063559;
+}
+.button-group .btn-ux:hover {
   background-color: #031e30;
 }
-.button-group #btnUX:hover {
-  background-color: #c14424;
-}
+
 
 @media (max-width: 768px) {
   .button-group {
@@ -79,38 +91,58 @@ h1 {
 }
 
 
-
-/* Side Panel */
-.side-panel {
+.modal {
+  display: none;
   position: fixed;
-  bottom: 80px;
-  width: 500px;
-  max-height: 200px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  padding: 30px 20px;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  z-index: 999;
-  overflow-y: auto;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateX(100%);
-  visibility: hidden;
-}
-.left-panel {
+  z-index: 1000;
+  top: 0;
   left: 0;
-  transform: translateX(-100%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
-.right-panel {
-  right: 0;
-  transform: translateX(100%);
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  margin: 10% auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-.side-panel.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateX(0);
-  visibility: visible;
+
+.modal-content h3 {
+  margin-bottom: 10px;
 }
+
+.modal-content h3::after {
+  content: "";
+  display: block;
+  margin-top: 8px;
+  height: 2px;
+  background-color: #000;
+}
+
+.modal-content p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.close:hover {
+  color: #333;
+}
+
 
 /* Tombol Close Panel */
 .close-btn {

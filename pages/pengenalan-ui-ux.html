@@ -82,8 +82,9 @@
 
     <section class="hero">
         <h1>Pengenalan <span style="color: #EBAC0E;">UI/UX</span></h1>
+
         <div class="image-hero">
-            <img src="../img/aset_pengenalan-uiux.png" alt="UI UX Besar">
+            <img src="../img/aset_pengenalan-uiux.png" alt="UI UX Besar" />
         </div>
 
         <p class="pengenalan-desc">
@@ -91,23 +92,44 @@
             UI (User Interface) dan UX (User Experience) adalah dua istilah yang sering digunakan dalam dunia desain produk digital.<br>
             Untuk mengenal UI/UX lebih dalam, mari kita pelajari pada halaman ini!
         </p>
+
         <p style="text-align: center; margin-bottom: 20px;">Klik salah satu tombol untuk melihat penjelasan singkat tentang UI/UX</p>
+
         <div class="button-group">
-            <button id="btnUI"><i class="bi bi-display"></i> User Interface (UI)</button>
-            <button id="btnUX"><i class="bi bi-emoji-smile"></i> User Experience (UX)</button>
+            <button class="btn-ui" onclick="openModal('modal-ui')">
+                <i class="bi bi-display"></i> User Interface (UI)
+            </button>
+            <button class="btn-ux" onclick="openModal('modal-ux')">
+                <i class="bi bi-emoji-smile"></i> User Experience (UX)
+            </button>
         </div>
     </section>
 
-    <aside id="uiPanel" class="side-panel left-panel">
-        <button class="close-btn" onclick="closePanel('uiPanel')">&times;</button>
+    <!-- Modal UI -->
+    <div class="modal" id="modal-ui">
+    <div class="modal-content modal-ui">
+        <span class="close" onclick="closeModal('modal-ui')">&times;</span>
         <h3>User Interface <span style="color: #EBAC0E;">(UI)</span></h3>
-        <p>Antarmuka pengguna, mengacu pada <b>semua elemen visual atau grafis</b> yang berinteraksi dengan pengguna dalam suatu produk.<br><br>Ini mencakup <b>elemen-elemen visual</b> seperti tata letak, warna, tipografi, ikon, dan elemen grafis lainnya.</p>
-    </aside>
-    <aside id="uxPanel" class="side-panel right-panel">
-        <button class="close-btn" onclick="closePanel('uxPanel')">&times;</button>
+        <p>
+            Antarmuka pengguna atau <b>User Interface (UI)</b> adalah <b>tampilan visual</b> yang kamu lihat dan pakai saat berinteraksi dengan sebuah produk digital.<br><br>
+            Contohnya seperti <b>tata letak, warna, tulisan (tipografi), ikon, dan elemen grafis lainnya</b> yang bikin tampilan aplikasi atau website jadi menarik dan enak dilihat.
+        </p>
+
+    </div>
+    </div>
+
+    <!-- Modal UX -->
+    <div class="modal" id="modal-ux">
+    <div class="modal-content modal-ux">
+        <span class="close" onclick="closeModal('modal-ux')">&times;</span>
         <h3>User Experience <span style="color: #EBAC0E;">(UX)</span></h3>
-        <p>Pengalaman pengguna, mengacu pada <b>keseluruhan pengalaman pengguna</b> saat menggunakan suatu produk.<br><br>Ini melibatkan aspek <b>emosional, kognitif, dan fungsional.</b></p>
-    </aside>
+        <p>
+            Pengalaman pengguna atau <b>User Experience (UX)</b> adalah <b>keseluruhan perasaan dan pengalaman</b> saat seseorang menggunakan sebuah produk digital.<br><br>
+            Ini mencakup hal-hal seperti <b>kemudahan saat navigasi, seberapa cepat dipahami, dan apakah pengguna merasa nyaman dan puas</b> saat memakainya.
+        </p>
+    </div>
+    </div>
+
 
     <section class="yellow-box">
         <img src="../img/icon-uiux-illustration.png" alt="Ilustrasi UIUX" class="illustration">
