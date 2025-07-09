@@ -17,23 +17,29 @@ function closePanel(id) {
 }
 
 // Perbedaan UI dan UX
-let jawabanTerbuka = null; // menyimpan ID yang sedang terbuka
+let jawabanTerbuka = null;
 
 function tampilJawaban(id) {
     const target = document.getElementById('jawaban-' + id);
 
     if (jawabanTerbuka === id) {
-        // Kalau tombol yang sama diklik lagi → sembunyikan
         target.style.display = 'none';
         jawabanTerbuka = null;
     } else {
-        // Sembunyikan semua dulu
+        // Sembunyikan semua
         document.querySelectorAll('.jawaban-pair').forEach(div => {
             div.style.display = 'none';
         });
 
-        // Tampilkan yang dipilih
-        target.style.display = 'block';
+        // Tampilkan yang dipilih, cek khusus untuk kesimpulan
+        if (id === 'kesimpulan') {
+            target.style.display = 'flex';
+        } else {
+            target.style.display = 'block';
+        }
+
         jawabanTerbuka = id;
     }
 }
+
+
