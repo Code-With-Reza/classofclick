@@ -228,13 +228,43 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const toggles = document.querySelectorAll('.submenu-toggle');
+            const submenus = document.querySelectorAll('.submenu-list');
+
             toggles.forEach(toggle => {
                 toggle.addEventListener('click', function (e) {
                     e.preventDefault();
                     e.stopPropagation();
-                    const submenu = this.nextElementSibling;
-                    submenu.classList.toggle('show');
+
+                    const currentSubmenu = this.nextElementSibling;
+                    const arrow = this.querySelector('.arrow');
+                    const isOpen = currentSubmenu.classList.contains('show');
+
+                    // Tutup semua submenu
+                    submenus.forEach(submenu => {
+                        submenu.classList.remove('show');
+                        const otherToggle = submenu.previousElementSibling;
+                        const otherArrow = otherToggle.querySelector('.arrow');
+                        if (otherArrow) otherArrow.style.transform = 'rotate(0deg)';
+                    });
+
+                    // Kalau sebelumnya belum terbuka, buka yang diklik
+                    if (!isOpen) {
+                        currentSubmenu.classList.add('show');
+                        if (arrow) arrow.style.transform = 'rotate(180deg)';
+                    }
                 });
+            });
+
+            // Klik di luar tutup semua submenu
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.dropdown-menu')) {
+                    submenus.forEach(submenu => {
+                        submenu.classList.remove('show');
+                        const toggle = submenu.previousElementSibling;
+                        const arrow = toggle.querySelector('.arrow');
+                        if (arrow) arrow.style.transform = 'rotate(0deg)';
+                    });
+                }
             });
         });
     </script>

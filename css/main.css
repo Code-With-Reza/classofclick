@@ -118,6 +118,36 @@ b, strong {
   color: #fff !important;
   font-weight: 600;
 }
+.dropdown-menu {
+    border: 1px solid rgba(235, 172, 14, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 12px 10px;
+    border-radius: 12px;
+    min-width: 260px;
+}
+.submenu-list {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submenu-list.show {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+}
+.arrow {
+    transition: transform 0.4s ease;
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
 
 /* Hero Section */
 .hero {

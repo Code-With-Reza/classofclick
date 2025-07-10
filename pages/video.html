@@ -200,40 +200,13 @@
         <p>© 2025 Class of Click. All rights reserved.</p>
     </footer>
 
-    <!-- Dropdown di dalam Menu Materi -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggles = document.querySelectorAll('.submenu-toggle');
-            toggles.forEach(toggle => {
-                toggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    const submenu = this.nextElementSibling;
-                    submenu.classList.toggle('show');
-                });
-            });
-        });
-    </script>
-
     <!-- Tombol Kembali ke Atas -->
     <button id="toTopBtn" title="Kembali ke atas">
         <i class="bi bi-chevron-double-up"></i>
     </button>
-    <script>
-        const toTopBtn = document.getElementById("toTopBtn");
-        window.addEventListener('scroll', () => {
-            if (document.documentElement.scrollTop > 100) {
-                toTopBtn.classList.add('show');
-            } else {
-                toTopBtn.classList.remove('show');
-            }
-        });
-        toTopBtn.onclick = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
-    </script>
 
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
