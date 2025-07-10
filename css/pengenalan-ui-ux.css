@@ -31,7 +31,7 @@ h1 {
 /* Deskripsi Pengenalan */
 .pengenalan-desc {
   text-align: center;
-  margin: 100px auto;
+  margin: 100px auto 30px auto;
   padding: 0 20px;
   color: var(--text-color);
   max-width: 1200px;
@@ -40,8 +40,7 @@ h1 {
 
 /* Button Group */
 .button-group {
-  margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   display: flex;
   gap: 32px;
   justify-content: center;
