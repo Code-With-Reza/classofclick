@@ -127,6 +127,31 @@ b, strong {
     border-radius: 12px;
     min-width: 260px;
 }
+.dropdown-item:active,
+.submenu-toggle:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+}
+/* Hilangkan efek warna biru bawaan saat diklik */
+.dropdown-item:focus,
+.dropdown-item:active {
+    background-color: rgba(235, 172, 14, 0.1) !important;
+    color: var(--secondary-color) !important;
+    outline: none;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+/* Kalau pakai button, submenu-toggle juga perlu diatur */
+.submenu-toggle:focus,
+.submenu-toggle:active {
+    background-color: rgba(235, 172, 14, 0.1) !important;
+    color: var(--secondary-color) !important;
+    outline: none;
+    box-shadow: none;
+    font-weight: 500;
+}
+
 .submenu-list {
     max-height: 0;
     overflow: hidden;
