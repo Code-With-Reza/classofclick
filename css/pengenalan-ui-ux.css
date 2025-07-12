@@ -1,37 +1,9 @@
-/* Subheading */
-.subheading {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--Acc-color); /* oranye */
-  text-align: center;
-  margin-top: 30px;
+.mt-custom {
+  margin-top: 100px;
 }
-
-/* Heading */
-h1 {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-/* Hero Icons */
-.hero .image-hero {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-}
-
-.hero .image-hero img {
-  max-width: 100%;
-  width: 600px;
-  height: auto;
-}
-
-
 /* Deskripsi Pengenalan */
 .pengenalan-desc {
-  text-align: center;
-  margin: 100px auto 30px auto;
+  text-align: justify;
   padding: 0 20px;
   color: var(--text-color);
   max-width: 1200px;
@@ -39,15 +11,8 @@ h1 {
 }
 
 /* Button Group */
-.button-group {
-  margin-bottom: 150px;
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-}
-
-.button-group button {
-  transition: all 0.3s ease;
+.btn-ui {
+  background-color: #EBAC0E;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -55,23 +20,29 @@ h1 {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* UI = Kuning */
-.button-group .btn-ui {
-  background-color: #EBAC0E;
-}
-.button-group .btn-ui:hover {
+.btn-ui:hover {
   background-color: #d49900;
 }
 
-/* UX = Biru */
-.button-group .btn-ux {
+.btn-ux {
   background-color: #063559;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.button-group .btn-ux:hover {
+
+.btn-ux:hover {
   background-color: #031e30;
 }
+
 
 
 @media (max-width: 768px) {
@@ -79,12 +50,12 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    padding: 0 20px; /* jarak kiri-kanan biar ga mentok */
+    padding: 0 20px; 
     margin-bottom: 40px;
   }
 
   .button-group button {
-    width: 100%;         /* biar penuh tapi dalam padding */
+    width: 100%;         
     max-width: 300px;    /* batasi lebarnya agar tetap rapi */
     font-size: 14px;     /* optional, bisa dikecilkan */
   }
