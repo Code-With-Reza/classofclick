@@ -3,7 +3,7 @@ section.hero {
   background-image: url("../img/bg-kuning2.png");
   background-repeat: repeat;
   background-size: 500px;
-  height: 100vh;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -34,7 +34,7 @@ section.hero h1 {
 /* Gambar tambahan di bawah deskripsi */
 .hero-image-bawah img {
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
   height: auto;
 }
 
@@ -42,7 +42,7 @@ section.hero h1 {
 /* Card */
 .card-container {
   display: flex;
-  margin: 200px auto 120px auto;
+  margin: 100px auto;
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;

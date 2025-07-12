@@ -45,8 +45,7 @@
                             <!-- User Interface -->
                             <li>
                                 <button class="dropdown-item submenu-toggle">
-                                    User Interface
-                                    <span class="arrow bi bi-caret-down-fill" style="color: #EBAC0E; font-weight: 600;"></span>
+                                    User Interface<span class="arrow bi bi-caret-down-fill" style="color: #EBAC0E; font-weight: 600;"></span></span>
                                 </button>
                                 <ul class="submenu-list">
                                     <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
@@ -81,6 +80,9 @@
                                 </ul>
                             </li>
                             <li><hr class="dropdown-divider"></li>
+                            <!-- Kamus -->
+                            <li><a class="dropdown-item" href="kamus.html">Kamus UI/UX</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <!-- Studi Kasus -->
                             <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
                         </ul>
@@ -100,102 +102,133 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero">
-        <div class="hero-image">
-            <img src="../img/aset_prinsip-ui.png" alt="Ilustrasi UI" />
+    <section class="hero py-5 mt-custom">
+    <div class="container">
+        <div class="row align-items-center">
+        <!-- Kolom Gambar -->
+        <div class="col-md-6 mb-4 mb-md-0 text-center">
+            <img src="../img/aset_prinsip-ui.png" alt="Ilustrasi UI" class="img-fluid" />
         </div>
-        <div class="hero-text">
+
+        <!-- Kolom Teks -->
+        <div class="col-md-6">
             <h1>Prinsip <strong style="color: #EBAC0E;">UI</strong></h1>
             <p class="prinsip-desc">
                 Desainer UI yang hebat bukan hanya bisa membuat tampilan antarmuka yang keren, tetapi juga tahu bagaimana cara membuat pengguna merasa nyaman. Itu semua karena mereka paham prinsip UI.
                 <br><b>Ayo pelajari prinsip-prinsip UI di bab ini!</b>
-            </p>
-            <div class="tag-buttons">
-                <div class="tag-row">
-                    <a href="#section2" class="tag">Keterlihatan</a>
-                    <a href="#section1" class="tag">Kesederhanaan</a>
-                    <a href="#section3" class="tag">Konsistensi</a>
-                </div>
-                <div class="tag-row">
-                    <a href="#section7" class="tag">Estetika</a>
-                    <a href="#section6" class="tag">Umpan Balik</a>
-                    <a href="#section5" class="tag">Aksesibilitas</a>
-                </div>
+            </p>
+
+            <!-- Tag Buttons -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+                <a href="#section2" class="btn btn-tag">Keterlihatan</a>
+                <a href="#section1" class="btn btn-tag">Kesederhanaan</a>
+                <a href="#section3" class="btn btn-tag">Konsistensi</a>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <a href="#section7" class="btn btn-tag">Estetika</a>
+                <a href="#section6" class="btn btn-tag">Umpan Balik</a>
+                <a href="#section5" class="btn btn-tag">Aksesibilitas</a>
             </div>
         </div>
+        </div>
+    </div>
     </section>
 
-    <!-- Prinsip 1 -->
-    <section class="section reverse" id="section2">
-        <div class="section-content">
-            <h2>Keterlihatan <span style="color: #EBAC0E;">(Visibility)</span></h2>
-            <p>Elemen penting di layar harus terlihat jelas. Pengguna harus dapat dengan mudah melihat dan memahami apa yang terjadi di layar. Menggunakan kontras warna yang jelas antara elemen utama dan latar belakang, memberikan petunjuk visual yang jelas, dan menyoroti elemen penting adalah beberapa strategi untuk meningkatkan keterlihatan antarmuka.</p>
-            <p>💡<strong>Contoh:</strong> <br>Pada gambar di samping, tombol "Subscribe now" dibuat lebih mencolok agar mudah dilihat dan diklik pengguna.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip2.png" alt="Ilustrasi Keterlihatan" />
-        </div>
-    </section>
+    <!-- Prinsip 1 - bg putih -->
+<section class="py-5 bg-light" id="section2">
+  <div class="container">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <h2>Keterlihatan <span style="color: #EBAC0E;">(Visibility)</span></h2>
+        <p>Elemen penting di layar harus terlihat jelas. Pengguna harus dapat dengan mudah melihat dan memahami apa yang terjadi di layar. Menggunakan kontras warna yang jelas antara elemen utama dan latar belakang, memberikan petunjuk visual yang jelas, dan menyoroti elemen penting adalah beberapa strategi untuk meningkatkan keterlihatan antarmuka.</p>
+        <p>💡<strong>Contoh:</strong><br>Pada gambar di samping, tombol "Subscribe now" dibuat lebih mencolok agar mudah dilihat dan diklik pengguna.</p>
+      </div>
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="../img/prinsip2.png" alt="Ilustrasi Keterlihatan" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Prinsip 2 -->
-    <section class="section" id="section1">
-        <div class="section-content">
-            <h2>Kesederhanaan <span style="color: #EBAC0E;">(Simplicity)</span></h2>
-            <p>Desain antarmuka harus mudah digunakan dan tidak membingungkan. Hindari tampilan yang terlalu ramai atau banyak elemen yang tidak penting.</p>
-            <p>💡<strong>Contoh:</strong> <br>Membagi form ke beberapa langkah kecil membuatnya lebih ringan dan mudah dipahami pengguna.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip1(1).png" alt="Ilustrasi Kesederhanaan" />
-        </div>
-    </section>
+<!-- Prinsip 2 - bg abu -->
+<section class="py-5" id="section1">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Kesederhanaan <span style="color: #EBAC0E;">(Simplicity)</span></h2>
+        <p>Desain antarmuka harus mudah digunakan dan tidak membingungkan. Hindari tampilan yang terlalu ramai atau banyak elemen yang tidak penting.</p>
+        <p>💡<strong>Contoh:</strong><br>Membagi form ke beberapa langkah kecil membuatnya lebih ringan dan mudah dipahami pengguna.</p>
+      </div>
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="../img/prinsip1(1).png" alt="Ilustrasi Kesederhanaan" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Prinsip 3 -->
-    <section class="section reverse" id="section3">
-        <div class="section-content">
-            <h2>Konsistensi <span style="color: #EBAC0E;">(Consistency)</span></h2>
-            <p>Desain harus menggunakan pola yang sama di semua bagian aplikasi atau website. Ini membuat pengguna tidak bingung saat berpindah halaman. Penggunaan konsistensi dalam tata letak, ikon, simbol, navigasi, dan perilaku interaktif membantu menciptakan pengalaman yang lebih mudah dan familiar.</p>
-            <p>💡<strong>Contoh:</strong> <br>Ikon menggunakan gaya visual yang sama (baik outline atau solid).</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip3.png" alt="Ilustrasi Konsistensi" />
-        </div>
-    </section>
+<!-- Prinsip 3 - bg putih -->
+<section class="py-5  bg-light" id="section3">
+  <div class="container">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <h2>Konsistensi <span style="color: #EBAC0E;">(Consistency)</span></h2>
+        <p>Desain harus menggunakan pola yang sama di semua bagian aplikasi atau website. Ini membuat pengguna tidak bingung saat berpindah halaman. Penggunaan konsistensi dalam tata letak, ikon, simbol, navigasi, dan perilaku interaktif membantu menciptakan pengalaman yang lebih mudah dan familiar.</p>
+        <p>💡<strong>Contoh:</strong><br>Ikon menggunakan gaya visual yang sama (baik outline atau solid).</p>
+      </div>
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="../img/prinsip3.png" alt="Ilustrasi Konsistensi" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Prinsip 4 -->
-    <section class="section" id="section7">
-        <div class="section-content">
-            <h2>Estetika <span style="color: #EBAC0E;">(Aesthetics)</span></h2>
-            <p>Prinsip ini fokus pada tampilan antarmuka yang menarik secara visual supaya pengguna betah dan nyaman menggunakannya. Desain yang enak dilihat bisa bikin pengalaman jadi lebih menyenangkan dan profesional, bahkan bisa meningkatkan kepercayaan pengguna terhadap produk.</p>
-            <p>💡<strong>Contoh:</strong> <br>Menerapkan prinsip aesthetics dengan menghadirkan tampilan yang lebih menarik, ekspresif, dan menyenangkan melalui penggunaan emoji dan warna yang memperkuat makna pilihan pengguna.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip7.png" alt="Ilustrasi Estetika" />
-        </div>
-    </section>
+<!-- Prinsip 4 - bg abu -->
+<section class="py-5" id="section7">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Estetika <span style="color: #EBAC0E;">(Aesthetics)</span></h2>
+        <p>Prinsip ini fokus pada tampilan antarmuka yang menarik secara visual supaya pengguna betah dan nyaman menggunakannya. Desain yang enak dilihat bisa bikin pengalaman jadi lebih menyenangkan dan profesional, bahkan bisa meningkatkan kepercayaan pengguna terhadap produk.</p>
+        <p>💡<strong>Contoh:</strong><br>Menerapkan prinsip aesthetics dengan menghadirkan tampilan yang lebih menarik, ekspresif, dan menyenangkan melalui penggunaan emoji dan warna yang memperkuat makna pilihan pengguna.</p>
+      </div>
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="../img/prinsip7.png" alt="Ilustrasi Estetika" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Prinsip 5 -->
-    <section class="section reverse" id="section6">
-        <div class="section-content">
-            <h2>Umpan Balik <span style="color: #EBAC0E;">(Feedback)</span></h2>
-            <p>Prinsip ini tidak hanya penting dalam UI, tapi juga merupakan bagian utama dari UX. Feedback dalam UI adalah tentang tampilan visual yang merespons tindakan pengguna, seperti warna, ikon, animasi, atau teks yang muncul saat suatu aksi berhasil atau gagal.</p>
-            <p>💡<strong>Contoh:</strong> <br>Gambar di samping menunjukkan dua kondisi hasil aksi pengguna — berhasil dan gagal — dengan visual dan teks yang langsung memberitahu pengguna apa yang terjadi setelah mereka melakukan sesuatu.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip6.gif" alt="Ilustrasi Umpan Balik" />
-        </div>
-    </section>
+<!-- Prinsip 5 - bg putih -->
+<section class="py-5  bg-light" id="section6">
+  <div class="container">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <h2>Umpan Balik <span style="color: #EBAC0E;">(Feedback)</span></h2>
+        <p>Prinsip ini tidak hanya penting dalam UI, tapi juga merupakan bagian utama dari UX. Feedback dalam UI adalah tentang tampilan visual yang merespons tindakan pengguna, seperti warna, ikon, animasi, atau teks yang muncul saat suatu aksi berhasil atau gagal.</p>
+        <p>💡<strong>Contoh:</strong><br>Gambar di samping menunjukkan dua kondisi hasil aksi pengguna — berhasil dan gagal — dengan visual dan teks yang langsung memberitahu pengguna apa yang terjadi setelah mereka melakukan sesuatu.</p>
+      </div>
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="../img/prinsip6.gif" alt="Ilustrasi Umpan Balik" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Prinsip 6 -->
-    <section class="section" id="section5">
-        <div class="section-content">
-            <h2>Aksesibilitas <span style="color: #EBAC0E;">(Accessibility)</span></h2>
-            <p>Prinsip aksesibilitas mencakup desain antarmuka yang dapat diakses, termasuk oleh mereka yang memiliki keterbatasan fisik atau sensorik. Menyediakan opsi navigasi alternatif, memastikan kontras warna yang cukup tinggi, memberikan alternatif teks untuk gambar, dan mendukung akses keyboard adalah beberapa aspek penting dalam menciptakan antarmuka agar dapat diakses oleh semua pengguna.</p>
-            <p>💡<strong>Contoh:</strong> <br>Kontras warna yang cukup. Warna teks dan latar belakang harus cukup berbeda, supaya mudah dibaca.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip8.png" alt="Ilustrasi Aksesibilitas" />
-        </div>
-    </section>
+<!-- Prinsip 6 - bg abu -->
+<section class="py-5" id="section5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Aksesibilitas <span style="color: #EBAC0E;">(Accessibility)</span></h2>
+        <p>Prinsip aksesibilitas mencakup desain antarmuka yang dapat diakses, termasuk oleh mereka yang memiliki keterbatasan fisik atau sensorik. Menyediakan opsi navigasi alternatif, memastikan kontras warna yang cukup tinggi, memberikan alternatif teks untuk gambar, dan mendukung akses keyboard adalah beberapa aspek penting dalam menciptakan antarmuka agar dapat diakses oleh semua pengguna.</p>
+        <p>💡<strong>Contoh:</strong><br>Kontras warna yang cukup. Warna teks dan latar belakang harus cukup berbeda, supaya mudah dibaca.</p>
+      </div>
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="../img/prinsip8.png" alt="Ilustrasi Aksesibilitas" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Before / Next Page -->
     <div class="navigation-buttons">
