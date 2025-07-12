@@ -12,7 +12,7 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/elemen-ux.css" />
+    <link rel="stylesheet" href="../css/proses-desain.css" />
     
     <!-- Icon -->
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
@@ -53,12 +53,9 @@
                             <li><hr class="dropdown-divider"></li>
                             <!-- User Experience -->
                             <li>
-                                <button class="dropdown-item submenu-toggle">
-                                    User Experience
-                                    <span class="arrow bi bi-caret-down-fill" style="color: #EBAC0E; font-weight: 600;"></span>
-                                </button>
+                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
                                 <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item active" href="elemen-ux.html">1) Elemen UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
                                     <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
                                     <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
                                 </ul>
@@ -78,7 +75,7 @@
                             <li><a class="dropdown-item" href="proses-desain.html">Proses Desain UI/UX</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <!-- Evaluasi Desain -->
-                            <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
+                            <li><a class="dropdown-item active" href="evaluasi.html">Evaluasi Desain</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <!-- Studi Kasus -->
                             <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
@@ -98,105 +95,11 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <h1>Elemen <span style="color: #EBAC0E;">UX</span></h1>
-        <p class="elemenux-desc">
-            Desain UX dibangun dari beberapa tahapan yang biasanya diikuti oleh UX designer untuk mengubah ide menjadi produk yang bekerja dengan baik. Kerangka kerja (Framework) ini dibuat oleh <b>Jesse James Garrett</b>  
-            dalam bukunya <em>The Elements of User Experience.</em> Model ini membagi UX menjadi 5 lapisan bertingkat. <strong>Perhatikan gambar di bawah, 
-            urutannya adalah dari bawah ke atas:</strong> 1) Strategy, 2) Scope, 3) Structure, 4) Skeleton, dan 5) Surface.</b><br><br> 
-            <strong>Untuk penjelasan lebih lanjut, silakan klik pada tombol-tombol di bawah ini.</strong> 
-        </p>
-    </section>
-
-    <!-- Isi -->
-    <div class="container-isi">
-        <div class="sidebar">
-            <button class="ux-btn" data-modal="modal-surface">
-                <img src="../img/elemenux-surface.png" alt="Surface">
-            </button>
-            <button class="ux-btn" data-modal="modal-skeleton">
-                <img src="../img/elemenux-skeleton.png" alt="Skeleton">
-            </button>
-            <button class="ux-btn" data-modal="modal-structure">
-                <img src="../img/elemenux-structure.png" alt="Structure">
-            </button>
-            <button class="ux-btn" data-modal="modal-scope">
-                <img src="../img/elemenux-scope.png" alt="Scope">
-            </button>
-            <button class="ux-btn" data-modal="modal-strategy">
-                <img src="../img/elemenux-strategy.png" alt="Strategy">
-            </button>
-        </div>
-        <div class="main-image">
-            <img src="../img/elemenux.png" alt="UX Layers">
-        </div>
-    </div>
-
-    <!-- Modal: Surface -->
-    <div class="modal" id="modal-surface">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3><span style="color: #EBAC0E;">Surface</span> (Tampilan Akhir)</h3>
-            <p>
-                <strong>→ Seperti apa tampilan visual dari website ini?</strong><br><br>
-                Ini adalah tahap paling atas dan paling terlihat oleh pengguna. Di sini kita menentukan warna, jenis huruf (font), ikon, ilustrasi, dan elemen visual lainnya yang membuat tampilan website menjadi menarik dan sesuai dengan tujuan desain.
-            </p>
-        </div>
-    </div>
-
-    <!-- Modal: Skeleton -->
-    <div class="modal" id="modal-skeleton">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3><span style="color: #EBAC0E;">Skeleton</span> (Kerangka Tampilan)</h3>
-            <p>
-                <strong>→ Bagaimana tata letak elemen-elemen di layar?</strong><br><br>
-                Tahap skeleton berfokus pada penempatan elemen di layar seperti tombol, menu, teks, dan gambar. Biasanya dibuat dalam bentuk wireframe (kerangka desain) tanpa warna atau gambar akhir, hanya susunan bentuk dan posisi elemen.
-            </p>
-        </div>
-    </div>
-
-    <!-- Modal: Structure -->
-    <div class="modal" id="modal-structure">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3><span style="color: #EBAC0E;">Structure</span> (Struktur)</h3>
-            <p>
-                <strong>→ Bagaimana alur dan sistem kerja dari website ini?</strong><br><br>
-                Di tahap struktur, kita menyusun alur navigasi dan bagaimana pengguna berinteraksi dengan fitur-fitur yang sudah direncanakan. Struktur ini menjadi kerangka logika bagaimana semua informasi dan fitur disusun.
-            </p>
-        </div>
-    </div>
-
-    <!-- Modal: Scope -->
-    <div class="modal" id="modal-scope">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3><span style="color: #EBAC0E;">Scope</span> (Ruang Lingkup)</h3>
-            <p>
-                <strong>→ Website ini akan berisi apa saja?</strong><br><br>
-                Tahap ini berisi penentuan fitur dan konten apa saja yang akan disediakan di dalam website. Kita juga menentukan batasan-batasan apa saja yang ada dalam pembuatan website tersebut.
-            </p>
-        </div>
-    </div>
-
-    <!-- Modal: Strategy -->
-    <div class="modal" id="modal-strategy">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3><span style="color: #EBAC0E;">Strategy</span> (Strategi)</h3>
-            <p>
-                <strong>→ Untuk siapa website ini dibuat dan apa tujuannya?</strong><br><br>
-                Pada tahap strategi, kita menentukan tujuan utama dari website dan siapa target penggunanya. Kita juga mencari tahu apa yang dibutuhkan pengguna dan apa yang ingin dicapai oleh pemilik website.
-            </p>
-        </div>
-    </div>
 
     <!-- Before / Next Page -->
     <div class="navigation-buttons">
-        <a href="tahapan-ui.html" class="nav-button prev">◀ Sebelumnya</a>
-        <a href="prinsip-ux.html" class="nav-button next">Berikutnya ▶</a>
+        <a href="proses-desain.html" class="nav-button prev">◀ Sebelumnya</a>
+        <a href="contoh.html" class="nav-button next">Berikutnya ▶</a>
     </div>
 
     <!-- Footer -->
@@ -269,6 +172,5 @@
 
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/elemen-ux.js"></script>
 </body>
 </html>

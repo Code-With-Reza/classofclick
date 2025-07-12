@@ -12,7 +12,7 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/elemen-ux.css" />
+    <link rel="stylesheet" href="../css/proses-desain.css" />
     
     <!-- Icon -->
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
@@ -53,12 +53,9 @@
                             <li><hr class="dropdown-divider"></li>
                             <!-- User Experience -->
                             <li>
-                                <button class="dropdown-item submenu-toggle">
-                                    User Experience
-                                    <span class="arrow bi bi-caret-down-fill" style="color: #EBAC0E; font-weight: 600;"></span>
-                                </button>
+                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
                                 <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item active" href="elemen-ux.html">1) Elemen UX</a></li>
+                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
                                     <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
                                     <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
                                 </ul>
@@ -75,7 +72,7 @@
                             </li>
                             <li><hr class="dropdown-divider"></li>
                             <!-- Proses Desain -->
-                            <li><a class="dropdown-item" href="proses-desain.html">Proses Desain UI/UX</a></li>
+                            <li><a class="dropdown-item active" href="proses-desain.html">Proses Desain UI/UX</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <!-- Evaluasi Desain -->
                             <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
@@ -98,105 +95,89 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <h1>Elemen <span style="color: #EBAC0E;">UX</span></h1>
-        <p class="elemenux-desc">
-            Desain UX dibangun dari beberapa tahapan yang biasanya diikuti oleh UX designer untuk mengubah ide menjadi produk yang bekerja dengan baik. Kerangka kerja (Framework) ini dibuat oleh <b>Jesse James Garrett</b>  
-            dalam bukunya <em>The Elements of User Experience.</em> Model ini membagi UX menjadi 5 lapisan bertingkat. <strong>Perhatikan gambar di bawah, 
-            urutannya adalah dari bawah ke atas:</strong> 1) Strategy, 2) Scope, 3) Structure, 4) Skeleton, dan 5) Surface.</b><br><br> 
-            <strong>Untuk penjelasan lebih lanjut, silakan klik pada tombol-tombol di bawah ini.</strong> 
-        </p>
+    <!-- Hero Section -->
+    <section class="hero container py-5 mt-custom">
+        <div class="row align-items-center">
+            <!-- Teks -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h1>Proses Desain<span style="color: #EBAC0E;"> UI/UX</span></h1>
+                <p>
+                    Dalam dunia UI/UX, proses merancang desain bisa melibatkan banyak tahapan tergantung proyek dan tim yang mengerjakannya. Tapi, di sini kita akan belajar <strong>5 tahap paling umum</strong> yang sering dipakai dalam dunia nyata — mulai dari mengenal pengguna hingga membuat prototype interaktif.
+                </p>
+            </div>
+
+            <!-- Gambar -->
+            <div class="col-md-6 text-center">
+            <img src="img/hero-process.png" alt="Ilustrasi proses desain UI/UX" class="img-fluid" style="max-height: 400px;">
+            </div>
+        </div>
     </section>
 
-    <!-- Isi -->
-    <div class="container-isi">
-        <div class="sidebar">
-            <button class="ux-btn" data-modal="modal-surface">
-                <img src="../img/elemenux-surface.png" alt="Surface">
-            </button>
-            <button class="ux-btn" data-modal="modal-skeleton">
-                <img src="../img/elemenux-skeleton.png" alt="Skeleton">
-            </button>
-            <button class="ux-btn" data-modal="modal-structure">
-                <img src="../img/elemenux-structure.png" alt="Structure">
-            </button>
-            <button class="ux-btn" data-modal="modal-scope">
-                <img src="../img/elemenux-scope.png" alt="Scope">
-            </button>
-            <button class="ux-btn" data-modal="modal-strategy">
-                <img src="../img/elemenux-strategy.png" alt="Strategy">
-            </button>
-        </div>
-        <div class="main-image">
-            <img src="../img/elemenux.png" alt="UX Layers">
-        </div>
-    </div>
 
-    <!-- Modal: Surface -->
-    <div class="modal" id="modal-surface">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3><span style="color: #EBAC0E;">Surface</span> (Tampilan Akhir)</h3>
+    <!-- Content Section -->
+    <section class="container py-5">
+        <!-- 1. User Persona -->
+        <div class="mb-5">
+            <h3>1) <span style="color: #EBAC0E;">User Persona</span></h3>
             <p>
-                <strong>→ Seperti apa tampilan visual dari website ini?</strong><br><br>
-                Ini adalah tahap paling atas dan paling terlihat oleh pengguna. Di sini kita menentukan warna, jenis huruf (font), ikon, ilustrasi, dan elemen visual lainnya yang membuat tampilan website menjadi menarik dan sesuai dengan tujuan desain.
+            User Persona adalah representasi fiktif dari pengguna yang menjadi target utama desain. Persona ini dibuat berdasarkan hasil riset untuk memahami siapa pengguna, apa kebutuhan mereka, apa masalah yang dihadapi, serta tujuan mereka saat menggunakan produk.
+            Biasanya berisi: nama, usia, pekerjaan, tujuan, tantangan, dan kebiasaan digital. Untuk membuat user persona, kamu bisa menggunakan tools seperti Google Docs, Figma, atau platform khusus seperti UXPressia dan Miro yang menyediakan template siap pakai.
             </p>
+            <img src="../img/user-persona.png" alt="Contoh" class="img-fluid img-konten mt-3">
         </div>
-    </div>
 
-    <!-- Modal: Skeleton -->
-    <div class="modal" id="modal-skeleton">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3><span style="color: #EBAC0E;">Skeleton</span> (Kerangka Tampilan)</h3>
+        <!-- 2. Flowchart -->
+        <div class="mb-5">
+            <h3>2) <span style="color: #EBAC0E;">Flowchart</span></h3>
             <p>
-                <strong>→ Bagaimana tata letak elemen-elemen di layar?</strong><br><br>
-                Tahap skeleton berfokus pada penempatan elemen di layar seperti tombol, menu, teks, dan gambar. Biasanya dibuat dalam bentuk wireframe (kerangka desain) tanpa warna atau gambar akhir, hanya susunan bentuk dan posisi elemen.
+            Flowchart adalah diagram alur yang menunjukkan bagaimana pengguna berpindah antar halaman dalam aplikasi atau website. Ini membantu memahami struktur navigasi dan logika interaksi antar halaman.
+            User flow bisa dibuat menggunakan tools seperti Miro, Whimsical, Figma, atau draw.io untuk memudahkan visualisasi alur pengguna secara interaktif.
+            Simbol umum: kotak (proses), belah ketupat (keputusan), panah (alur).
             </p>
+            <img src="../img/flowchart.png" class="img-fluid rounded shadow mt-3" alt="Contoh Flowchart UI/UX">
         </div>
-    </div>
 
-    <!-- Modal: Structure -->
-    <div class="modal" id="modal-structure">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3><span style="color: #EBAC0E;">Structure</span> (Struktur)</h3>
+        <!-- 3. Wireframe -->
+        <div class="mb-5">
+            <h3>3) <span style="color: #EBAC0E;">Wireframe</span></h3>
             <p>
-                <strong>→ Bagaimana alur dan sistem kerja dari website ini?</strong><br><br>
-                Di tahap struktur, kita menyusun alur navigasi dan bagaimana pengguna berinteraksi dengan fitur-fitur yang sudah direncanakan. Struktur ini menjadi kerangka logika bagaimana semua informasi dan fitur disusun.
+            Wireframe adalah kerangka kasar dari halaman aplikasi. Fokusnya pada penempatan elemen seperti tombol, teks, gambar, dan struktur layout — tanpa warna atau desain visual.
+            Wireframe dapat dibuat secara manual menggunakan kertas dan alat tulis (disebut manual wireframe), atau secara digital menggunakan tools seperti Figma dan Balsamiq (digital wireframe). 
+            Keduanya bertujuan sama: menyusun struktur awal antarmuka sebelum masuk ke desain visual.
             </p>
+            <img src="../img/wireframe.png" class="img-fluid rounded shadow mt-3" alt="Contoh Wireframe">
         </div>
-    </div>
 
-    <!-- Modal: Scope -->
-    <div class="modal" id="modal-scope">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3><span style="color: #EBAC0E;">Scope</span> (Ruang Lingkup)</h3>
+        <!-- 4. Mockup -->
+        <div class="mb-5">
+            <h3>4) <span style="color: #EBAC0E;">Mockup</span></h3>
             <p>
-                <strong>→ Website ini akan berisi apa saja?</strong><br><br>
-                Tahap ini berisi penentuan fitur dan konten apa saja yang akan disediakan di dalam website. Kita juga menentukan batasan-batasan apa saja yang ada dalam pembuatan website tersebut.
+            Mockup adalah desain visual final dari tampilan UI yang sudah lengkap dengan warna, font, dan gambar. Mockup menunjukkan seperti apa tampilan akhir dari aplikasi, 
+            namun belum bisa diklik. Mockup biasanya dibuat dengan tools desain seperti Figma, Adobe XD, atau Sketch karena mendukung visualisasi warna, font, dan layout secara detail.
+            Biasanya digunakan untuk mendapatkan masukan visual sebelum dilanjut ke tahap prototype.
             </p>
+            <img src="../img/mockup.png" class="img-fluid rounded shadow mt-3" alt="Contoh Mockup">
         </div>
-    </div>
 
-    <!-- Modal: Strategy -->
-    <div class="modal" id="modal-strategy">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3><span style="color: #EBAC0E;">Strategy</span> (Strategi)</h3>
+        <!-- 5. Prototype -->
+        <div class="mb-5">
+            <h3>5) <span style="color: #EBAC0E;">Prototype</span></h3>
             <p>
-                <strong>→ Untuk siapa website ini dibuat dan apa tujuannya?</strong><br><br>
-                Pada tahap strategi, kita menentukan tujuan utama dari website dan siapa target penggunanya. Kita juga mencari tahu apa yang dibutuhkan pengguna dan apa yang ingin dicapai oleh pemilik website.
+            Prototype adalah versi interaktif dari mockup yang bisa diklik dan digunakan untuk menguji alur penggunaan. Ini membantu mengetahui apakah desain yang dibuat sudah nyaman digunakan.
+            Biasanya digunakan dalam usability testing sebelum masuk tahap pengembangan. Untuk membuat prototype interaktif, kamu bisa menggunakan Figma, Adobe XD, atau InVision agar pengguna bisa mencoba langsung simulasi desainnya.
             </p>
+            <video class="img-fluid rounded shadow mt-3" autoplay loop muted playsinline>
+                <source src="../video/vid-contoh-prototipyng.mp4" type="video/mp4">
+                Browser kamu tidak mendukung tag video.
+            </video>
+
         </div>
-    </div>
+    </section>
 
     <!-- Before / Next Page -->
     <div class="navigation-buttons">
-        <a href="tahapan-ui.html" class="nav-button prev">◀ Sebelumnya</a>
-        <a href="prinsip-ux.html" class="nav-button next">Berikutnya ▶</a>
+        <a href="plugins.html" class="nav-button prev">◀ Sebelumnya</a>
+        <a href="evaluasi.html" class="nav-button next">Berikutnya ▶</a>
     </div>
 
     <!-- Footer -->
@@ -269,6 +250,7 @@
 
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/elemen-ux.js"></script>
 </body>
 </html>
+
+

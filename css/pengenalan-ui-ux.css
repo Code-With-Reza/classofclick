@@ -1,10 +1,10 @@
 .mt-custom {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 /* Deskripsi Pengenalan */
 .pengenalan-desc {
   text-align: justify;
-  padding: 0 20px;
+  padding: 10px 20px;
   color: var(--text-color);
   max-width: 1200px;
   line-height: 1.6;
@@ -207,6 +207,14 @@
   height: auto;
   display: block;
 }
+
+.brain-right video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* opsional, biar video nggak gepeng */
+}
+
 .buttons {
   display: flex;
   flex-direction: column;
