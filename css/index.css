@@ -24,7 +24,6 @@ section.hero {
 
 .hero-text h1 {
   margin: 24px 0;
-  color: var(--secondary-color);
 }
 
 .hero-text p {
