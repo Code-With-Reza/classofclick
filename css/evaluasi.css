@@ -1,0 +1,14 @@
+.mt-custom {
+  margin-top: 120px;
+}
+
+p {
+    text-align: justify;
+}
+
+.img-konten {
+  width: 70%;
+  max-width: 600px;
+  display: block;
+  margin: 32px auto;
+}
