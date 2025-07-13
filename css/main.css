@@ -243,18 +243,37 @@ b, strong {
   margin: 40px auto 60px;
   padding: 10px 0;
 }
+
 .nav-button {
   text-decoration: none;
-  background-color: #f1b600;
-  color: white;
   padding: 10px 20px;
   border-radius: 25px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
-.nav-button:hover {
+
+/* Tombol "Sebelumnya" (outline kuning, teks kuning, background transparan) */
+.nav-button.prev {
+  color: #f1b600;
+  border: 2px solid #f1b600;
+  background-color: transparent;
+}
+
+.nav-button.prev:hover {
+  background-color: #fff7da; /* opsional: hover-nya jadi agak terang */
+}
+
+/* Tombol "Berikutnya" (solid kuning) */
+.nav-button.next {
+  background-color: #f1b600;
+  color: white;
+  border: none;
+}
+
+.nav-button.next:hover {
   background-color: #d49900;
 }
+
 
 /* Footer */
 footer {
@@ -337,6 +356,7 @@ footer p {
   }
   .navigation-buttons {
     padding: 0 16px;
+    font-size: 14px;
   }
 }
 
