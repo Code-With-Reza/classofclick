@@ -3,7 +3,7 @@ section.hero {
   background-image: url("../img/bg-kuning2.png");
   background-repeat: repeat;
   background-size: 500px;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
