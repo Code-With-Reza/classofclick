@@ -103,7 +103,7 @@ h2 {
 .info-box {
   flex: 1 1 45%;
   background-color: #f9f9f9;
-  border-left: 6px solid #EDB427;
+  border-left: 6px solid #edb427;
   padding: 1rem 1.2rem;
   border-radius: 0.75rem;
 }
@@ -125,7 +125,7 @@ h2 {
   max-width: 300px;
   border-radius: 1rem;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* References Card */
@@ -151,7 +151,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #EA5937;
+  color: #ea5937;
 }
 
 .ref-section a {
@@ -172,7 +172,7 @@ h2 {
 }
 
 .references li::marker {
-  color: #EA5937;
+  color: #ea5937;
 }
 
 /* Responsive Styles */

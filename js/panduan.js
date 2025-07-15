@@ -1,16 +1,17 @@
-pdfjsLib.GlobalWorkerOptions.workerSrc = '../pdfjs/pdf.worker.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = "../pdfjs/pdf.worker.js";
 
-const url = '../pdf/buku.pdf';
-const container = document.getElementById('pdf-container');
+const url = "../pdf/buku.pdf";
+const container = document.getElementById("pdf-container");
 
-pdfjsLib.getDocument(url).promise
-  .then(function (pdfDoc) {
+pdfjsLib
+  .getDocument(url)
+  .promise.then(function (pdfDoc) {
     for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
       pdfDoc.getPage(pageNum).then(function (page) {
         const viewport = page.getViewport({ scale: 1.2 });
 
-        const canvas = document.createElement('canvas');
-        const context = canvas.getContext('2d');
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
         canvas.height = viewport.height;
         canvas.width = viewport.width;
 
@@ -25,5 +26,5 @@ pdfjsLib.getDocument(url).promise
     }
   })
   .catch(function (error) {
-    console.error('PDF gagal dimuat:', error);
+    console.error("PDF gagal dimuat:", error);
   });

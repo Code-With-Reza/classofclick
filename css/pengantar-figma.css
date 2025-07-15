@@ -40,7 +40,7 @@ h1 {
   margin: 0 auto;
   margin-top: 40px;
   padding: 20px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   line-height: 1.8;
 }
 
@@ -80,7 +80,7 @@ h1 {
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .why-figma-text {
@@ -95,8 +95,14 @@ h1 {
 }
 
 @keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(40px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Subab Kelebihan dan Kekurangan */
@@ -151,7 +157,6 @@ h1 {
   margin: 0 auto 10px; /* auto untuk rata tengah, 10px jarak ke teks */
   object-fit: contain; /* biar tidak pecah */
 }
-
 
 .text {
   font-weight: bold;
@@ -210,17 +215,17 @@ table {
   border-collapse: collapse;
   width: 500px;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .tabel-bisa th {
-  background-color: #EBAC0E;
+  background-color: #ebac0e;
   color: white;
   padding: 12px;
 }
 
 .tabel-tidak-bisa th {
-  background-color: #1A3E66;
+  background-color: #1a3e66;
   color: white;
   padding: 12px;
 }
@@ -231,16 +236,14 @@ td {
 }
 
 .tabel-bisa td b {
-  color: #E5B004; 
+  color: #e5b004;
   font-weight: bold;
 }
 
 .tabel-tidak-bisa td b {
-  color: #1A3E66;
+  color: #1a3e66;
   font-weight: bold;
 }
-
-
 
 /* Responsive */
 @media (max-width: 768px) {

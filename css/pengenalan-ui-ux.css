@@ -12,7 +12,7 @@
 
 /* Button Group */
 .btn-ui {
-  background-color: #EBAC0E;
+  background-color: #ebac0e;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -43,24 +43,21 @@
   background-color: #031e30;
 }
 
-
-
 @media (max-width: 768px) {
   .button-group {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    padding: 0 20px; 
+    padding: 0 20px;
     margin-bottom: 40px;
   }
 
   .button-group button {
-    width: 100%;         
-    max-width: 300px;    /* batasi lebarnya agar tetap rapi */
-    font-size: 14px;     /* optional, bisa dikecilkan */
+    width: 100%;
+    max-width: 300px; /* batasi lebarnya agar tetap rapi */
+    font-size: 14px; /* optional, bisa dikecilkan */
   }
 }
-
 
 .modal {
   display: none;
@@ -70,7 +67,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
@@ -81,7 +78,7 @@
   max-width: 600px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .modal-content h3 {
@@ -113,7 +110,6 @@
 .close:hover {
   color: #333;
 }
-
 
 /* Tombol Close Panel */
 .close-btn {
@@ -160,7 +156,7 @@
 /* Yellow Box */
 .yellow-box {
   padding: 60px 20px;
-  background-image: url('../img/bg-biru2.png');
+  background-image: url("../img/bg-biru2.png");
   background-repeat: repeat;
   background-size: 500px;
 }
@@ -170,7 +166,7 @@
   border-radius: 12px;
   max-width: 900px;
   margin: 60px auto;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 .shortcut-yellow-box h3,
 .shortcut-yellow-box p {
@@ -209,10 +205,10 @@
 }
 
 .brain-right video {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; /* opsional, biar video nggak gepeng */
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* opsional, biar video nggak gepeng */
 }
 
 .buttons {
@@ -224,7 +220,7 @@
 
 button {
   padding: 0.75rem 1.5rem;
-  background-color: #EA5937;
+  background-color: #ea5937;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -232,14 +228,14 @@ button {
   font-size: 1rem;
 }
 button:hover {
-  background-color: #C8462C;
+  background-color: #c8462c;
 }
 
 .btn-kesimpulan {
   padding: 0.75rem 1.5rem;
   background-color: #ffffff;
-  color: #EA5937;
-  border: 2px solid #EA5937;
+  color: #ea5937;
+  border: 2px solid #ea5937;
   border-radius: 0.5rem;
   cursor: pointer;
   font-size: 1rem;
@@ -247,7 +243,7 @@ button:hover {
 }
 
 .btn-kesimpulan:hover {
-  background-color: #EA5937;
+  background-color: #ea5937;
   color: #ffffff;
 }
 .jawaban-pair {
@@ -283,7 +279,6 @@ button:hover {
   transform: translateX(100%);
 }
 
-
 /* Jawaban Kesimpulan */
 .jawaban-left ul,
 .jawaban-right ul {
@@ -302,7 +297,7 @@ button:hover {
 
 .jawaban-left li::before,
 .jawaban-right li::before {
-  content: '•';
+  content: "•";
   position: absolute;
   left: 0;
   top: 0;
@@ -312,14 +307,12 @@ button:hover {
 }
 .ui-box {
   background-color: #fff9e5; /* kuning muda */
-  border-left: 8px solid #EBAC0E;
+  border-left: 8px solid #ebac0e;
 }
 .ux-box {
   background-color: #e6f0f8; /* biru muda */
   border-right: 8px solid #063559;
 }
-
-
 
 /* Responsive Perbedaan UI-UX */
 @media (max-width: 768px) {
@@ -375,7 +368,7 @@ button:hover {
 .importance-section {
   text-align: center;
   padding: 100px 20px;
-  background-image: url('../img/bg-kuning2.png');
+  background-image: url("../img/bg-kuning2.png");
   background-repeat: repeat;
   background-size: 500px;
 }
@@ -413,7 +406,7 @@ button:hover {
   backface-visibility: hidden;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;

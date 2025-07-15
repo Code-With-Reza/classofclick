@@ -42,7 +42,7 @@ h2 {
 }
 
 .card {
-  border: 2px solid #EBAC0E;
+  border: 2px solid #ebac0e;
   border-radius: 20px 0 20px 0; /* kiri atas & kanan bawah membulat */
   padding: 20px;
   display: flex;
@@ -69,7 +69,7 @@ h2 {
   align-self: center; /* link rata tengah */
   font-weight: bold;
   text-decoration: underline;
-  color: #EA5937;
+  color: #ea5937;
   font-size: 14px;
   margin-top: 10px;
 }

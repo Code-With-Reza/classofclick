@@ -1,6 +1,6 @@
 /* Hero Section */
 section.hero {
-  background: url('../img/aset6_beranda.png') no-repeat center center;
+  background: url("../img/aset6_beranda.png") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ section.hero {
   max-width: 900px;
   margin: 0 auto;
   line-height: 1.6;
-  padding: 1rem 1rem; 
+  padding: 1rem 1rem;
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ section.hero {
 }
 
 .hero-text .cta {
-  background-color: #EA5937;
+  background-color: #ea5937;
   color: #fff;
   padding: 12px 24px;
   border-radius: 8px;
@@ -41,7 +41,7 @@ section.hero {
 }
 
 .hero-text .cta:hover {
-  background-color: #D94A2B;
+  background-color: #d94a2b;
 }
 
 .hero-image-bawah img {
@@ -81,7 +81,7 @@ section.hero {
 .features-section {
   width: 100%;
   margin: 0 auto;
-  background-color:  #063559;
+  background-color: #063559;
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -170,7 +170,7 @@ section.hero {
 
 .carousel-box {
   background-color: #ffffff; /* putih */
-  border: 1.5px solid #FFEBA9; /* warna soft dari palet kamu */
+  border: 1.5px solid #ffeba9; /* warna soft dari palet kamu */
   border-radius: 20px;
   padding: 48px 32px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); /* lembut aja */
@@ -185,9 +185,8 @@ section.hero {
   margin-right: auto;
 }
 
-
 .carousel-box h3 {
-  color: #EA5937;
+  color: #ea5937;
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 16px;
@@ -205,7 +204,7 @@ section.hero {
   top: 50%;
   transform: translateY(-50%);
   background-color: #fff; /* soft yellow, beda dari box putih */
-  border: 1.5px solid #FFEBA9; /* kasih tepi halus */
+  border: 1.5px solid #ffeba9; /* kasih tepi halus */
   width: 48px;
   height: 48px;
   border-radius: 12px;
@@ -218,9 +217,8 @@ section.hero {
 }
 
 .carousel-nav:hover {
-  background-color: #FFEB99; /* lebih cerah waktu hover */
+  background-color: #ffeb99; /* lebih cerah waktu hover */
 }
-
 
 .carousel-nav.left {
   left: -24px;

@@ -27,7 +27,7 @@ h1 {
 .case-card {
   background-color: #fff;
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s;
 }
@@ -52,7 +52,7 @@ h1 {
 
 .case-card .read-more {
   text-decoration: underline;
-  color: #1A3E66;
+  color: #1a3e66;
 }
 
 .case-card .author,
@@ -67,7 +67,7 @@ h1 {
   display: inline-block;
   margin: 0 16px 24px;
   padding: 6px 16px;
-  background-color: #EBAC0E;
+  background-color: #ebac0e;
   color: white !important;
   font-size: 13px;
   font-weight: bold;
@@ -78,7 +78,7 @@ h1 {
 }
 
 .read-more:hover {
-  background-color: #DA9F06;
+  background-color: #da9f06;
   color: white !important;
 }
 

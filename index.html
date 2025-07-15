@@ -1,304 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
     <title>Class of Click | Website Belajar UI/UX Dasar</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/index.css" />
-    
+
     <!-- Icon -->
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <!-- Logo Title (Favicon) -->
     <link rel="icon" href="./img/logomark-coc-19.png" type="image/png" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active" aria-current="page" href="index.html" style="color: #EBAC0E; font-weight: 600;">Beranda</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Materi
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- Pengenalan UI-UX -->
-                            <li><a class="dropdown-item" href="pages/pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Interface -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="pages/elemen-ui.html">1) Elemen UI</a></li>
-                                    <li><a class="dropdown-item sub-item" href="pages/prinsip-ui.html">2) Prinsip UI</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Experience -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="pages/elemen-ux.html">1) Elemen UX</a></li>
-                                    <li><a class="dropdown-item sub-item" href="pages/prinsip-ux.html">2) Prinsip UX</a></li>
-                                    <li><a class="dropdown-item sub-item" href="pages/metode-populer.html">3) Metode Populer Desain UX</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Figma -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="pages/pengantar-figma.html">1) Pengantar Figma</a></li>
-                                    <li><a class="dropdown-item sub-item" href="pages/tools-figma.html">2) Tools</a></li>
-                                    <li><a class="dropdown-item sub-item" href="pages/plugins.html">3) Plugins</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Proses Desain -->
-                            <li><a class="dropdown-item" href="pages/proses-desain.html">Proses Desain UI/UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Evaluasi Desain -->
-                            <li><a class="dropdown-item" href="pages/evaluasi.html">Evaluasi Desain</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="pages/contoh.html">Contoh Studi Kasus</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="pages/video.html">Video</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="pages/latihan.html">Latihan</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="pages/tentang.html">Tentang</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="index.html" style="color: #ebac0e; font-weight: 600">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Materi </a>
+              <ul class="dropdown-menu">
+                <!-- Pengenalan UI-UX -->
+                <li><a class="dropdown-item" href="pages/pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Interface -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="pages/elemen-ui.html">1) Elemen UI</a></li>
+                    <li><a class="dropdown-item sub-item" href="pages/prinsip-ui.html">2) Prinsip UI</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Experience -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="pages/elemen-ux.html">1) Elemen UX</a></li>
+                    <li><a class="dropdown-item sub-item" href="pages/prinsip-ux.html">2) Prinsip UX</a></li>
+                    <li><a class="dropdown-item sub-item" href="pages/metode-populer.html">3) Metode Populer Desain UX</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Figma -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="pages/pengantar-figma.html">1) Pengantar Figma</a></li>
+                    <li><a class="dropdown-item sub-item" href="pages/tools-figma.html">2) Tools</a></li>
+                    <li><a class="dropdown-item sub-item" href="pages/plugins.html">3) Plugins</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Proses Desain -->
+                <li><a class="dropdown-item" href="pages/proses-desain.html">Proses Desain UI/UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Evaluasi Desain -->
+                <li><a class="dropdown-item" href="pages/evaluasi.html">Evaluasi Desain</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="pages/contoh.html">Contoh Studi Kasus</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="pages/video.html">Video</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="pages/latihan.html">Latihan</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="pages/tentang.html">Tentang</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-text">
-            <h5 style="color: var(--text-color); font-size: 18px;"><b>Selamat datang di</b></h5>
-            <h1><span style="color: #EBAC0E;">CLASS OF CLICK</span></h1>
-            <p>
-                Bingung mulai belajar UI/UX dari mana? <br>
-                Yuk, kenali dasar-dasarnya bersama Class of Click dan mulai eksplorasimu sekarang! <br>
-            </p>
-            <a href="./pages/pengenalan-ui-ux.html" class="cta">Mulai Belajar</a>
-        </div>
-        <div class="hero-image-bawah">
-            <img src="./img/aset_hero-beranda.png" alt="Ilustrasi latihan">
-        </div>
-    </section>
-    
-    <!-- About -->
-    <section class="about-section py-5 bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-        <div class="col-md-10">
-            <h2 class="mb-4">Tentang <span style="color: #EBAC0E;">COC</span></h2>
-            <p>
-            <b>Class of Click (COC)</b> adalah teman belajar kamu dalam mengenal dunia desain UI/UX. 
-            Kami menyajikan materi dasar <b>User Interface (UI)</b> dan <b>User Experience (UX)</b> secara sederhana, menyenangkan, dan mudah dipahami.
-            COC hadir untuk membantu kamu memahami dasar-dasar desain antarmuka <b>(User Interface/UI)</b> dan 
-            pengalaman pengguna <b>(User Experience/UX)</b> dengan cara yang mudah dan menyenangkan.
-            Dengan pendekatan yang santai dan fleksibel, COC dirancang khusus untuk pemula.
-            </p>
-        </div>
-        </div>
-    </div>
+      <div class="hero-text">
+        <h5 style="color: var(--text-color); font-size: 18px"><b>Selamat datang di</b></h5>
+        <h1><span style="color: #ebac0e">CLASS OF CLICK</span></h1>
+        <p>
+          Bingung mulai belajar UI/UX dari mana? <br />
+          Yuk, kenali dasar-dasarnya bersama Class of Click dan mulai eksplorasimu sekarang! <br />
+        </p>
+        <a href="./pages/pengenalan-ui-ux.html" class="cta">Mulai Belajar</a>
+      </div>
+      <div class="hero-image-bawah">
+        <img src="./img/aset_hero-beranda.png" alt="Ilustrasi latihan" />
+      </div>
     </section>
 
+    <!-- About -->
+    <section class="about-section py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h2 class="mb-4">Tentang <span style="color: #ebac0e">COC</span></h2>
+            <p>
+              <b>Class of Click (COC)</b> adalah teman belajar kamu dalam mengenal dunia desain UI/UX. Kami menyajikan materi dasar <b>User Interface (UI)</b> dan <b>User Experience (UX)</b> secara sederhana, menyenangkan, dan mudah
+              dipahami. COC hadir untuk membantu kamu memahami dasar-dasar desain antarmuka <b>(User Interface/UI)</b> dan pengalaman pengguna <b>(User Experience/UX)</b> dengan cara yang mudah dan menyenangkan. Dengan pendekatan yang
+              santai dan fleksibel, COC dirancang khusus untuk pemula.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Features -->
     <section class="features-section">
-        <h2 class="features-heading">Fitur COC</h2>
-        <div class="features-container">
-            <section class="features">
-                <div class="feature-card">
-                    <a href="./pages/pengenalan-ui-ux.html">
-                        <img class="feature-icon" src="./img/fitur_materi.png" alt="Icon" />
-                        <h4>Materi</h4>
-                        <p>
-                            Di menu Materi, kamu bisa mempelajari dasar-dasar UI/UX, mulai dari pengenalan UI/UX, pengenalan aplikasi Figma sampai dengan contoh studi kasus.
-                        </p>
-                    </a>
-                </div>
-                <div class="feature-card">
-                    <a href="./pages/video.html">
-                        <img class="feature-icon" src="./img/fitur_vid.png" alt="Icon" />
-                        <h4>Video</h4>
-                        <p>
-                            Di menu Video, kamu bisa menonton kumpulan video pilihan seputar UI/UX yang diambil dari berbagai channel YouTube.
-                        </p>
-                    </a>
-                </div>
-                <div class="feature-card">
-                    <a href="./pages/latihan.html">
-                        <img class="feature-icon" src="./img/fitur_lat.png" alt="Icon" />
-                        <h4>Latihan</h4>
-                        <p>
-                            Menu Latihan berisi berbagai tantangan seru untuk menguji pemahaman kamu. Ada tiga level: Easy, Medium, dan Hard.
-                        </p>
-                    </a>
-                </div>
-            </section>
-        </div>
+      <h2 class="features-heading">Fitur COC</h2>
+      <div class="features-container">
+        <section class="features">
+          <div class="feature-card">
+            <a href="./pages/pengenalan-ui-ux.html">
+              <img class="feature-icon" src="./img/fitur_materi.png" alt="Icon" />
+              <h4>Materi</h4>
+              <p>Di menu Materi, kamu bisa mempelajari dasar-dasar UI/UX, mulai dari pengenalan UI/UX, pengenalan aplikasi Figma sampai dengan contoh studi kasus.</p>
+            </a>
+          </div>
+          <div class="feature-card">
+            <a href="./pages/video.html">
+              <img class="feature-icon" src="./img/fitur_vid.png" alt="Icon" />
+              <h4>Video</h4>
+              <p>Di menu Video, kamu bisa menonton kumpulan video pilihan seputar UI/UX yang diambil dari berbagai channel YouTube.</p>
+            </a>
+          </div>
+          <div class="feature-card">
+            <a href="./pages/latihan.html">
+              <img class="feature-icon" src="./img/fitur_lat.png" alt="Icon" />
+              <h4>Latihan</h4>
+              <p>Menu Latihan berisi berbagai tantangan seru untuk menguji pemahaman kamu. Ada tiga level: Easy, Medium, dan Hard.</p>
+            </a>
+          </div>
+        </section>
+      </div>
     </section>
 
     <!-- SECTION 4: Kenapa Belajar UI/UX Itu Asik Banget? -->
     <section class="carousel-section">
-        <div class="carousel-heading">
-            <h2 >Kenapa Belajar <span style="color: #EBAC0E;">UI/UX</span> Itu Asik Banget?</h2>
-        </div>
-        
-        <div class="carousel-wrapper position-relative">
-            <button class="carousel-nav left" data-bs-target="#customCarousel" data-bs-slide="prev">
-                <i class="fas fa-chevron-left"></i>
-            </button>
+      <div class="carousel-heading">
+        <h2>Kenapa Belajar <span style="color: #ebac0e">UI/UX</span> Itu Asik Banget?</h2>
+      </div>
 
-            <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="carousel-box">
-                        <img src="./img/brain.png" alt="Otak" class="carousel-img-icon">
-                        <h3> Asah Otak Kanan & Kiri Biar Makin Kompak!</h3>
-                        <p>Di UI/UX, kamu bakal belajar gabungin seni visual yang keren sama logika berpikir yang jitu.</p>
-                    </div>
-                </div>
+      <div class="carousel-wrapper position-relative">
+        <button class="carousel-nav left" data-bs-target="#customCarousel" data-bs-slide="prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
 
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <img src="./img/kaca-pembesar.png" alt="Kaca Pembesar" class="carousel-img-icon">
-                        <h3>Belajar Jadi Detektif User</h3>
-                        <p>Di UI/UX, kamu diajak berpikir seperti pengguna. Kamu akan mencari tau apa yang mereka butuh, suka, dan rasakan.</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <img src="./img/sparkle.png" alt="Sparkle" class="carousel-img-icon">
-                        <h3> Desain Kamu Jadi Lebih Bermakna</h3>
-                        <p>Gak cukup cuma estetik. Dengan UI/UX, kamu belajar bikin desain yang enak dilihat dan nyaman dipakai.</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <img src="./img/desain-digital.png" alt="Desain Digital" class="carousel-img-icon">
-                        <h3>Buka Jalan ke Dunia Desain Digital</h3>
-                        <p>UI/UX jadi langkah awal kamu buat terjun ke dunia kreatif digital. Banyak profesi seru yang bisa kamu jelajahi, dari desainer, researcher, sampai UI developer!</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <img src="./img/lamp.png" alt="Lampu" class="carousel-img-icon">
-                        <h3>Ciptakan Solusi Keren yang Bikin Hidup Orang Lebih Mudah!</h3>
-                        <p>Di UI/UX, kamu tidak hanya mendesain tampilan, tapi juga pecahin masalah nyata lewat aplikasi atau website.</p>
-                    </div>
-                </div>
-                </div>
-
+        <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-box">
+                <img src="./img/brain.png" alt="Otak" class="carousel-img-icon" />
+                <h3>Asah Otak Kanan & Kiri Biar Makin Kompak!</h3>
+                <p>Di UI/UX, kamu bakal belajar gabungin seni visual yang keren sama logika berpikir yang jitu.</p>
+              </div>
             </div>
 
-            <button class="carousel-nav right" data-bs-target="#customCarousel" data-bs-slide="next">
-                <i class="fas fa-chevron-right"></i>
-            </button>
+            <div class="carousel-item">
+              <div class="carousel-box">
+                <img src="./img/kaca-pembesar.png" alt="Kaca Pembesar" class="carousel-img-icon" />
+                <h3>Belajar Jadi Detektif User</h3>
+                <p>Di UI/UX, kamu diajak berpikir seperti pengguna. Kamu akan mencari tau apa yang mereka butuh, suka, dan rasakan.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-box">
+                <img src="./img/sparkle.png" alt="Sparkle" class="carousel-img-icon" />
+                <h3>Desain Kamu Jadi Lebih Bermakna</h3>
+                <p>Gak cukup cuma estetik. Dengan UI/UX, kamu belajar bikin desain yang enak dilihat dan nyaman dipakai.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-box">
+                <img src="./img/desain-digital.png" alt="Desain Digital" class="carousel-img-icon" />
+                <h3>Buka Jalan ke Dunia Desain Digital</h3>
+                <p>UI/UX jadi langkah awal kamu buat terjun ke dunia kreatif digital. Banyak profesi seru yang bisa kamu jelajahi, dari desainer, researcher, sampai UI developer!</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-box">
+                <img src="./img/lamp.png" alt="Lampu" class="carousel-img-icon" />
+                <h3>Ciptakan Solusi Keren yang Bikin Hidup Orang Lebih Mudah!</h3>
+                <p>Di UI/UX, kamu tidak hanya mendesain tampilan, tapi juga pecahin masalah nyata lewat aplikasi atau website.</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <button class="carousel-nav right" data-bs-target="#customCarousel" data-bs-slide="next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
     </section>
 
-
     <footer>
-        <p>© 2025 Class of Click. All rights reserved.</p>
+      <p>© 2025 Class of Click. All rights reserved.</p>
     </footer>
 
     <!-- Dropdown di dalam Menu Materi -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggles = document.querySelectorAll('.submenu-toggle');
-            const submenus = document.querySelectorAll('.submenu-list');
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".submenu-toggle");
+        const submenus = document.querySelectorAll(".submenu-list");
 
-            toggles.forEach(toggle => {
-                toggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-                    const currentSubmenu = this.nextElementSibling;
-                    const arrow = this.querySelector('.arrow');
-                    const isOpen = currentSubmenu.classList.contains('show');
+            const currentSubmenu = this.nextElementSibling;
+            const arrow = this.querySelector(".arrow");
+            const isOpen = currentSubmenu.classList.contains("show");
 
-                    // Tutup semua submenu
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const otherToggle = submenu.previousElementSibling;
-                        const otherArrow = otherToggle.querySelector('.arrow');
-                        if (otherArrow) otherArrow.style.transform = 'rotate(0deg)';
-                    });
-
-                    // Kalau sebelumnya belum terbuka, buka yang diklik
-                    if (!isOpen) {
-                        currentSubmenu.classList.add('show');
-                        if (arrow) arrow.style.transform = 'rotate(180deg)';
-                    }
-                });
+            // Tutup semua submenu
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const otherToggle = submenu.previousElementSibling;
+              const otherArrow = otherToggle.querySelector(".arrow");
+              if (otherArrow) otherArrow.style.transform = "rotate(0deg)";
             });
 
-            // Klik di luar tutup semua submenu
-            document.addEventListener('click', function (e) {
-                if (!e.target.closest('.dropdown-menu')) {
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const toggle = submenu.previousElementSibling;
-                        const arrow = toggle.querySelector('.arrow');
-                        if (arrow) arrow.style.transform = 'rotate(0deg)';
-                    });
-                }
-            });
+            // Kalau sebelumnya belum terbuka, buka yang diklik
+            if (!isOpen) {
+              currentSubmenu.classList.add("show");
+              if (arrow) arrow.style.transform = "rotate(180deg)";
+            }
+          });
         });
+
+        // Klik di luar tutup semua submenu
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown-menu")) {
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const toggle = submenu.previousElementSibling;
+              const arrow = toggle.querySelector(".arrow");
+              if (arrow) arrow.style.transform = "rotate(0deg)";
+            });
+          }
+        });
+      });
     </script>
 
     <!-- Tombol Kembali ke Atas -->
     <button id="toTopBtn" title="Kembali ke atas">
-        <i class="bi bi-chevron-double-up"></i>
+      <i class="bi bi-chevron-double-up"></i>
     </button>
     <script>
-        const toTopBtn = document.getElementById("toTopBtn");
-        window.addEventListener('scroll', () => {
-            if (document.documentElement.scrollTop > 100) {
-                toTopBtn.classList.add('show');
-            } else {
-                toTopBtn.classList.remove('show');
-            }
-        });
-        toTopBtn.onclick = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
+      const toTopBtn = document.getElementById("toTopBtn");
+      window.addEventListener("scroll", () => {
+        if (document.documentElement.scrollTop > 100) {
+          toTopBtn.classList.add("show");
+        } else {
+          toTopBtn.classList.remove("show");
+        }
+      });
+      toTopBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
     </script>
 
     <!-- JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/elemen-ux.js"></script>
-</body>
+  </body>
 </html>

@@ -1,9 +1,9 @@
 /* Root Variables */
 :root {
   --primary-color: #ffffff;
-  --secondary-color: #EDB427;
+  --secondary-color: #edb427;
   --secondary-color-dark: #063559;
-  --Acc-color: #EA5937;
+  --Acc-color: #ea5937;
   --text-color: #333333;
   --textp-color: #797979;
   --gray-bg: #e6e6e6;
@@ -42,11 +42,16 @@ p {
   font-size: 20px;
   line-height: 1.6;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--secondary-color-dark);
 }
 .highlight {
-  color: #EBAC0E;
+  color: #ebac0e;
 }
 
 /* Base Styles */
@@ -62,10 +67,10 @@ body {
   padding: 0;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 700;
 }
-
 
 /* Navbar */
 .navbar {
@@ -114,65 +119,64 @@ b, strong {
 .dropdown-item.active,
 .dropdown-item.active:focus,
 .dropdown-item.active:hover {
-  background-color: #EBAC0E !important;
+  background-color: #ebac0e !important;
   color: #fff !important;
   font-weight: 600;
 }
 .dropdown-menu {
-    border: 1px solid rgba(235, 172, 14, 0.2);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.97);
-    padding: 12px 10px;
-    border-radius: 12px;
-    min-width: 260px;
+  border: 1px solid rgba(235, 172, 14, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.97);
+  padding: 12px 10px;
+  border-radius: 12px;
+  min-width: 260px;
 }
 .dropdown-item:active,
 .submenu-toggle:active {
-    transform: scale(0.98);
-    transition: transform 0.1s ease;
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
 }
 /* Hilangkan efek warna biru bawaan saat diklik */
 .dropdown-item:focus,
 .dropdown-item:active {
-    background-color: rgba(235, 172, 14, 0.1) !important;
-    color: var(--secondary-color) !important;
-    outline: none;
-    box-shadow: none;
-    font-weight: 500;
+  background-color: rgba(235, 172, 14, 0.1) !important;
+  color: var(--secondary-color) !important;
+  outline: none;
+  box-shadow: none;
+  font-weight: 500;
 }
 
 /* Kalau pakai button, submenu-toggle juga perlu diatur */
 .submenu-toggle:focus,
 .submenu-toggle:active {
-    background-color: rgba(235, 172, 14, 0.1) !important;
-    color: var(--secondary-color) !important;
-    outline: none;
-    box-shadow: none;
-    font-weight: 500;
+  background-color: rgba(235, 172, 14, 0.1) !important;
+  color: var(--secondary-color) !important;
+  outline: none;
+  box-shadow: none;
+  font-weight: 500;
 }
 
 .submenu-list {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submenu-list.show {
-    max-height: 500px;
-    opacity: 1;
-    transform: translateY(0);
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
 }
 .arrow {
-    transition: transform 0.4s ease;
-    display: inline-block;
-    margin-left: 6px;
-    font-size: 14px;
-    color: var(--text-color);
+  transition: transform 0.4s ease;
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 14px;
+  color: var(--text-color);
 }
-
 
 /* Hero Section */
 .hero {
@@ -228,7 +232,7 @@ b, strong {
   max-width: 90%;
 }
 .link-next a {
-  color: #EA5937;
+  color: #ea5937;
   text-decoration: underline;
   cursor: pointer;
   font-size: 20px;
@@ -274,7 +278,6 @@ b, strong {
   background-color: #d49900;
 }
 
-
 /* Footer */
 footer {
   background-color: var(--secondary-color-dark);
@@ -310,7 +313,7 @@ footer p {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 #toTopBtn:hover {
-  background: #EBAC0E;
+  background: #ebac0e;
   transform: scale(1.1);
 }
 #toTopBtn.show {
@@ -320,23 +323,55 @@ footer p {
 }
 /* Responsive Typography */
 @media (max-width: 768px) {
-  h1 { font-size: 40px; }
-  h2 { font-size: 32px; }
-  h3 { font-size: 28px; }
-  h4 { font-size: 24px; }
-  h5, p { font-size: 18px; }
-  h1, h2, h3, h4, h5, p {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5,
+  p {
+    font-size: 18px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
     padding: 0 20px;
   }
 }
 
 @media (max-width: 600px) {
-  h1 { font-size: 32px; }
-  h2 { font-size: 26px; }
-  h3 { font-size: 22px; }
-  h4 { font-size: 20px; }
-  h5, p { font-size: 8px; }
-  h1, h2, h3, h4, h5, p {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5,
+  p {
+    font-size: 8px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
     padding: 0 16px;
   }
   footer,
@@ -346,12 +381,28 @@ footer p {
 }
 
 @media (max-width: 480px) {
-  h1 { font-size: 32px; }
-  h2 { font-size: 26px; }
-  h3 { font-size: 22px; }
-  h4 { font-size: 20px; }
-  h5, p { font-size: 16px; }
-  h1, h2, h3, h4, h5, p {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5,
+  p {
+    font-size: 16px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
     padding: 0 16px;
   }
   .navigation-buttons {
@@ -367,4 +418,3 @@ footer p {
     position: static;
   }
 }
-

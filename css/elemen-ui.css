@@ -180,40 +180,40 @@
 #s3:checked ~ #slide1,
 #s4:checked ~ #slide2,
 #s5:checked ~ #slide3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(-30%,0,-200px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(-30%, 0, -200px);
 }
 #s1:checked ~ #slide5,
 #s2:checked ~ #slide1,
 #s3:checked ~ #slide2,
 #s4:checked ~ #slide3,
 #s5:checked ~ #slide4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(-15%,0,-100px);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(-15%, 0, -100px);
 }
 #s1:checked ~ #slide1,
 #s2:checked ~ #slide2,
 #s3:checked ~ #slide3,
 #s4:checked ~ #slide4,
 #s5:checked ~ #slide5 {
-  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-  transform: translate3d(0,0,0);
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+  transform: translate3d(0, 0, 0);
 }
 #s1:checked ~ #slide2,
 #s2:checked ~ #slide3,
 #s3:checked ~ #slide4,
 #s4:checked ~ #slide5,
 #s5:checked ~ #slide1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(15%,0,-100px);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(15%, 0, -100px);
 }
 #s1:checked ~ #slide3,
 #s2:checked ~ #slide4,
 #s3:checked ~ #slide5,
 #s4:checked ~ #slide1,
 #s5:checked ~ #slide2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%,0,-200px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(30%, 0, -200px);
 }
 
 /* Slide Elemen Navigasi */
@@ -222,40 +222,40 @@
 #n3:checked ~ #sliden1,
 #n4:checked ~ #sliden2,
 #n5:checked ~ #sliden3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(-30%,0,-200px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(-30%, 0, -200px);
 }
 #n1:checked ~ #sliden5,
 #n2:checked ~ #sliden1,
 #n3:checked ~ #sliden2,
 #n4:checked ~ #sliden3,
 #n5:checked ~ #sliden4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(-15%,0,-100px);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(-15%, 0, -100px);
 }
 #n1:checked ~ #sliden1,
 #n2:checked ~ #sliden2,
 #n3:checked ~ #sliden3,
 #n4:checked ~ #sliden4,
 #n5:checked ~ #sliden5 {
-  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-  transform: translate3d(0,0,0);
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+  transform: translate3d(0, 0, 0);
 }
 #n1:checked ~ #sliden2,
 #n2:checked ~ #sliden3,
 #n3:checked ~ #sliden4,
 #n4:checked ~ #sliden5,
 #n5:checked ~ #sliden1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(15%,0,-100px);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(15%, 0, -100px);
 }
 #n1:checked ~ #sliden3,
 #n2:checked ~ #sliden4,
 #n3:checked ~ #sliden5,
 #n4:checked ~ #sliden1,
 #n5:checked ~ #sliden2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%,0,-200px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(30%, 0, -200px);
 }
 
 /* Slide Elemen Informasi */
@@ -264,40 +264,40 @@
 #f3:checked ~ #slidef1,
 #f4:checked ~ #slidef2,
 #f5:checked ~ #slidef3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(-30%,0,-200px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(-30%, 0, -200px);
 }
 #f1:checked ~ #slidef5,
 #f2:checked ~ #slidef1,
 #f3:checked ~ #slidef2,
 #f4:checked ~ #slidef3,
 #f5:checked ~ #slidef4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(-15%,0,-100px);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(-15%, 0, -100px);
 }
 #f1:checked ~ #slidef1,
 #f2:checked ~ #slidef2,
 #f3:checked ~ #slidef3,
 #f4:checked ~ #slidef4,
 #f5:checked ~ #slidef5 {
-  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-  transform: translate3d(0,0,0);
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+  transform: translate3d(0, 0, 0);
 }
 #f1:checked ~ #slidef2,
 #f2:checked ~ #slidef3,
 #f3:checked ~ #slidef4,
 #f4:checked ~ #slidef5,
 #f5:checked ~ #slidef1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(15%,0,-100px);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(15%, 0, -100px);
 }
 #f1:checked ~ #slidef3,
 #f2:checked ~ #slidef4,
 #f3:checked ~ #slidef5,
 #f4:checked ~ #slidef1,
 #f5:checked ~ #slidef2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%,0,-200px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(30%, 0, -200px);
 }
 
 /* Slide Elemen Wadah */
@@ -306,40 +306,40 @@
 #w3:checked ~ #slidew1,
 #w4:checked ~ #slidew2,
 #w5:checked ~ #slidew3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(-30%,0,-200px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(-30%, 0, -200px);
 }
 #w1:checked ~ #slidew5,
 #w2:checked ~ #slidew1,
 #w3:checked ~ #slidew2,
 #w4:checked ~ #slidew3,
 #w5:checked ~ #slidew4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(-15%,0,-100px);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(-15%, 0, -100px);
 }
 #w1:checked ~ #slidew1,
 #w2:checked ~ #slidew2,
 #w3:checked ~ #slidew3,
 #w4:checked ~ #slidew4,
 #w5:checked ~ #slidew5 {
-  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-  transform: translate3d(0,0,0);
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+  transform: translate3d(0, 0, 0);
 }
 #w1:checked ~ #slidew2,
 #w2:checked ~ #slidew3,
 #w3:checked ~ #slidew4,
 #w4:checked ~ #slidew5,
 #w5:checked ~ #slidew1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(15%,0,-100px);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(15%, 0, -100px);
 }
 #w1:checked ~ #slidew3,
 #w2:checked ~ #slidew4,
 #w3:checked ~ #slidew5,
 #w4:checked ~ #slidew1,
 #w5:checked ~ #slidew2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%,0,-200px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(30%, 0, -200px);
 }
 
 /* Slide Elemen Visual */
@@ -348,40 +348,40 @@
 #v3:checked ~ #slidev1,
 #v4:checked ~ #slidev2,
 #v5:checked ~ #slidev3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(-30%,0,-200px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(-30%, 0, -200px);
 }
 #v1:checked ~ #slidev5,
 #v2:checked ~ #slidev1,
 #v3:checked ~ #slidev2,
 #v4:checked ~ #slidev3,
 #v5:checked ~ #slidev4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(-15%,0,-100px);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(-15%, 0, -100px);
 }
 #v1:checked ~ #slidev1,
 #v2:checked ~ #slidev2,
 #v3:checked ~ #slidev3,
 #v4:checked ~ #slidev4,
 #v5:checked ~ #slidev5 {
-  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-  transform: translate3d(0,0,0);
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+  transform: translate3d(0, 0, 0);
 }
 #v1:checked ~ #slidev2,
 #v2:checked ~ #slidev3,
 #v3:checked ~ #slidev4,
 #v4:checked ~ #slidev5,
 #v5:checked ~ #slidev1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(15%,0,-100px);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(15%, 0, -100px);
 }
 #v1:checked ~ #slidev3,
 #v2:checked ~ #slidev4,
 #v3:checked ~ #slidev5,
 #v4:checked ~ #slidev1,
 #v5:checked ~ #slidev2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%,0,-200px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(30%, 0, -200px);
 }
 
 /* Slide Background */

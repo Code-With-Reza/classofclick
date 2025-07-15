@@ -1,275 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
     <title>Class of Click | Website Belajar UI/UX Dasar</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/prinsip-ux.css" />
-    
+
     <!-- Icon -->
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
     <!-- Logo Title (Favicon) -->
     <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #EBAC0E; font-weight: 600;">
-                            Materi
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- Pengenalan UI-UX -->
-                            <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Interface -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
-                                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Experience -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill" style="color: #EBAC0E; font-weight: 600;"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
-                                    <li><a class="dropdown-item sub-item active" href="prinsip-ux.html">2) Prinsip UX</a></li>
-                                    <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Figma -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
-                                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
-                                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Proses Desain -->
-                            <li><a class="dropdown-item" href="proses-desain.html">Proses Desain UI/UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Evaluasi Desain -->
-                            <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Studi Kasus -->
-                            <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ebac0e; font-weight: 600"> Materi </a>
+              <ul class="dropdown-menu">
+                <!-- Pengenalan UI-UX -->
+                <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Interface -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
+                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Experience -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill" style="color: #ebac0e; font-weight: 600"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
+                    <li><a class="dropdown-item sub-item active" href="prinsip-ux.html">2) Prinsip UX</a></li>
+                    <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Figma -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
+                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
+                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Proses Desain -->
+                <li><a class="dropdown-item" href="proses-desain.html">Proses Desain UI/UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Evaluasi Desain -->
+                <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Studi Kasus -->
+                <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="video.html">Video</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-text">
-            <h1>Prinsip <strong style="color: #EBAC0E;">UX</strong></h1>
-            <p class="prinsip-desc">
-                Desainer UX yang andal tidak hanya memikirkan fungsionalitas, tetapi juga memastikan pengguna merasa nyaman, dimengerti, dan dipandu dengan baik saat menggunakan produk digital.
-                Itu semua bisa terjadi karena mereka menerapkan prinsip-prinsip UX dengan tepat. <br><br>
-                Berikut adalah enam prinsip UX yang perlu kamu ketahui:
-            </p>
-            <div class="tag-buttons">
-                <div class="tag-row">
-                    <a href="#section1" class="tag">Keberlanjutan</a>
-                    <a href="#section2" class="tag">Pemahaman</a>
-                    <a href="#section3" class="tag">Aksesibilitas</a>
-                </div>
-                <div class="tag-row">
-                    <a href="#section4" class="tag">Efisiensi</a>
-                    <a href="#section5" class="tag">Umpan Balik</a>
-                    <a href="#section6" class="tag">Kepuasan</a>
-                </div>
-            </div>
+      <div class="hero-text">
+        <h1>Prinsip <strong style="color: #ebac0e">UX</strong></h1>
+        <p class="prinsip-desc">
+          Desainer UX yang andal tidak hanya memikirkan fungsionalitas, tetapi juga memastikan pengguna merasa nyaman, dimengerti, dan dipandu dengan baik saat menggunakan produk digital. Itu semua bisa terjadi karena mereka menerapkan
+          prinsip-prinsip UX dengan tepat. <br /><br />
+          Berikut adalah enam prinsip UX yang perlu kamu ketahui:
+        </p>
+        <div class="tag-buttons">
+          <div class="tag-row">
+            <a href="#section1" class="tag">Keberlanjutan</a>
+            <a href="#section2" class="tag">Pemahaman</a>
+            <a href="#section3" class="tag">Aksesibilitas</a>
+          </div>
+          <div class="tag-row">
+            <a href="#section4" class="tag">Efisiensi</a>
+            <a href="#section5" class="tag">Umpan Balik</a>
+            <a href="#section6" class="tag">Kepuasan</a>
+          </div>
         </div>
-        <div class="hero-image">
-            <img src="../img/aset_prinsip-ux.png" alt="Ilustrasi UI" />
-        </div>
+      </div>
+      <div class="hero-image">
+        <img src="../img/aset_prinsip-ux.png" alt="Ilustrasi UI" />
+      </div>
     </section>
 
     <!-- Prinsip 1 -->
     <section class="section reverse" id="section1">
-        <div class="section-content">
-            <h2>Keberlanjutan <span style="color: #EBAC0E;">(Memorability)</span></h2>
-            <p>Desain yang baik harus memudahkan pengguna saat kembali menggunakan sistem, tanpa perlu belajar ulang atau mengulang proses yang sama. Sistem yang mengingat atau menyimpan data sebelumnya akan menghemat waktu dan tenaga pengguna.</p>
-            <p>💡<strong>Contoh:</strong> <br>Fitur autofill atau auto-suggestion. Gambar ini menunjukkan bagaimana sistem dapat mengisi otomatis kode verifikasi dari pesan masuk, sehingga pengguna tidak perlu mengetik ulang. Hal ini mempermudah proses input dan membuat pengalaman lebih efisien serta mudah diingat.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip5.png" alt="Ilustrasi Keberlanjutan" />
-        </div>
+      <div class="section-content">
+        <h2>Keberlanjutan <span style="color: #ebac0e">(Memorability)</span></h2>
+        <p>
+          Desain yang baik harus memudahkan pengguna saat kembali menggunakan sistem, tanpa perlu belajar ulang atau mengulang proses yang sama. Sistem yang mengingat atau menyimpan data sebelumnya akan menghemat waktu dan tenaga pengguna.
+        </p>
+        <p>
+          💡<strong>Contoh:</strong> <br />Fitur autofill atau auto-suggestion. Gambar ini menunjukkan bagaimana sistem dapat mengisi otomatis kode verifikasi dari pesan masuk, sehingga pengguna tidak perlu mengetik ulang. Hal ini
+          mempermudah proses input dan membuat pengalaman lebih efisien serta mudah diingat.
+        </p>
+      </div>
+      <div class="section-image">
+        <img src="../img/prinsip5.png" alt="Ilustrasi Keberlanjutan" />
+      </div>
     </section>
 
     <!-- Prinsip 2 -->
     <section class="section" id="section2">
-        <div class="section-content">
-            <h2>Pemahaman <span style="color: #EBAC0E;">(Understanding)</span></h2>
-            <p>Desain harus mengomunikasikan apa yang dapat dilakukan pengguna, apa yang sedang terjadi, dan apa yang diharapkan dari mereka. Menggunakan label yang deskriptif, petunjuk visual intuitif, dan pesan yang jelas adalah beberapa cara untuk meningkatkan pemahaman pengguna terhadap antarmuka.</p>
-            <p>💡<strong>Contoh:</strong> <br>Gunakan bahasa yang jelas dan langsung agar pengguna mudah memahami situasi dan tahu apa yang harus dilakukan selanjutnya.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip4.png" alt="Ilustrasi Pemahaman" />
-        </div>
+      <div class="section-content">
+        <h2>Pemahaman <span style="color: #ebac0e">(Understanding)</span></h2>
+        <p>
+          Desain harus mengomunikasikan apa yang dapat dilakukan pengguna, apa yang sedang terjadi, dan apa yang diharapkan dari mereka. Menggunakan label yang deskriptif, petunjuk visual intuitif, dan pesan yang jelas adalah beberapa cara
+          untuk meningkatkan pemahaman pengguna terhadap antarmuka.
+        </p>
+        <p>💡<strong>Contoh:</strong> <br />Gunakan bahasa yang jelas dan langsung agar pengguna mudah memahami situasi dan tahu apa yang harus dilakukan selanjutnya.</p>
+      </div>
+      <div class="section-image">
+        <img src="../img/prinsip4.png" alt="Ilustrasi Pemahaman" />
+      </div>
     </section>
 
     <!-- Prinsip 3 -->
     <section class="section reverse" id="section3">
-        <div class="section-content">
-            <h2>Aksesibilitas <span style="color: #EBAC0E;">(Accessibility)</span></h2>
-            <p>Desain pengalaman harus dapat digunakan oleh semua orang, termasuk mereka yang memiliki keterbatasan fisik, sensorik, atau kognitif. Aksesibilitas dalam UX memastikan bahwa setiap pengguna bisa memahami dan menjalankan tugas dengan mudah tanpa hambatan.</p>
-            <p>💡<strong>Contoh:</strong> <br>Fitur asisten suara seperti Google Assistant memungkinkan pengguna menjalankan perintah, mencari lokasi, dan membuka aplikasi hanya dengan suara, tanpa perlu mengetik atau menyentuh layar. Pengguna cukup menekan tombol mikrofon atau mengucapkan perintah, sehingga sangat membantu mereka yang memiliki keterbatasan mobilitas atau penglihatan.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip-ux-aksesibilitas.png" alt="Ilustrasi Aksesibilitas" />
-        </div>
+      <div class="section-content">
+        <h2>Aksesibilitas <span style="color: #ebac0e">(Accessibility)</span></h2>
+        <p>
+          Desain pengalaman harus dapat digunakan oleh semua orang, termasuk mereka yang memiliki keterbatasan fisik, sensorik, atau kognitif. Aksesibilitas dalam UX memastikan bahwa setiap pengguna bisa memahami dan menjalankan tugas
+          dengan mudah tanpa hambatan.
+        </p>
+        <p>
+          💡<strong>Contoh:</strong> <br />Fitur asisten suara seperti Google Assistant memungkinkan pengguna menjalankan perintah, mencari lokasi, dan membuka aplikasi hanya dengan suara, tanpa perlu mengetik atau menyentuh layar. Pengguna
+          cukup menekan tombol mikrofon atau mengucapkan perintah, sehingga sangat membantu mereka yang memiliki keterbatasan mobilitas atau penglihatan.
+        </p>
+      </div>
+      <div class="section-image">
+        <img src="../img/prinsip-ux-aksesibilitas.png" alt="Ilustrasi Aksesibilitas" />
+      </div>
     </section>
 
     <!-- Prinsip 4 -->
     <section class="section" id="section4">
-        <div class="section-content">
-            <h2>Efisiensi <span style="color: #EBAC0E;">(Efficiency)</span></h2>
-            <p>Desain harus membantu pengguna menyelesaikan tugas dengan cepat dan tanpa langkah yang tidak perlu. Fokusnya adalah mempercepat proses dan mengurangi beban interaksi.</p>
-            <p>💡<strong>Contoh:</strong> <br>Pendaftaran akun dengan satu klik menggunakan Google, Facebook, atau Apple memungkinkan pengguna masuk tanpa harus mengisi formulir panjang. Ini mempercepat proses dan membuat pengalaman lebih efisien.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip-ux-efisiensi.png" alt="Ilustrasi Efisiensi" />
-        </div>
+      <div class="section-content">
+        <h2>Efisiensi <span style="color: #ebac0e">(Efficiency)</span></h2>
+        <p>Desain harus membantu pengguna menyelesaikan tugas dengan cepat dan tanpa langkah yang tidak perlu. Fokusnya adalah mempercepat proses dan mengurangi beban interaksi.</p>
+        <p>
+          💡<strong>Contoh:</strong> <br />Pendaftaran akun dengan satu klik menggunakan Google, Facebook, atau Apple memungkinkan pengguna masuk tanpa harus mengisi formulir panjang. Ini mempercepat proses dan membuat pengalaman lebih
+          efisien.
+        </p>
+      </div>
+      <div class="section-image">
+        <img src="../img/prinsip-ux-efisiensi.png" alt="Ilustrasi Efisiensi" />
+      </div>
     </section>
 
     <!-- Prinsip 5 -->
     <section class="section reverse" id="section5">
-        <div class="section-content">
-            <h2>Umpan Balik <span style="color: #EBAC0E;">(Feedback)</span></h2>
-            <p>Dalam UX, prinsip umpan balik bukan hanya soal sistem memberi respons, tapi juga bagaimana respons itu membuat pengguna merasa dipandu, dihargai, dan tahu apa yang sedang terjadi setelah melakukan sebuah aksi.</p>
-            <p>💡<strong>Contoh:</strong> <br>Saat pengguna mengunggah file, sistem menampilkan informasi progres seperti jumlah file, persentase, estimasi waktu, serta animasi garis berjalan. Umpan balik ini membuat pengguna merasa yakin bahwa proses berjalan dengan baik dan sistem tidak mengalami gangguan.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip-ux-umpan-balik.gif" alt="Ilustrasi Umpan Balik" />
-        </div>
+      <div class="section-content">
+        <h2>Umpan Balik <span style="color: #ebac0e">(Feedback)</span></h2>
+        <p>Dalam UX, prinsip umpan balik bukan hanya soal sistem memberi respons, tapi juga bagaimana respons itu membuat pengguna merasa dipandu, dihargai, dan tahu apa yang sedang terjadi setelah melakukan sebuah aksi.</p>
+        <p>
+          💡<strong>Contoh:</strong> <br />Saat pengguna mengunggah file, sistem menampilkan informasi progres seperti jumlah file, persentase, estimasi waktu, serta animasi garis berjalan. Umpan balik ini membuat pengguna merasa yakin
+          bahwa proses berjalan dengan baik dan sistem tidak mengalami gangguan.
+        </p>
+      </div>
+      <div class="section-image">
+        <img src="../img/prinsip-ux-umpan-balik.gif" alt="Ilustrasi Umpan Balik" />
+      </div>
     </section>
 
     <!-- Prinsip 6 -->
     <section class="section" id="section6">
-        <div class="section-content">
-            <h2>Kepuasan <span style="color: #EBAC0E;">(Satisfaction)</span></h2>
-            <p>Desain yang baik membuat pengguna merasa senang, nyaman, dan puas saat menggunakan produk. Pengalaman yang menyenangkan membuat pengguna ingin kembali lagi.</p>
-            <p>💡<strong>Contoh:</strong> <br>Setelah pengguna berhasil menyelesaikan tugas seperti mendaftar (sign in) atau checkout, sistem menampilkan pesan terima kasih yang ceria. Umpan visual ini memberi sentuhan emosional positif yang meningkatkan kepuasan pengguna.</p>
-        </div>
-        <div class="section-image">
-            <img src="../img/prinsip-ux-kepuasan.png" alt="Ilustrasi Kepuasan" />
-        </div>
+      <div class="section-content">
+        <h2>Kepuasan <span style="color: #ebac0e">(Satisfaction)</span></h2>
+        <p>Desain yang baik membuat pengguna merasa senang, nyaman, dan puas saat menggunakan produk. Pengalaman yang menyenangkan membuat pengguna ingin kembali lagi.</p>
+        <p>
+          💡<strong>Contoh:</strong> <br />Setelah pengguna berhasil menyelesaikan tugas seperti mendaftar (sign in) atau checkout, sistem menampilkan pesan terima kasih yang ceria. Umpan visual ini memberi sentuhan emosional positif yang
+          meningkatkan kepuasan pengguna.
+        </p>
+      </div>
+      <div class="section-image">
+        <img src="../img/prinsip-ux-kepuasan.png" alt="Ilustrasi Kepuasan" />
+      </div>
     </section>
 
     <!-- Before / Next Page -->
     <div class="navigation-buttons">
-        <a href="elemen-ux.html" class="nav-button prev">◀ Sebelumnya</a>
-        <a href="metode-populer.html" class="nav-button next">Berikutnya ▶</a>
+      <a href="elemen-ux.html" class="nav-button prev">◀ Sebelumnya</a>
+      <a href="metode-populer.html" class="nav-button next">Berikutnya ▶</a>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Class of Click. All rights reserved.</p>
+      <p>© 2025 Class of Click. All rights reserved.</p>
     </footer>
 
     <!-- Dropdown di dalam Menu Materi -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggles = document.querySelectorAll('.submenu-toggle');
-            const submenus = document.querySelectorAll('.submenu-list');
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".submenu-toggle");
+        const submenus = document.querySelectorAll(".submenu-list");
 
-            toggles.forEach(toggle => {
-                toggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-                    const currentSubmenu = this.nextElementSibling;
-                    const arrow = this.querySelector('.arrow');
-                    const isOpen = currentSubmenu.classList.contains('show');
+            const currentSubmenu = this.nextElementSibling;
+            const arrow = this.querySelector(".arrow");
+            const isOpen = currentSubmenu.classList.contains("show");
 
-                    // Tutup semua submenu
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const otherToggle = submenu.previousElementSibling;
-                        const otherArrow = otherToggle.querySelector('.arrow');
-                        if (otherArrow) otherArrow.style.transform = 'rotate(0deg)';
-                    });
-
-                    // Kalau sebelumnya belum terbuka, buka yang diklik
-                    if (!isOpen) {
-                        currentSubmenu.classList.add('show');
-                        if (arrow) arrow.style.transform = 'rotate(180deg)';
-                    }
-                });
+            // Tutup semua submenu
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const otherToggle = submenu.previousElementSibling;
+              const otherArrow = otherToggle.querySelector(".arrow");
+              if (otherArrow) otherArrow.style.transform = "rotate(0deg)";
             });
 
-            // Klik di luar tutup semua submenu
-            document.addEventListener('click', function (e) {
-                if (!e.target.closest('.dropdown-menu')) {
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const toggle = submenu.previousElementSibling;
-                        const arrow = toggle.querySelector('.arrow');
-                        if (arrow) arrow.style.transform = 'rotate(0deg)';
-                    });
-                }
-            });
+            // Kalau sebelumnya belum terbuka, buka yang diklik
+            if (!isOpen) {
+              currentSubmenu.classList.add("show");
+              if (arrow) arrow.style.transform = "rotate(180deg)";
+            }
+          });
         });
+
+        // Klik di luar tutup semua submenu
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown-menu")) {
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const toggle = submenu.previousElementSibling;
+              const arrow = toggle.querySelector(".arrow");
+              if (arrow) arrow.style.transform = "rotate(0deg)";
+            });
+          }
+        });
+      });
     </script>
 
     <!-- Tombol Kembali ke Atas -->
     <button id="toTopBtn" title="Kembali ke atas">
-        <i class="bi bi-chevron-double-up"></i>
+      <i class="bi bi-chevron-double-up"></i>
     </button>
 
     <script>
-        const toTopBtn = document.getElementById("toTopBtn");
-        window.addEventListener('scroll', () => {
-            if (document.documentElement.scrollTop > 100) {
-                toTopBtn.classList.add('show');
-            } else {
-                toTopBtn.classList.remove('show');
-            }
-        });
-        toTopBtn.onclick = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
+      const toTopBtn = document.getElementById("toTopBtn");
+      window.addEventListener("scroll", () => {
+        if (document.documentElement.scrollTop > 100) {
+          toTopBtn.classList.add("show");
+        } else {
+          toTopBtn.classList.remove("show");
+        }
+      });
+      toTopBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
     </script>
 
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

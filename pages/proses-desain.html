@@ -1,256 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
     <title>Class of Click | Website Belajar UI/UX Dasar</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/proses-desain.css" />
-    
+
     <!-- Icon -->
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
     <!-- Logo Title (Favicon) -->
     <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #EBAC0E; font-weight: 600;">
-                            Materi
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- Pengenalan UI-UX -->
-                            <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Interface -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
-                                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Experience -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
-                                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
-                                    <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Figma -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
-                                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
-                                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Proses Desain -->
-                            <li><a class="dropdown-item active" href="proses-desain.html">Proses Desain UI/UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Evaluasi Desain -->
-                            <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Studi Kasus -->
-                            <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ebac0e; font-weight: 600"> Materi </a>
+              <ul class="dropdown-menu">
+                <!-- Pengenalan UI-UX -->
+                <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Interface -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
+                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Experience -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
+                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
+                    <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Figma -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
+                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
+                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Proses Desain -->
+                <li><a class="dropdown-item active" href="proses-desain.html">Proses Desain UI/UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Evaluasi Desain -->
+                <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Studi Kasus -->
+                <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="video.html">Video</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero container py-5 mt-custom">
-        <div class="row align-items-center">
-            <!-- Teks -->
-            <div class="col-md-6 mb-4 mb-md-0">
-                <h1>Proses Desain<span style="color: #EBAC0E;"> UI/UX</span></h1>
-                <p>
-                    Dalam dunia UI/UX, proses merancang desain bisa melibatkan banyak tahapan tergantung proyek dan tim yang mengerjakannya. Tapi, di sini kita akan belajar <strong>5 tahap paling umum</strong> yang sering dipakai dalam dunia nyata — mulai dari mengenal pengguna hingga membuat prototype interaktif.
-                </p>
-            </div>
-
-            <!-- Gambar -->
-            <div class="col-md-6 text-center">
-            <img src="/img/aset_proses-desain.png" alt="Ilustrasi proses desain UI/UX" class="img-fluid" style="max-height: 400px;">
-            </div>
+      <div class="row align-items-center">
+        <!-- Teks -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h1>Proses Desain<span style="color: #ebac0e"> UI/UX</span></h1>
+          <p>
+            Dalam dunia UI/UX, proses merancang desain bisa melibatkan banyak tahapan tergantung proyek dan tim yang mengerjakannya. Tapi, di sini kita akan belajar <strong>5 tahap paling umum</strong> yang sering dipakai dalam dunia nyata
+            — mulai dari mengenal pengguna hingga membuat prototype interaktif.
+          </p>
         </div>
-    </section>
 
+        <!-- Gambar -->
+        <div class="col-md-6 text-center">
+          <img src="/img/aset_proses-desain.png" alt="Ilustrasi proses desain UI/UX" class="img-fluid" style="max-height: 400px" />
+        </div>
+      </div>
+    </section>
 
     <!-- Content Section -->
     <section class="container py-5">
-        <!-- 1. User Persona -->
-        <div class="mb-5">
-            <h3>1) <span style="color: #EBAC0E;">User Persona</span></h3>
-            <p>
-            User Persona adalah representasi fiktif dari pengguna yang menjadi target utama desain. Persona ini dibuat berdasarkan hasil riset untuk memahami siapa pengguna, apa kebutuhan mereka, apa masalah yang dihadapi, serta tujuan mereka saat menggunakan produk.
-            Biasanya berisi: nama, usia, pekerjaan, tujuan, tantangan, dan kebiasaan digital. Untuk membuat user persona, kamu bisa menggunakan tools seperti Google Docs, Figma, atau platform khusus seperti UXPressia dan Miro yang menyediakan template siap pakai.
-            </p>
-            <img src="../img/user-persona.png" alt="Contoh" class="img-fluid rounded shadow img-content">
-        </div>
+      <!-- 1. User Persona -->
+      <div class="mb-5">
+        <h3>1) <span style="color: #ebac0e">User Persona</span></h3>
+        <p>
+          User Persona adalah representasi fiktif dari pengguna yang menjadi target utama desain. Persona ini dibuat berdasarkan hasil riset untuk memahami siapa pengguna, apa kebutuhan mereka, apa masalah yang dihadapi, serta tujuan mereka
+          saat menggunakan produk. Biasanya berisi: nama, usia, pekerjaan, tujuan, tantangan, dan kebiasaan digital. Untuk membuat user persona, kamu bisa menggunakan tools seperti Google Docs, Figma, atau platform khusus seperti UXPressia
+          dan Miro yang menyediakan template siap pakai.
+        </p>
+        <img src="../img/user-persona.png" alt="Contoh" class="img-fluid rounded shadow img-content" />
+      </div>
 
-        <!-- 2. User Flow -->
-        <div class="mb-5">
-            <h3>2) <span style="color: #EBAC0E;">Use Flow</span></h3>
-            <p>
-            User flow adalah diagram alur yang menggambarkan langkah-langkah yang dilalui pengguna saat berinteraksi dengan produk digital, dari awal masuk hingga mencapai tujuan tertentu. 
-            Fokusnya bukan pada logika sistem, melainkan pada urutan layar atau tindakan pengguna. User flow membantu tim desain memastikan pengalaman pengguna berjalan lancar dan efisien. 
-            Visualisasi ini biasanya hanya menggunakan elemen sederhana seperti kotak untuk tiap layar dan panah untuk menunjukkan alur. Tools seperti Figma, Miro, Whimsical, dan FlowMapp sering digunakan untuk menyusun user flow secara ringkas dan mudah dipahami.
-            </p>
-            <img src="../img/user flow.png" class="img-fluid rounded shadow img-content" alt="Contoh User Flow UI/UX">
-        </div>
+      <!-- 2. User Flow -->
+      <div class="mb-5">
+        <h3>2) <span style="color: #ebac0e">Use Flow</span></h3>
+        <p>
+          User flow adalah diagram alur yang menggambarkan langkah-langkah yang dilalui pengguna saat berinteraksi dengan produk digital, dari awal masuk hingga mencapai tujuan tertentu. Fokusnya bukan pada logika sistem, melainkan pada
+          urutan layar atau tindakan pengguna. User flow membantu tim desain memastikan pengalaman pengguna berjalan lancar dan efisien. Visualisasi ini biasanya hanya menggunakan elemen sederhana seperti kotak untuk tiap layar dan panah
+          untuk menunjukkan alur. Tools seperti Figma, Miro, Whimsical, dan FlowMapp sering digunakan untuk menyusun user flow secara ringkas dan mudah dipahami.
+        </p>
+        <img src="../img/user flow.png" class="img-fluid rounded shadow img-content" alt="Contoh User Flow UI/UX" />
+      </div>
 
-        <!-- 3. Wireframe -->
-        <div class="mb-5">
-            <h3>3) <span style="color: #EBAC0E;">Wireframe</span></h3>
-            <p>
-            Wireframe adalah kerangka kasar dari halaman aplikasi. Fokusnya pada penempatan elemen seperti tombol, teks, gambar, dan struktur layout — tanpa warna atau desain visual.
-            Wireframe dapat dibuat secara manual menggunakan kertas dan alat tulis (disebut manual wireframe), atau secara digital menggunakan tools seperti Figma dan Balsamiq (digital wireframe). 
-            Keduanya bertujuan sama: menyusun struktur awal antarmuka sebelum masuk ke desain visual.
-            </p>
-            <img src="../img/wireframe.png" class="img-fluid rounded shadow img-content" alt="Contoh Wireframe">
-        </div>
+      <!-- 3. Wireframe -->
+      <div class="mb-5">
+        <h3>3) <span style="color: #ebac0e">Wireframe</span></h3>
+        <p>
+          Wireframe adalah kerangka kasar dari halaman aplikasi. Fokusnya pada penempatan elemen seperti tombol, teks, gambar, dan struktur layout — tanpa warna atau desain visual. Wireframe dapat dibuat secara manual menggunakan kertas dan
+          alat tulis (disebut manual wireframe), atau secara digital menggunakan tools seperti Figma dan Balsamiq (digital wireframe). Keduanya bertujuan sama: menyusun struktur awal antarmuka sebelum masuk ke desain visual.
+        </p>
+        <img src="../img/wireframe.png" class="img-fluid rounded shadow img-content" alt="Contoh Wireframe" />
+      </div>
 
-        <!-- 4. Mockup -->
-        <div class="mb-5">
-            <h3>4) <span style="color: #EBAC0E;">Mockup</span></h3>
-            <p>
-            Mockup adalah desain visual final dari tampilan UI yang sudah lengkap dengan warna, font, dan gambar. Mockup menunjukkan seperti apa tampilan akhir dari aplikasi, 
-            namun belum bisa diklik. Mockup biasanya dibuat dengan tools desain seperti Figma, Adobe XD, atau Sketch karena mendukung visualisasi warna, font, dan layout secara detail.
-            Biasanya digunakan untuk mendapatkan masukan visual sebelum dilanjut ke tahap prototype.
-            </p>
-            <img src="../img/mockup.png" class="img-fluid rounded shadow img-content" alt="Contoh Mockup">
-        </div>
+      <!-- 4. Mockup -->
+      <div class="mb-5">
+        <h3>4) <span style="color: #ebac0e">Mockup</span></h3>
+        <p>
+          Mockup adalah desain visual final dari tampilan UI yang sudah lengkap dengan warna, font, dan gambar. Mockup menunjukkan seperti apa tampilan akhir dari aplikasi, namun belum bisa diklik. Mockup biasanya dibuat dengan tools desain
+          seperti Figma, Adobe XD, atau Sketch karena mendukung visualisasi warna, font, dan layout secara detail. Biasanya digunakan untuk mendapatkan masukan visual sebelum dilanjut ke tahap prototype.
+        </p>
+        <img src="../img/mockup.png" class="img-fluid rounded shadow img-content" alt="Contoh Mockup" />
+      </div>
 
-        <!-- 5. Prototype -->
-        <div class="mb-5">
-            <h3>5) <span style="color: #EBAC0E;">Prototype</span></h3>
-            <p>
-            Prototype adalah versi interaktif dari mockup yang bisa diklik dan digunakan untuk menguji alur penggunaan. Ini membantu mengetahui apakah desain yang dibuat sudah nyaman digunakan.
-            Biasanya digunakan dalam usability testing sebelum masuk tahap pengembangan. Untuk membuat prototype interaktif, kamu bisa menggunakan Figma, Adobe XD, atau InVision agar pengguna bisa mencoba langsung simulasi desainnya.
-            </p>
-            <video class="img-fluid rounded shadow img-content" autoplay loop muted playsinline>
-                <source src="../video/vid-contoh-prototipyng.mp4" type="video/mp4">
-                Browser kamu tidak mendukung tag video.
-            </video>
-
-        </div>
+      <!-- 5. Prototype -->
+      <div class="mb-5">
+        <h3>5) <span style="color: #ebac0e">Prototype</span></h3>
+        <p>
+          Prototype adalah versi interaktif dari mockup yang bisa diklik dan digunakan untuk menguji alur penggunaan. Ini membantu mengetahui apakah desain yang dibuat sudah nyaman digunakan. Biasanya digunakan dalam usability testing
+          sebelum masuk tahap pengembangan. Untuk membuat prototype interaktif, kamu bisa menggunakan Figma, Adobe XD, atau InVision agar pengguna bisa mencoba langsung simulasi desainnya.
+        </p>
+        <video class="img-fluid rounded shadow img-content" autoplay loop muted playsinline>
+          <source src="../video/vid-contoh-prototipyng.mp4" type="video/mp4" />
+          Browser kamu tidak mendukung tag video.
+        </video>
+      </div>
     </section>
 
     <!-- Before / Next Page -->
     <div class="navigation-buttons">
-        <a href="plugins.html" class="nav-button prev">◀ Sebelumnya</a>
-        <a href="evaluasi.html" class="nav-button next">Berikutnya ▶</a>
+      <a href="plugins.html" class="nav-button prev">◀ Sebelumnya</a>
+      <a href="evaluasi.html" class="nav-button next">Berikutnya ▶</a>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Class of Click. All rights reserved.</p>
+      <p>© 2025 Class of Click. All rights reserved.</p>
     </footer>
 
     <!-- Dropdown di dalam Menu Materi -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggles = document.querySelectorAll('.submenu-toggle');
-            const submenus = document.querySelectorAll('.submenu-list');
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".submenu-toggle");
+        const submenus = document.querySelectorAll(".submenu-list");
 
-            toggles.forEach(toggle => {
-                toggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-                    const currentSubmenu = this.nextElementSibling;
-                    const arrow = this.querySelector('.arrow');
-                    const isOpen = currentSubmenu.classList.contains('show');
+            const currentSubmenu = this.nextElementSibling;
+            const arrow = this.querySelector(".arrow");
+            const isOpen = currentSubmenu.classList.contains("show");
 
-                    // Tutup semua submenu
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const otherToggle = submenu.previousElementSibling;
-                        const otherArrow = otherToggle.querySelector('.arrow');
-                        if (otherArrow) otherArrow.style.transform = 'rotate(0deg)';
-                    });
-
-                    // Kalau sebelumnya belum terbuka, buka yang diklik
-                    if (!isOpen) {
-                        currentSubmenu.classList.add('show');
-                        if (arrow) arrow.style.transform = 'rotate(180deg)';
-                    }
-                });
+            // Tutup semua submenu
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const otherToggle = submenu.previousElementSibling;
+              const otherArrow = otherToggle.querySelector(".arrow");
+              if (otherArrow) otherArrow.style.transform = "rotate(0deg)";
             });
 
-            // Klik di luar tutup semua submenu
-            document.addEventListener('click', function (e) {
-                if (!e.target.closest('.dropdown-menu')) {
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const toggle = submenu.previousElementSibling;
-                        const arrow = toggle.querySelector('.arrow');
-                        if (arrow) arrow.style.transform = 'rotate(0deg)';
-                    });
-                }
-            });
+            // Kalau sebelumnya belum terbuka, buka yang diklik
+            if (!isOpen) {
+              currentSubmenu.classList.add("show");
+              if (arrow) arrow.style.transform = "rotate(180deg)";
+            }
+          });
         });
+
+        // Klik di luar tutup semua submenu
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown-menu")) {
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const toggle = submenu.previousElementSibling;
+              const arrow = toggle.querySelector(".arrow");
+              if (arrow) arrow.style.transform = "rotate(0deg)";
+            });
+          }
+        });
+      });
     </script>
 
     <!-- Tombol Kembali ke Atas -->
     <button id="toTopBtn" title="Kembali ke atas">
-        <i class="bi bi-chevron-double-up"></i>
+      <i class="bi bi-chevron-double-up"></i>
     </button>
     <script>
-        const toTopBtn = document.getElementById("toTopBtn");
-        window.addEventListener('scroll', () => {
-            if (document.documentElement.scrollTop > 100) {
-                toTopBtn.classList.add('show');
-            } else {
-                toTopBtn.classList.remove('show');
-            }
-        });
-        toTopBtn.onclick = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
+      const toTopBtn = document.getElementById("toTopBtn");
+      window.addEventListener("scroll", () => {
+        if (document.documentElement.scrollTop > 100) {
+          toTopBtn.classList.add("show");
+        } else {
+          toTopBtn.classList.remove("show");
+        }
+      });
+      toTopBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
     </script>
 
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
-
-

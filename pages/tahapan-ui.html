@@ -1,335 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
     <title>Class of Click | Website Belajar UI/UX Dasar</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/tahapan-ui.css" />
-    
+
     <!-- Icon -->
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
     <!-- Logo Title (Favicon) -->
     <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #EBAC0E; font-weight: 600;">
-                            Materi
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- Pengenalan UI-UX -->
-                            <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Interface -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">
-                                    User Interface
-                                    <span class="arrow bi bi-caret-down-fill" style="color: #EBAC0E; font-weight: 600;"></span>
-                                </button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
-                                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Experience -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">
-                                    User Experience
-                                    <span class="arrow bi bi-caret-down-fill"></span>
-                                </button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
-                                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
-                                    <li><a class="dropdown-item sub-itema" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Figma -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">
-                                    Figma
-                                    <span class="arrow bi bi-caret-down-fill"></span>
-                                </button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
-                                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
-                                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Proses Desain -->
-                            <li><a class="dropdown-item" href="proses-desain.html">Proses Desain UI/UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Evaluasi Desain -->
-                            <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Studi Kasus -->
-                            <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ebac0e; font-weight: 600"> Materi </a>
+              <ul class="dropdown-menu">
+                <!-- Pengenalan UI-UX -->
+                <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Interface -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">
+                    User Interface
+                    <span class="arrow bi bi-caret-down-fill" style="color: #ebac0e; font-weight: 600"></span>
+                  </button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
+                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Experience -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">
+                    User Experience
+                    <span class="arrow bi bi-caret-down-fill"></span>
+                  </button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
+                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
+                    <li><a class="dropdown-item sub-itema" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Figma -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">
+                    Figma
+                    <span class="arrow bi bi-caret-down-fill"></span>
+                  </button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="pengantar-figma.html">1) Pengantar Figma</a></li>
+                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
+                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Proses Desain -->
+                <li><a class="dropdown-item" href="proses-desain.html">Proses Desain UI/UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Evaluasi Desain -->
+                <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Studi Kasus -->
+                <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="video.html">Video</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
-        <h1>Tahapan Khusus<span style="color: #EBAC0E;"> Desain UI</span></h1>
-        <p class="tahapan-desc">
-            Desain antarmuka pengguna (UI) bukan hanya soal membuat tampilan menarik. 
-            Di balik layar, ada proses bertahap yang membantu desainer menciptakan pengalaman visual yang jelas, nyaman, dan fungsional.
-            <br><b>Berikut tahapan-tahapannya:</b>
-        </p>
+      <h1>Tahapan Khusus<span style="color: #ebac0e"> Desain UI</span></h1>
+      <p class="tahapan-desc">
+        Desain antarmuka pengguna (UI) bukan hanya soal membuat tampilan menarik. Di balik layar, ada proses bertahap yang membantu desainer menciptakan pengalaman visual yang jelas, nyaman, dan fungsional.
+        <br /><b>Berikut tahapan-tahapannya:</b>
+      </p>
     </section>
 
     <!-- Card -->
     <div class="main">
-        <ul class="cards">
-            <!-- Card 1 -->
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="../img/tahapui1.jpeg" alt="User  Research" />
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title"><span style="color: #EBAC0E;">1)</span> User Research</h2>
-                        <hr />
-                        <div class="card_text">
-                            <p>Tahap ini bertujuan untuk memahami siapa pengguna produk, apa kebutuhan mereka, bagaimana kebiasaannya, dan masalah apa yang mereka alami.</p>
-                            <p><strong>🎯Output (Keluaran):</strong><br>
-                                <br><strong>1) User Persona</strong> → Profil fiktif yang mewakili tipe pengguna ideal.
-                                <br><strong>2) Affinity Diagram</strong> → Diagram yang mengelompokkan hasil wawancara/observasi menjadi tema-tema.
-                                <br><strong>3) User Journey Map</strong> → Visualisasi langkah-langkah yang dilakukan pengguna saat menggunakan aplikasi, termasuk emosi dan kendala.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li> 
-            <!-- Card 2 -->
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="../img/tahapui2.jpeg" alt="Perencanaan Alur" />
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title"><span style="color: #EBAC0E;">2)</span> Perencanaan Alur</h2>
-                        <hr />
-                        <div class="card_text">
-                            <p>Di tahap ini desainer mulai menyusun struktur alur halaman dan navigasi.</p>
-                            <p><strong>🎯Output (Keluaran):</strong><br>
-                                <br><strong>1) User Flow</strong> → Diagram alur yang menggambarkan langkah demi langkah dari awal sampai akhir penggunaan aplikasi.
-                                <br><strong>2) Site Map</strong> → Diagram struktur menu dan halaman yang ada dalam aplikasi/website.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li> 
-            <!-- Card 3 -->
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="../img/tahapui3.jpeg" alt="Wireframe" />
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title"><span style="color: #EBAC0E;">3)</span> Wireframe</h2>
-                        <hr />
-                        <div class="card_text">
-                            <p>Wireframe adalah kerangka dasar dari halaman aplikasi atau website, biasanya dibuat hitam-putih tanpa visual detail. Fokus utamanya adalah tata letak dan urutan konten.</p>
-                            <p><strong>🎯Output (Keluaran):</strong><br>
-                                <br><strong>Wireframe</strong> → Sketsa kotak-kotak yang menunjukkan letak tombol, teks, gambar, dll. Bisa dibuat di kertas atau aplikasi seperti Figma.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!-- Card 4 -->
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="../img/tahapui4.jpeg" alt="Mockup Design" />
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title"><span style="color: #EBAC0E;">4)</span> Mockup</h2>
-                        <hr />
-                        <div class="card_text">
-                            <p>Setelah wireframe dibuat, desainer menambahkan warna, font, ikon, gambar, dan elemen grafis lainnya agar desain tampak seperti tampilan final. Estetika dan branding mulai diperhatikan.</p>
-                            <p><strong>🎯Output (Keluaran):</strong><br>
-                                <br><strong>1) Mockup</strong> → Desain visual lengkap dan berwarna dari tampilan antarmuka.
-                                <br><strong>2) UI Style Guide</strong> → Dokumen berisi panduan visual seperti warna utama, font yang digunakan, ukuran tombol, jarak antar elemen, dll.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!-- Card 5 -->
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <video autoplay loop muted playsinline>
-                            <source src="../video/tahapui.mp4" type="video/mp4" />
-                        </video>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title"><span style="color: #EBAC0E;">5)</span> Prototipe</h2>
-                        <hr />
-                        <div class="card_text">
-                            <p>Mockup yang telah dibuat dijadikan prototipe interaktif. Prototipe memungkinkan pengguna untuk mencoba klik dan navigasi seperti menggunakan aplikasi asli, meskipun belum benar-benar berfungsi.</p>
-                            <p><strong>🎯Output (Keluaran):</strong><br>
-                                <br><strong>Interactive Prototype</strong> → Simulasi desain yang bisa diklik, untuk menguji alur pengguna. Dibuat di tools seperti Figma (Prototype Mode), Adobe XD, dsb.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!-- Card 6 -->
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="../img/tahapui6.jpg" alt="Prototipe" />
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title"><span style="color: #EBAC0E;">6)</span> Usability Testing</h2>
-                        <hr />
-                        <div class="card_text">
-                            <p>Desain yang sudah berupa prototipe diuji coba kepada pengguna nyata. Tujuannya adalah mengamati apakah pengguna memahami tampilan dan navigasi yang dibuat.</p>
-                            <p><strong>🎯Output (Keluaran):</strong><br>
-                                <br><strong>1) Catatan Observasi & Feedback</strong> → Hasil wawancara singkat atau pengamatan langsung dari pengguna saat mencoba prototipe.
-                                <br><strong>2) Perbaikan Desain</strong> → Catatan revisi berdasarkan masukan pengguna.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li> 
-            <!-- Card 7 -->
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="../img/tahapui7.jpeg" alt="Finalisasi Desain" />
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title"><span style="color: #EBAC0E;">7)</span> Finalisasi Desain & Handoff ke Developer</h2>
-                        <hr />
-                        <div class="card_text">
-                            <p>Setelah diuji dan diperbaiki, desain siap diserahkan ke developer. Desainer menyiapkan file yang rapi dan lengkap agar pengembang bisa langsung mengimplementasikan desain ke dalam kode.</p>
-                            <p><strong>🎯Output (Keluaran):</strong><br>
-                                <br><strong>1) File Desain Final (Figma, XD, SVG, PNG)</strong>
-                                <br><strong>2) Spesifikasi Desain</strong> → Informasi ukuran, warna, padding, dan elemen lainnya untuk developer.
-                                <br><strong>3) Dokumentasi UI Style Guide</strong> → Versi final yang konsisten dan bisa dijadikan referensi oleh tim.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
+      <ul class="cards">
+        <!-- Card 1 -->
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="../img/tahapui1.jpeg" alt="User  Research" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title"><span style="color: #ebac0e">1)</span> User Research</h2>
+              <hr />
+              <div class="card_text">
+                <p>Tahap ini bertujuan untuk memahami siapa pengguna produk, apa kebutuhan mereka, bagaimana kebiasaannya, dan masalah apa yang mereka alami.</p>
+                <p>
+                  <strong>🎯Output (Keluaran):</strong><br />
+                  <br /><strong>1) User Persona</strong> → Profil fiktif yang mewakili tipe pengguna ideal. <br /><strong>2) Affinity Diagram</strong> → Diagram yang mengelompokkan hasil wawancara/observasi menjadi tema-tema. <br /><strong
+                    >3) User Journey Map</strong
+                  >
+                  → Visualisasi langkah-langkah yang dilakukan pengguna saat menggunakan aplikasi, termasuk emosi dan kendala.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Card 2 -->
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="../img/tahapui2.jpeg" alt="Perencanaan Alur" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title"><span style="color: #ebac0e">2)</span> Perencanaan Alur</h2>
+              <hr />
+              <div class="card_text">
+                <p>Di tahap ini desainer mulai menyusun struktur alur halaman dan navigasi.</p>
+                <p>
+                  <strong>🎯Output (Keluaran):</strong><br />
+                  <br /><strong>1) User Flow</strong> → Diagram alur yang menggambarkan langkah demi langkah dari awal sampai akhir penggunaan aplikasi. <br /><strong>2) Site Map</strong> → Diagram struktur menu dan halaman yang ada dalam
+                  aplikasi/website.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Card 3 -->
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="../img/tahapui3.jpeg" alt="Wireframe" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title"><span style="color: #ebac0e">3)</span> Wireframe</h2>
+              <hr />
+              <div class="card_text">
+                <p>Wireframe adalah kerangka dasar dari halaman aplikasi atau website, biasanya dibuat hitam-putih tanpa visual detail. Fokus utamanya adalah tata letak dan urutan konten.</p>
+                <p>
+                  <strong>🎯Output (Keluaran):</strong><br />
+                  <br /><strong>Wireframe</strong> → Sketsa kotak-kotak yang menunjukkan letak tombol, teks, gambar, dll. Bisa dibuat di kertas atau aplikasi seperti Figma.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Card 4 -->
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="../img/tahapui4.jpeg" alt="Mockup Design" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title"><span style="color: #ebac0e">4)</span> Mockup</h2>
+              <hr />
+              <div class="card_text">
+                <p>Setelah wireframe dibuat, desainer menambahkan warna, font, ikon, gambar, dan elemen grafis lainnya agar desain tampak seperti tampilan final. Estetika dan branding mulai diperhatikan.</p>
+                <p>
+                  <strong>🎯Output (Keluaran):</strong><br />
+                  <br /><strong>1) Mockup</strong> → Desain visual lengkap dan berwarna dari tampilan antarmuka. <br /><strong>2) UI Style Guide</strong> → Dokumen berisi panduan visual seperti warna utama, font yang digunakan, ukuran
+                  tombol, jarak antar elemen, dll.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Card 5 -->
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <video autoplay loop muted playsinline>
+                <source src="../video/tahapui.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="card_content">
+              <h2 class="card_title"><span style="color: #ebac0e">5)</span> Prototipe</h2>
+              <hr />
+              <div class="card_text">
+                <p>Mockup yang telah dibuat dijadikan prototipe interaktif. Prototipe memungkinkan pengguna untuk mencoba klik dan navigasi seperti menggunakan aplikasi asli, meskipun belum benar-benar berfungsi.</p>
+                <p>
+                  <strong>🎯Output (Keluaran):</strong><br />
+                  <br /><strong>Interactive Prototype</strong> → Simulasi desain yang bisa diklik, untuk menguji alur pengguna. Dibuat di tools seperti Figma (Prototype Mode), Adobe XD, dsb.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Card 6 -->
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="../img/tahapui6.jpg" alt="Prototipe" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title"><span style="color: #ebac0e">6)</span> Usability Testing</h2>
+              <hr />
+              <div class="card_text">
+                <p>Desain yang sudah berupa prototipe diuji coba kepada pengguna nyata. Tujuannya adalah mengamati apakah pengguna memahami tampilan dan navigasi yang dibuat.</p>
+                <p>
+                  <strong>🎯Output (Keluaran):</strong><br />
+                  <br /><strong>1) Catatan Observasi & Feedback</strong> → Hasil wawancara singkat atau pengamatan langsung dari pengguna saat mencoba prototipe. <br /><strong>2) Perbaikan Desain</strong> → Catatan revisi berdasarkan
+                  masukan pengguna.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Card 7 -->
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="../img/tahapui7.jpeg" alt="Finalisasi Desain" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title"><span style="color: #ebac0e">7)</span> Finalisasi Desain & Handoff ke Developer</h2>
+              <hr />
+              <div class="card_text">
+                <p>Setelah diuji dan diperbaiki, desain siap diserahkan ke developer. Desainer menyiapkan file yang rapi dan lengkap agar pengembang bisa langsung mengimplementasikan desain ke dalam kode.</p>
+                <p>
+                  <strong>🎯Output (Keluaran):</strong><br />
+                  <br /><strong>1) File Desain Final (Figma, XD, SVG, PNG)</strong> <br /><strong>2) Spesifikasi Desain</strong> → Informasi ukuran, warna, padding, dan elemen lainnya untuk developer. <br /><strong
+                    >3) Dokumentasi UI Style Guide</strong
+                  >
+                  → Versi final yang konsisten dan bisa dijadikan referensi oleh tim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
 
     <!-- Before / Next Page -->
     <div class="navigation-buttons">
-        <a href="prinsip-ui.html" class="nav-button prev">◀ Sebelumnya</a>
-        <a href="elemen-ux.html" class="nav-button next">Berikutnya ▶</a>
+      <a href="prinsip-ui.html" class="nav-button prev">◀ Sebelumnya</a>
+      <a href="elemen-ux.html" class="nav-button next">Berikutnya ▶</a>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Class of Click. All rights reserved.</p>
+      <p>© 2025 Class of Click. All rights reserved.</p>
     </footer>
 
     <!-- Dropdown di dalam Menu Materi -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggles = document.querySelectorAll('.submenu-toggle');
-            const submenus = document.querySelectorAll('.submenu-list');
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".submenu-toggle");
+        const submenus = document.querySelectorAll(".submenu-list");
 
-            toggles.forEach(toggle => {
-                toggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-                    const currentSubmenu = this.nextElementSibling;
-                    const arrow = this.querySelector('.arrow');
-                    const isOpen = currentSubmenu.classList.contains('show');
+            const currentSubmenu = this.nextElementSibling;
+            const arrow = this.querySelector(".arrow");
+            const isOpen = currentSubmenu.classList.contains("show");
 
-                    // Tutup semua submenu
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const otherToggle = submenu.previousElementSibling;
-                        const otherArrow = otherToggle.querySelector('.arrow');
-                        if (otherArrow) otherArrow.style.transform = 'rotate(0deg)';
-                    });
-
-                    // Kalau sebelumnya belum terbuka, buka yang diklik
-                    if (!isOpen) {
-                        currentSubmenu.classList.add('show');
-                        if (arrow) arrow.style.transform = 'rotate(180deg)';
-                    }
-                });
+            // Tutup semua submenu
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const otherToggle = submenu.previousElementSibling;
+              const otherArrow = otherToggle.querySelector(".arrow");
+              if (otherArrow) otherArrow.style.transform = "rotate(0deg)";
             });
 
-            // Klik di luar tutup semua submenu
-            document.addEventListener('click', function (e) {
-                if (!e.target.closest('.dropdown-menu')) {
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const toggle = submenu.previousElementSibling;
-                        const arrow = toggle.querySelector('.arrow');
-                        if (arrow) arrow.style.transform = 'rotate(0deg)';
-                    });
-                }
-            });
+            // Kalau sebelumnya belum terbuka, buka yang diklik
+            if (!isOpen) {
+              currentSubmenu.classList.add("show");
+              if (arrow) arrow.style.transform = "rotate(180deg)";
+            }
+          });
         });
+
+        // Klik di luar tutup semua submenu
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown-menu")) {
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const toggle = submenu.previousElementSibling;
+              const arrow = toggle.querySelector(".arrow");
+              if (arrow) arrow.style.transform = "rotate(0deg)";
+            });
+          }
+        });
+      });
     </script>
 
     <!-- Tombol Kembali ke Atas -->
     <button id="toTopBtn" title="Kembali ke atas">
-        <i class="bi bi-chevron-double-up"></i>
+      <i class="bi bi-chevron-double-up"></i>
     </button>
     <script>
-        const toTopBtn = document.getElementById("toTopBtn");
-        window.addEventListener('scroll', () => {
-            if (document.documentElement.scrollTop > 100) {
-                toTopBtn.classList.add('show');
-            } else {
-                toTopBtn.classList.remove('show');
-            }
-        });
-        toTopBtn.onclick = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
+      const toTopBtn = document.getElementById("toTopBtn");
+      window.addEventListener("scroll", () => {
+        if (document.documentElement.scrollTop > 100) {
+          toTopBtn.classList.add("show");
+        } else {
+          toTopBtn.classList.remove("show");
+        }
+      });
+      toTopBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
     </script>
 
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

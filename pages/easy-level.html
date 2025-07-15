@@ -1,306 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
     <title>Class of Click | Website Belajar UI/UX Dasar</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/easy-level.css" />
-    
+
     <!-- Icon -->
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
     <!-- Logo Title (Favicon) -->
     <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Materi
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- Pengenalan UI-UX -->
-                            <li><a class="dropdown-item" href="pages/pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Interface -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="pages/elemen-ui.html">1) Elemen UI</a></li>
-                                    <li><a class="dropdown-item sub-item" href="pages/prinsip-ui.html">2) Prinsip UI</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Experience -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="pages/elemen-ux.html">1) Elemen UX</a></li>
-                                    <li><a class="dropdown-item sub-item" href="pages/prinsip-ux.html">2) Prinsip UX</a></li>
-                                    <li><a class="dropdown-item sub-item" href="pages/metode-populer.html">3) Metode Populer Desain UX</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Figma -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="pages/pengantar-figma.html">1) Pengantar Figma</a></li>
-                                    <li><a class="dropdown-item sub-item" href="pages/tools-figma.html">2) Toolbar & Shortcut</a></li>
-                                    <li><a class="dropdown-item sub-item" href="pages/plugins.html">3) Plugins</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Proses Desain -->
-                            <li><a class="dropdown-item" href="proses-desain.html">Proses Desain UI/UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Evaluasi Desain -->
-                            <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Studi Kasus -->
-                            <li><a class="dropdown-item" href="pages/contoh.html">Contoh Studi Kasus</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active" aria-current="page" href="latihan.html" style="color: #EBAC0E; font-weight: 600;">Latihan</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Materi </a>
+              <ul class="dropdown-menu">
+                <!-- Pengenalan UI-UX -->
+                <li><a class="dropdown-item" href="pages/pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Interface -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="pages/elemen-ui.html">1) Elemen UI</a></li>
+                    <li><a class="dropdown-item sub-item" href="pages/prinsip-ui.html">2) Prinsip UI</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Experience -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="pages/elemen-ux.html">1) Elemen UX</a></li>
+                    <li><a class="dropdown-item sub-item" href="pages/prinsip-ux.html">2) Prinsip UX</a></li>
+                    <li><a class="dropdown-item sub-item" href="pages/metode-populer.html">3) Metode Populer Desain UX</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Figma -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="pages/pengantar-figma.html">1) Pengantar Figma</a></li>
+                    <li><a class="dropdown-item sub-item" href="pages/tools-figma.html">2) Toolbar & Shortcut</a></li>
+                    <li><a class="dropdown-item sub-item" href="pages/plugins.html">3) Plugins</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Proses Desain -->
+                <li><a class="dropdown-item" href="proses-desain.html">Proses Desain UI/UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Evaluasi Desain -->
+                <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Studi Kasus -->
+                <li><a class="dropdown-item" href="pages/contoh.html">Contoh Studi Kasus</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="video.html">Video</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="latihan.html" style="color: #ebac0e; font-weight: 600">Latihan</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
-        <h1><strong style="color: #EBAC0E;">Easy</strong> Level</h1>
-        <p class="easy-desc">
-            Cobalah jawab pertanyaan-pertanyaan di bawah ini dengan benar.<br>
-            <b>Selamat Mencoba!</b>
-        </p>
+      <h1><strong style="color: #ebac0e">Easy</strong> Level</h1>
+      <p class="easy-desc">
+        Cobalah jawab pertanyaan-pertanyaan di bawah ini dengan benar.<br />
+        <b>Selamat Mencoba!</b>
+      </p>
     </section>
 
     <!-- Soal -->
     <section class="questions">
-        <div class="question" id="q1">
-            <p>1. Apa kepanjangan dari UI?</p>
-            <label><input type="radio" name="q1" value="wrong" /> User Interest</label><br />
-            <label><input type="radio" name="q1" value="correct" /> User Interface</label><br />
-            <label><input type="radio" name="q1" value="wrong" /> Unique Identity</label><br />
-            <label><input type="radio" name="q1" value="wrong" /> User Insight</label><br />
-            <button onclick="checkAnswer('q1')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q2">
-            <p>2. Apa kepanjangan dari UX?</p>
-            <label><input type="radio" name="q2" value="correct" /> User Experience</label><br />
-            <label><input type="radio" name="q2" value="wrong" /> User Exchange</label><br />
-            <label><input type="radio" name="q2" value="wrong" /> User Example</label><br />
-            <label><input type="radio" name="q2" value="wrong" /> Universal Experience</label><br />
-            <button onclick="checkAnswer('q2')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q3">
-            <p>3. Warna, ikon, dan tipografi dalam UI termasuk dalam elemen...</p>
-            <label><input type="radio" name="q3" value="wrong" /> Navigasi</label><br />
-            <label><input type="radio" name="q3" value="wrong" /> Informasi</label><br />
-            <label><input type="radio" name="q3" value="wrong" /> Input</label><br />
-            <label><input type="radio" name="q3" value="correct" /> Visual</label><br />
-            <button onclick="checkAnswer('q3')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q4">
-            <p>4. Prinsip UI “simplicity” menekankan pada...</p>
-            <label><input type="radio" name="q4" value="wrong" /> Desain mewah dan kompleks</label><br />
-            <label><input type="radio" name="q4" value="correct" /> Tampilan minimalis dan mudah digunakan</label><br />
-            <label><input type="radio" name="q4" value="wrong" /> Menambahkan banyak efek</label><br />
-            <label><input type="radio" name="q4" value="wrong" /> Menyamakan semua fitur</label><br />
-            <button onclick="checkAnswer('q4')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q5">
-            <p>5. Kerangka dasar dari halaman aplikasi atau website yang biasanya dibuat hitam-putih tanpa visual detail, disebut...</p>
-            <label><input type="radio" name="q5" value="correct" /> Wireframe</label><br />
-            <label><input type="radio" name="q5" value="wrong" /> Mockup Design</label><br />
-            <label><input type="radio" name="q5" value="wrong" /> Prototipe</label><br />
-            <label><input type="radio" name="q5" value="wrong" /> User Flow</label><br />
-            <button onclick="checkAnswer('q5')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q6">
-            <p>6. Apa fokus utama dari User Experience (UX)?</p>
-            <label><input type="radio" name="q6" value="wrong" /> Warna dan tipografi</label><br />
-            <label><input type="radio" name="q6" value="correct" /> Kemudahan pengguna dalam berinteraksi dengan produk</label><br />
-            <label><input type="radio" name="q6" value="wrong" /> Keamanan sistem</label><br />
-            <label><input type="radio" name="q6" value="wrong" /> Harga produk digital</label><br />
-            <button onclick="checkAnswer('q6')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q7">
-            <p>7. Prinsip utama dalam UI adalah...</p>
-            <label><input type="radio" name="q7" value="correct" /> Mudah digunakan dan menarik</label><br />
-            <label><input type="radio" name="q7" value="wrong" /> Kompleks dan ramai</label><br />
-            <label><input type="radio" name="q7" value="wrong" /> Penuh efek animas</label><br />
-            <label><input type="radio" name="q7" value="wrong" /> Sulit dipahami</label><br />
-            <button onclick="checkAnswer('q7')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q8">
-            <p>8. Design Thinking dimulai dengan tahap...</p>
-            <label><input type="radio" name="q8" value="wrong" /> Ideate</label><br />
-            <label><input type="radio" name="q8" value="wrong" /> Define</label><br />
-            <label><input type="radio" name="q8" value="correct" /> Empathize</label><br />
-            <label><input type="radio" name="q8" value="wrong" /> Test</label><br />
-            <button onclick="checkAnswer('q8')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q9">
-            <p>9. Tools untuk membuat prototipe secara kolaboratif berbasis cloud adalah...</p>
-            <label><input type="radio" name="q9" value="wrong" /> CorelDraw</label><br />
-            <label><input type="radio" name="q9" value="wrong" /> Adobe Illustrator</label><br />
-            <label><input type="radio" name="q9" value="wrong" /> Canva</label><br />
-            <label><input type="radio" name="q9" value="correct" /> Figma</label><br />
-            <button onclick="checkAnswer('q9')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q10">
-            <p>10. Design Sprint biasanya dilakukan selama...</p>
-            <label><input type="radio" name="q10" value="wrong" /> 1 hari</label><br />
-            <label><input type="radio" name="q10" value="wrong" /> 3 hari</label><br />
-            <label><input type="radio" name="q10" value="correct" /> 5 hari</label><br />
-            <label><input type="radio" name="q10" value="wrong" /> 10 hari</label><br />
-            <button onclick="checkAnswer('q10')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q11">
-            <p>11. Figma adalah aplikasi yang digunakan untuk...</p>
-            <label><input type="radio" name="q11" value="wrong" /> Mengedit video</label><br />
-            <label><input type="radio" name="q11" value="wrong" /> Mendesain dan memprogram website</label><br />
-            <label><input type="radio" name="q11" value="correct" /> Mendesain antarmuka pengguna dan prototipe secara kolaboratif</label><br />
-            <label><input type="radio" name="q11" value="wrong" /> Menyimpan data</label><br />
-            <button onclick="checkAnswer('q11')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q12">
-            <p>12. Apa fungsi utama dari plugin di Figma?</p>
-            <label><input type="radio" name="q12" value="wrong" /> Menghapus fitur dasar</label><br />
-            <label><input type="radio" name="q12" value="wrong" /> Mengubah tampilan menjadi 3D</label><br />
-            <label><input type="radio" name="q12" value="correct" /> Menambahkan fitur tambahan yang mempercepat proses desain</label><br />
-            <label><input type="radio" name="q12" value="wrong" /> Membatasi ukuran file</label><br />
-            <button onclick="checkAnswer('q12')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q13">
-            <p>13. Fungsi dari Move Tool di Figma adalah...</p>
-            <label><input type="radio" name="q13" value="wrong" /> Membuat teks</label><br />
-            <label><input type="radio" name="q13" value="correct" /> Memindahkan objek desain</label><br />
-            <label><input type="radio" name="q13" value="wrong" /> Membuat artboard</label><br />
-            <label><input type="radio" name="q13" value="wrong" /> Menghapus layer</label><br />
-            <button onclick="checkAnswer('q13')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q14">
-            <p>14. Bagaimana cara mengakses plugin di Figma?</p>
-            <label><input type="radio" name="q14" value="wrong" /> Lewat menu File > Export</label><br />
-            <label><input type="radio" name="q14" value="correct" /> Klik kanan di canvas > Plugins</label><br />
-            <label><input type="radio" name="q14" value="wrong" /> Mengklik tombol Save</label><br />
-            <label><input type="radio" name="q14" value="wrong" /> Membuka aplikasi eksternal</label><br />
-            <button onclick="checkAnswer('q14')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
-        <div class="question" id="q15">
-            <p>15. Salah satu keunggulan utama Figma dibanding aplikasi desain lain adalah...</p>
-            <label><input type="radio" name="q15" value="wrong" /> Harus diinstal di komputer</label><br />
-            <label><input type="radio" name="q15" value="wrong" /> Tidak bisa digunakan di browser</label><br />
-            <label><input type="radio" name="q15" value="correct" /> Bisa kolaborasi secara real-time di cloud</label><br />
-            <label><input type="radio" name="q15" value="wrong" /> Hanya untuk pengguna Mac & Windows</label><br />
-            <button onclick="checkAnswer('q15')">Cek Jawaban</button>
-            <p class="feedback"></p>
-        </div>
+      <div class="question" id="q1">
+        <p>1. Apa kepanjangan dari UI?</p>
+        <label><input type="radio" name="q1" value="wrong" /> User Interest</label><br />
+        <label><input type="radio" name="q1" value="correct" /> User Interface</label><br />
+        <label><input type="radio" name="q1" value="wrong" /> Unique Identity</label><br />
+        <label><input type="radio" name="q1" value="wrong" /> User Insight</label><br />
+        <button onclick="checkAnswer('q1')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q2">
+        <p>2. Apa kepanjangan dari UX?</p>
+        <label><input type="radio" name="q2" value="correct" /> User Experience</label><br />
+        <label><input type="radio" name="q2" value="wrong" /> User Exchange</label><br />
+        <label><input type="radio" name="q2" value="wrong" /> User Example</label><br />
+        <label><input type="radio" name="q2" value="wrong" /> Universal Experience</label><br />
+        <button onclick="checkAnswer('q2')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q3">
+        <p>3. Warna, ikon, dan tipografi dalam UI termasuk dalam elemen...</p>
+        <label><input type="radio" name="q3" value="wrong" /> Navigasi</label><br />
+        <label><input type="radio" name="q3" value="wrong" /> Informasi</label><br />
+        <label><input type="radio" name="q3" value="wrong" /> Input</label><br />
+        <label><input type="radio" name="q3" value="correct" /> Visual</label><br />
+        <button onclick="checkAnswer('q3')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q4">
+        <p>4. Prinsip UI “simplicity” menekankan pada...</p>
+        <label><input type="radio" name="q4" value="wrong" /> Desain mewah dan kompleks</label><br />
+        <label><input type="radio" name="q4" value="correct" /> Tampilan minimalis dan mudah digunakan</label><br />
+        <label><input type="radio" name="q4" value="wrong" /> Menambahkan banyak efek</label><br />
+        <label><input type="radio" name="q4" value="wrong" /> Menyamakan semua fitur</label><br />
+        <button onclick="checkAnswer('q4')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q5">
+        <p>5. Kerangka dasar dari halaman aplikasi atau website yang biasanya dibuat hitam-putih tanpa visual detail, disebut...</p>
+        <label><input type="radio" name="q5" value="correct" /> Wireframe</label><br />
+        <label><input type="radio" name="q5" value="wrong" /> Mockup Design</label><br />
+        <label><input type="radio" name="q5" value="wrong" /> Prototipe</label><br />
+        <label><input type="radio" name="q5" value="wrong" /> User Flow</label><br />
+        <button onclick="checkAnswer('q5')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q6">
+        <p>6. Apa fokus utama dari User Experience (UX)?</p>
+        <label><input type="radio" name="q6" value="wrong" /> Warna dan tipografi</label><br />
+        <label><input type="radio" name="q6" value="correct" /> Kemudahan pengguna dalam berinteraksi dengan produk</label><br />
+        <label><input type="radio" name="q6" value="wrong" /> Keamanan sistem</label><br />
+        <label><input type="radio" name="q6" value="wrong" /> Harga produk digital</label><br />
+        <button onclick="checkAnswer('q6')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q7">
+        <p>7. Prinsip utama dalam UI adalah...</p>
+        <label><input type="radio" name="q7" value="correct" /> Mudah digunakan dan menarik</label><br />
+        <label><input type="radio" name="q7" value="wrong" /> Kompleks dan ramai</label><br />
+        <label><input type="radio" name="q7" value="wrong" /> Penuh efek animas</label><br />
+        <label><input type="radio" name="q7" value="wrong" /> Sulit dipahami</label><br />
+        <button onclick="checkAnswer('q7')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q8">
+        <p>8. Design Thinking dimulai dengan tahap...</p>
+        <label><input type="radio" name="q8" value="wrong" /> Ideate</label><br />
+        <label><input type="radio" name="q8" value="wrong" /> Define</label><br />
+        <label><input type="radio" name="q8" value="correct" /> Empathize</label><br />
+        <label><input type="radio" name="q8" value="wrong" /> Test</label><br />
+        <button onclick="checkAnswer('q8')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q9">
+        <p>9. Tools untuk membuat prototipe secara kolaboratif berbasis cloud adalah...</p>
+        <label><input type="radio" name="q9" value="wrong" /> CorelDraw</label><br />
+        <label><input type="radio" name="q9" value="wrong" /> Adobe Illustrator</label><br />
+        <label><input type="radio" name="q9" value="wrong" /> Canva</label><br />
+        <label><input type="radio" name="q9" value="correct" /> Figma</label><br />
+        <button onclick="checkAnswer('q9')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q10">
+        <p>10. Design Sprint biasanya dilakukan selama...</p>
+        <label><input type="radio" name="q10" value="wrong" /> 1 hari</label><br />
+        <label><input type="radio" name="q10" value="wrong" /> 3 hari</label><br />
+        <label><input type="radio" name="q10" value="correct" /> 5 hari</label><br />
+        <label><input type="radio" name="q10" value="wrong" /> 10 hari</label><br />
+        <button onclick="checkAnswer('q10')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q11">
+        <p>11. Figma adalah aplikasi yang digunakan untuk...</p>
+        <label><input type="radio" name="q11" value="wrong" /> Mengedit video</label><br />
+        <label><input type="radio" name="q11" value="wrong" /> Mendesain dan memprogram website</label><br />
+        <label><input type="radio" name="q11" value="correct" /> Mendesain antarmuka pengguna dan prototipe secara kolaboratif</label><br />
+        <label><input type="radio" name="q11" value="wrong" /> Menyimpan data</label><br />
+        <button onclick="checkAnswer('q11')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q12">
+        <p>12. Apa fungsi utama dari plugin di Figma?</p>
+        <label><input type="radio" name="q12" value="wrong" /> Menghapus fitur dasar</label><br />
+        <label><input type="radio" name="q12" value="wrong" /> Mengubah tampilan menjadi 3D</label><br />
+        <label><input type="radio" name="q12" value="correct" /> Menambahkan fitur tambahan yang mempercepat proses desain</label><br />
+        <label><input type="radio" name="q12" value="wrong" /> Membatasi ukuran file</label><br />
+        <button onclick="checkAnswer('q12')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q13">
+        <p>13. Fungsi dari Move Tool di Figma adalah...</p>
+        <label><input type="radio" name="q13" value="wrong" /> Membuat teks</label><br />
+        <label><input type="radio" name="q13" value="correct" /> Memindahkan objek desain</label><br />
+        <label><input type="radio" name="q13" value="wrong" /> Membuat artboard</label><br />
+        <label><input type="radio" name="q13" value="wrong" /> Menghapus layer</label><br />
+        <button onclick="checkAnswer('q13')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q14">
+        <p>14. Bagaimana cara mengakses plugin di Figma?</p>
+        <label><input type="radio" name="q14" value="wrong" /> Lewat menu File > Export</label><br />
+        <label><input type="radio" name="q14" value="correct" /> Klik kanan di canvas > Plugins</label><br />
+        <label><input type="radio" name="q14" value="wrong" /> Mengklik tombol Save</label><br />
+        <label><input type="radio" name="q14" value="wrong" /> Membuka aplikasi eksternal</label><br />
+        <button onclick="checkAnswer('q14')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
+      <div class="question" id="q15">
+        <p>15. Salah satu keunggulan utama Figma dibanding aplikasi desain lain adalah...</p>
+        <label><input type="radio" name="q15" value="wrong" /> Harus diinstal di komputer</label><br />
+        <label><input type="radio" name="q15" value="wrong" /> Tidak bisa digunakan di browser</label><br />
+        <label><input type="radio" name="q15" value="correct" /> Bisa kolaborasi secara real-time di cloud</label><br />
+        <label><input type="radio" name="q15" value="wrong" /> Hanya untuk pengguna Mac & Windows</label><br />
+        <button onclick="checkAnswer('q15')">Cek Jawaban</button>
+        <p class="feedback"></p>
+      </div>
     </section>
 
     <div class="link-back">
-        <a href="javascript:void(0)" onclick="if(history.length > 1){ history.back(); } else { window.location.href='latihan.html'; }">
-            << Kembali ke halaman sebelumnya
-        </a>
+      <a href="javascript:void(0)" onclick="if(history.length > 1){ history.back(); } else { window.location.href='latihan.html'; }"> << Kembali ke halaman sebelumnya </a>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Class of Click. All rights reserved.</p>
+      <p>© 2025 Class of Click. All rights reserved.</p>
     </footer>
 
     <!-- Dropdown di dalam Menu Materi -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggles = document.querySelectorAll('.submenu-toggle');
-            const submenus = document.querySelectorAll('.submenu-list');
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".submenu-toggle");
+        const submenus = document.querySelectorAll(".submenu-list");
 
-            toggles.forEach(toggle => {
-                toggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-                    const currentSubmenu = this.nextElementSibling;
-                    const arrow = this.querySelector('.arrow');
-                    const isOpen = currentSubmenu.classList.contains('show');
+            const currentSubmenu = this.nextElementSibling;
+            const arrow = this.querySelector(".arrow");
+            const isOpen = currentSubmenu.classList.contains("show");
 
-                    // Tutup semua submenu
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const otherToggle = submenu.previousElementSibling;
-                        const otherArrow = otherToggle.querySelector('.arrow');
-                        if (otherArrow) otherArrow.style.transform = 'rotate(0deg)';
-                    });
-
-                    // Kalau sebelumnya belum terbuka, buka yang diklik
-                    if (!isOpen) {
-                        currentSubmenu.classList.add('show');
-                        if (arrow) arrow.style.transform = 'rotate(180deg)';
-                    }
-                });
+            // Tutup semua submenu
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const otherToggle = submenu.previousElementSibling;
+              const otherArrow = otherToggle.querySelector(".arrow");
+              if (otherArrow) otherArrow.style.transform = "rotate(0deg)";
             });
 
-            // Klik di luar tutup semua submenu
-            document.addEventListener('click', function (e) {
-                if (!e.target.closest('.dropdown-menu')) {
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const toggle = submenu.previousElementSibling;
-                        const arrow = toggle.querySelector('.arrow');
-                        if (arrow) arrow.style.transform = 'rotate(0deg)';
-                    });
-                }
-            });
+            // Kalau sebelumnya belum terbuka, buka yang diklik
+            if (!isOpen) {
+              currentSubmenu.classList.add("show");
+              if (arrow) arrow.style.transform = "rotate(180deg)";
+            }
+          });
         });
+
+        // Klik di luar tutup semua submenu
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown-menu")) {
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const toggle = submenu.previousElementSibling;
+              const arrow = toggle.querySelector(".arrow");
+              if (arrow) arrow.style.transform = "rotate(0deg)";
+            });
+          }
+        });
+      });
     </script>
 
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/easy-level.js"></script>
-</body>
+  </body>
 </html>

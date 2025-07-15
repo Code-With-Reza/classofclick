@@ -1,274 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Class of Click adalah media belajar UI/UX berbasis website untuk siswa SMK. Cocok untuk pemula yang ingin memahami dasar-dasar desain antarmuka dan pengalaman pengguna." />
     <title>Class of Click | Website Belajar UI/UX Dasar</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/pengantar-figma.css" />
-    
+
     <!-- Icon -->
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
     <!-- Logo Title (Favicon) -->
     <link rel="icon" href="../img/logomark-coc-19.png" type="image/png" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light py-2">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #EBAC0E; font-weight: 600;">
-                            Materi
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- Pengenalan UI-UX -->
-                            <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Interface -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
-                                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- User Experience -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
-                                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
-                                    <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Figma -->
-                            <li>
-                                <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill" style="color: #EBAC0E; font-weight: 600;"></span></button>
-                                <ul class="submenu-list">
-                                    <li><a class="dropdown-item sub-item active" href="pengantar-figma.html">1) Pengantar Figma</a></li>
-                                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
-                                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
-                                </ul>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Proses Desain -->
-                            <li><a class="dropdown-item" href="proses-desain.html">Proses Desain UI/UX</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Evaluasi Desain -->
-                            <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- Studi Kasus -->
-                            <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="video.html">Video</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo-lettermark-coc.png" alt="lettermark COC" height="48px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ebac0e; font-weight: 600"> Materi </a>
+              <ul class="dropdown-menu">
+                <!-- Pengenalan UI-UX -->
+                <li><a class="dropdown-item" href="pengenalan-ui-ux.html">Pengenalan UI-UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Interface -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">User Interface<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="elemen-ui.html">1) Elemen UI</a></li>
+                    <li><a class="dropdown-item sub-item" href="prinsip-ui.html">2) Prinsip UI</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- User Experience -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">User Experience<span class="arrow bi bi-caret-down-fill"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item" href="elemen-ux.html">1) Elemen UX</a></li>
+                    <li><a class="dropdown-item sub-item" href="prinsip-ux.html">2) Prinsip UX</a></li>
+                    <li><a class="dropdown-item sub-item" href="metode-populer.html">3) Metode Populer Desain UX</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Figma -->
+                <li>
+                  <button class="dropdown-item submenu-toggle">Figma<span class="arrow bi bi-caret-down-fill" style="color: #ebac0e; font-weight: 600"></span></button>
+                  <ul class="submenu-list">
+                    <li><a class="dropdown-item sub-item active" href="pengantar-figma.html">1) Pengantar Figma</a></li>
+                    <li><a class="dropdown-item sub-item" href="tools-figma.html">2) Toolbar & Shortcut</a></li>
+                    <li><a class="dropdown-item sub-item" href="plugins.html">3) Plugins</a></li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Proses Desain -->
+                <li><a class="dropdown-item" href="proses-desain.html">Proses Desain UI/UX</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Evaluasi Desain -->
+                <li><a class="dropdown-item" href="evaluasi.html">Evaluasi Desain</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <!-- Studi Kasus -->
+                <li><a class="dropdown-item" href="contoh.html">Contoh Studi Kasus</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="video.html">Video</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="latihan.html">Latihan</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="tentang.html">Tentang</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
-        <h1>Apa itu <span style="color: #EBAC0E;">Figma ?</span></h1>
-        <p class="pengantar-desc">
-            <img src="../img/logo-figma.png" alt="Logo Figma" class="method-image">
-        </p>
+      <h1>Apa itu <span style="color: #ebac0e">Figma ?</span></h1>
+      <p class="pengantar-desc">
+        <img src="../img/logo-figma.png" alt="Logo Figma" class="method-image" />
+      </p>
     </section>
 
     <!-- Isi -->
     <section class="figma">
-        <div class="content">
+      <div class="content">
+        <p>
+          Figma adalah aplikasi berbasis cloud yang digunakan untuk merancang antarmuka pengguna (UI) dan pengalaman pengguna (UX). Aplikasi ini dapat dijalankan langsung melalui browser dan menyediakan berbagai alat untuk membuat
+          wireframe, mockup, dan prototipe desain. Figma banyak digunakan dalam proses perencanaan dan visualisasi desain digital, baik oleh individu maupun tim dalam berbagai bidang kreatif.
+        </p>
+      </div>
+
+      <!-- Mengapa Figma -->
+      <section class="why-figma-section">
+        <div class="why-figma-container">
+          <div class="why-figma-image">
+            <img src="../img/aset_why-figma.png" alt="Ilustrasi Figma" />
+          </div>
+          <div class="why-figma-text">
+            <h2><span style="color: #ebac0e">Mengapa</span> Figma?</h2>
             <p>
-                Figma adalah aplikasi berbasis cloud yang digunakan untuk merancang antarmuka pengguna (UI) dan pengalaman pengguna (UX). Aplikasi ini dapat dijalankan langsung melalui browser dan menyediakan berbagai alat untuk membuat wireframe, mockup, dan prototipe desain. Figma banyak digunakan dalam proses perencanaan dan visualisasi desain digital, baik oleh individu maupun tim dalam berbagai bidang kreatif.
+              Figma menjadi pilihan banyak desainer karena fleksibilitas dan kemudahannya, termasuk kemudahan dalam berbagi file, halaman, atau elemen desain lainnya. Karena berbasis cloud, pengguna tidak perlu menginstal aplikasi dan dapat
+              mengakses proyek mereka dari berbagai perangkat, seperti Windows, Mac, Linux, hingga Chromebook. Selain itu, Figma menyediakan fitur komentar langsung dalam aplikasi, di mana setiap utas komentar akan dipantau dan diberi
+              notifikasi melalui email. Figma juga memudahkan pengelolaan file dengan menampilkan proyek dan file yang saling terkait dalam jendela khusus yang tertata rapi.
             </p>
+          </div>
         </div>
+      </section>
 
-        <!-- Mengapa Figma -->
-        <section class="why-figma-section">
-            <div class="why-figma-container">
-                <div class="why-figma-image">
-                    <img src="../img/aset_why-figma.png" alt="Ilustrasi Figma">
-                </div>
-                <div class="why-figma-text">
-                    <h2><span style="color: #EBAC0E;">Mengapa</span> Figma?</h2>
-                    <p>
-                        Figma menjadi pilihan banyak desainer karena fleksibilitas dan kemudahannya, termasuk kemudahan dalam berbagi file, halaman, atau elemen desain lainnya. Karena berbasis cloud, pengguna tidak perlu menginstal aplikasi dan dapat mengakses proyek mereka dari berbagai perangkat, seperti Windows, Mac, Linux, hingga Chromebook. Selain itu, Figma menyediakan fitur komentar langsung dalam aplikasi, di mana setiap utas komentar akan dipantau dan diberi notifikasi melalui email. Figma juga memudahkan pengelolaan file dengan menampilkan proyek dan file yang saling terkait dalam jendela khusus yang tertata rapi.
-                    </p>
-                </div>
+      <!-- Apa yang Bisa & Tidak Bisa Dilakukan Figma -->
+      <section class="bisa-tidak-bisa">
+        <h2>Apa yang <span style="color: #ebac0e">Bisa & Tidak Bisa</span> Dilakukan Figma</h2>
+        <div class="tabel-wrapper">
+          <table class="tabel-bisa">
+            <thead>
+              <tr>
+                <th>Bisa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Kerja Bareng Langsung di Satu File:</b><br />Kamu bisa ngerjain desain bareng teman-teman kamu di satu file yang sama, secara online, kayak lagi ngetik dokumen bareng di Google Docs.</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Bikin Contoh Aplikasi yang Bisa Diklik-klik (Prototipe):</b><br />
+                  Kamu bisa bikin desain yang seolah-olah sudah jadi aplikasi. Tombolnya bisa diklik, halamannya bisa pindah-pindah, jadi kelihatan kayak aplikasi beneran.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Bikin Desain yang Rapi dan Bisa Dipakai Ulang (Komponen):</b><br />
+                  Kamu bisa bikin tombol, menu, atau bagian desain lain yang bisa disimpan dan dipakai berulang kali. Jadi, desainmu lebih rapi dan cepat selesai.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Desain Tampilan Aplikasi/Website (UI/UX):</b><br />
+                  Fungsi utamanya Figma itu buat bikin tampilan depan (UI) dan pengalaman pengguna (UX) dari aplikasi mobile, website, atau bahkan poster digital.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="tabel-tidak-bisa">
+            <thead>
+              <tr>
+                <th>Tidak Bisa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Bikin Kode Program Asli (HTML/CSS):</b><br />Figma cuma bikin desain tampilannya aja. Kalau mau jadi website atau aplikasi beneran, harus dikoding lagi pakai bahasa program kayak HTML, CSS, atau JavaScript.</td>
+              </tr>
+              <tr>
+                <td><b>Nggak Bisa Ngatur Logika Aplikasi yang Rumit:</b><br />Figma nggak bisa bikin fungsi kayak login akun, ngitung data otomatis, atau fitur-fitur yang butuh program canggih di belakang layar.</td>
+              </tr>
+              <tr>
+                <td><b>Nggak Bisa Urus Data Otomatis:</b><br />Figma itu statis, dia nggak bisa ambil data dari internet atau database kayak aplikasi beneran (misal: nunjukkin harga barang terbaru dari toko online).</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Figma Bukan Alat Buat Ngoding Beneran:</b><br />Figma cuma bikin desainnya doang. Biar desainmu jadi aplikasi atau website yang beneran jalan, itu tugasnya tukang coding atau developer. Figma itu alat bantu desainer,
+                  bukan koder.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Kelebihan dan Kekurangan -->
+      <section class="kelebihan-kekurangan">
+        <h2>Kelebihan & Kekurangan <span style="color: #ebac0e">Figma</span></h2>
+        <div class="cards-container">
+          <div class="card" id="card1">
+            <div class="card-front">
+              <img src="../icon/kelebihan.png" alt="Ikon Kelebihan" class="icon" />
+              <div class="text">Kelebihan</div>
             </div>
-        </section>
-
-        <!-- Apa yang Bisa & Tidak Bisa Dilakukan Figma -->
-        <section class="bisa-tidak-bisa">
-            <h2>Apa yang <span style="color: #EBAC0E;">Bisa & Tidak Bisa</span> Dilakukan Figma</h2>
-            <div class="tabel-wrapper">
-                <table class="tabel-bisa">
-                    <thead>
-                        <tr><th>Bisa</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><b>Kerja Bareng Langsung di Satu File:</b><br>Kamu bisa ngerjain desain bareng teman-teman kamu di satu file yang sama, secara online, kayak lagi ngetik dokumen bareng di Google Docs.</td></tr>
-                        <tr><td><b>Bikin Contoh Aplikasi yang Bisa Diklik-klik (Prototipe):</b><br> Kamu bisa bikin desain yang seolah-olah sudah jadi aplikasi. Tombolnya bisa diklik, halamannya bisa pindah-pindah, jadi kelihatan kayak aplikasi beneran.</td></tr>
-                        <tr><td><b>Bikin Desain yang Rapi dan Bisa Dipakai Ulang (Komponen):</b><br> Kamu bisa bikin tombol, menu, atau bagian desain lain yang bisa disimpan dan dipakai berulang kali. Jadi, desainmu lebih rapi dan cepat selesai.</td></tr>
-                        <tr><td><b>Desain Tampilan Aplikasi/Website (UI/UX):</b><br> Fungsi utamanya Figma itu buat bikin tampilan depan (UI) dan pengalaman pengguna (UX) dari aplikasi mobile, website, atau bahkan poster digital.</td></tr>
-
-                    </tbody>
-                </table>
-                <table class="tabel-tidak-bisa">
-                    <thead>
-                        <tr><th>Tidak Bisa</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><b>Bikin Kode Program Asli (HTML/CSS):</b><br>Figma cuma bikin desain tampilannya aja. Kalau mau jadi website atau aplikasi beneran, harus dikoding lagi pakai bahasa program kayak HTML, CSS, atau JavaScript.</td></tr>
-                        <tr><td><b>Nggak Bisa Ngatur Logika Aplikasi yang Rumit:</b><br>Figma nggak bisa bikin fungsi kayak login akun, ngitung data otomatis, atau fitur-fitur yang butuh program canggih di belakang layar.</td></tr>
-                        <tr><td><b>Nggak Bisa Urus Data Otomatis:</b><br>Figma itu statis, dia nggak bisa ambil data dari internet atau database kayak aplikasi beneran (misal: nunjukkin harga barang terbaru dari toko online).</td></tr>
-                        <tr><td><b>Figma Bukan Alat Buat Ngoding Beneran:</b><br>Figma cuma bikin desainnya doang. Biar desainmu jadi aplikasi atau website yang beneran jalan, itu tugasnya tukang coding atau developer. Figma itu alat bantu desainer, bukan koder.</td></tr>
-                    </tbody>
-                </table>
+            <div class="card-back">
+              <h3 style="color: #ebac0e">Kelebihan Figma</h3>
+              <ol>
+                <li>Kolaborasi real-time</li>
+                <li>Berbasis web (tanpa instalasi)</li>
+                <li>Integrasi plugin banyak</li>
+              </ol>
             </div>
-        </section>
-
-        <!-- Kelebihan dan Kekurangan -->
-        <section class="kelebihan-kekurangan">
-            <h2>Kelebihan & Kekurangan <span style="color: #EBAC0E;">Figma</span></h2>
-            <div class="cards-container">
-                <div class="card" id="card1">
-                    <div class="card-front">
-                        <img src="../icon/kelebihan.png" alt="Ikon Kelebihan" class="icon" />
-                        <div class="text">Kelebihan</div>
-                    </div>
-                    <div class="card-back">
-                        <h3 style="color: #EBAC0E;">Kelebihan Figma</h3>
-                        <ol>
-                            <li>Kolaborasi real-time</li>
-                            <li>Berbasis web (tanpa instalasi)</li>
-                            <li>Integrasi plugin banyak</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="card" id="card2">
-                    <div class="card-front">
-                        <img src="../icon/kekurangan.png" alt="Ikon Kekurangan" class="icon" />
-                        <div class="text">Kekurangan</div>
-                    </div>
-                    <div class="card-back">
-                        <h3>Kekurangan Figma</h3>
-                        <ol>
-                            <li>Performa kadang lambat</li>
-                            <li>Fitur offline terbatas</li>
-                            <li>Potensi kekhawatiran keamanan data <br>(karena berbasis cloud)</li>
-                        </ol>
-                    </div>
-                </div>
+          </div>
+          <div class="card" id="card2">
+            <div class="card-front">
+              <img src="../icon/kekurangan.png" alt="Ikon Kekurangan" class="icon" />
+              <div class="text">Kekurangan</div>
             </div>
-        </section>
+            <div class="card-back">
+              <h3>Kekurangan Figma</h3>
+              <ol>
+                <li>Performa kadang lambat</li>
+                <li>Fitur offline terbatas</li>
+                <li>Potensi kekhawatiran keamanan data <br />(karena berbasis cloud)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!-- Before / Next Page -->
     <div class="navigation-buttons">
-        <a href="metode-populer.html" class="nav-button prev">◀ Sebelumnya</a>
-        <a href="tools-figma.html" class="nav-button next">Berikutnya ▶</a>
+      <a href="metode-populer.html" class="nav-button prev">◀ Sebelumnya</a>
+      <a href="tools-figma.html" class="nav-button next">Berikutnya ▶</a>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Class of Click. All rights reserved.</p>
+      <p>© 2025 Class of Click. All rights reserved.</p>
     </footer>
 
     <!-- Dropdown di dalam Menu Materi -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggles = document.querySelectorAll('.submenu-toggle');
-            const submenus = document.querySelectorAll('.submenu-list');
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".submenu-toggle");
+        const submenus = document.querySelectorAll(".submenu-list");
 
-            toggles.forEach(toggle => {
-                toggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-                    const currentSubmenu = this.nextElementSibling;
-                    const arrow = this.querySelector('.arrow');
-                    const isOpen = currentSubmenu.classList.contains('show');
+            const currentSubmenu = this.nextElementSibling;
+            const arrow = this.querySelector(".arrow");
+            const isOpen = currentSubmenu.classList.contains("show");
 
-                    // Tutup semua submenu
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const otherToggle = submenu.previousElementSibling;
-                        const otherArrow = otherToggle.querySelector('.arrow');
-                        if (otherArrow) otherArrow.style.transform = 'rotate(0deg)';
-                    });
-
-                    // Kalau sebelumnya belum terbuka, buka yang diklik
-                    if (!isOpen) {
-                        currentSubmenu.classList.add('show');
-                        if (arrow) arrow.style.transform = 'rotate(180deg)';
-                    }
-                });
+            // Tutup semua submenu
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const otherToggle = submenu.previousElementSibling;
+              const otherArrow = otherToggle.querySelector(".arrow");
+              if (otherArrow) otherArrow.style.transform = "rotate(0deg)";
             });
 
-            // Klik di luar tutup semua submenu
-            document.addEventListener('click', function (e) {
-                if (!e.target.closest('.dropdown-menu')) {
-                    submenus.forEach(submenu => {
-                        submenu.classList.remove('show');
-                        const toggle = submenu.previousElementSibling;
-                        const arrow = toggle.querySelector('.arrow');
-                        if (arrow) arrow.style.transform = 'rotate(0deg)';
-                    });
-                }
-            });
+            // Kalau sebelumnya belum terbuka, buka yang diklik
+            if (!isOpen) {
+              currentSubmenu.classList.add("show");
+              if (arrow) arrow.style.transform = "rotate(180deg)";
+            }
+          });
         });
-    </script>
 
+        // Klik di luar tutup semua submenu
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown-menu")) {
+            submenus.forEach((submenu) => {
+              submenu.classList.remove("show");
+              const toggle = submenu.previousElementSibling;
+              const arrow = toggle.querySelector(".arrow");
+              if (arrow) arrow.style.transform = "rotate(0deg)";
+            });
+          }
+        });
+      });
+    </script>
 
     <!-- Tombol Kembali ke Atas -->
     <button id="toTopBtn" title="Kembali ke atas">
-        <i class="bi bi-chevron-double-up"></i>
+      <i class="bi bi-chevron-double-up"></i>
     </button>
     <script>
-        const toTopBtn = document.getElementById("toTopBtn");
-        window.addEventListener('scroll', () => {
-            if (document.documentElement.scrollTop > 100) {
-                toTopBtn.classList.add('show');
-            } else {
-                toTopBtn.classList.remove('show');
-            }
-        });
-        toTopBtn.onclick = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
+      const toTopBtn = document.getElementById("toTopBtn");
+      window.addEventListener("scroll", () => {
+        if (document.documentElement.scrollTop > 100) {
+          toTopBtn.classList.add("show");
+        } else {
+          toTopBtn.classList.remove("show");
+        }
+      });
+      toTopBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
     </script>
 
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/pengantar-figma.js"></script>
-</body>
+  </body>
 </html>
