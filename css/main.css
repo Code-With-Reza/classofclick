@@ -5,7 +5,6 @@
   --secondary-color-dark: #063559;
   --Acc-color: #ea5937;
   --text-color: #333333;
-  --textp-color: #797979;
   --gray-bg: #e6e6e6;
 }
 
@@ -146,7 +145,6 @@ strong {
   box-shadow: none;
   font-weight: 500;
 }
-
 /* Kalau pakai button, submenu-toggle juga perlu diatur */
 .submenu-toggle:focus,
 .submenu-toggle:active {
@@ -156,7 +154,6 @@ strong {
   box-shadow: none;
   font-weight: 500;
 }
-
 .submenu-list {
   max-height: 0;
   overflow: hidden;
@@ -164,7 +161,6 @@ strong {
   transform: translateY(-10px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .submenu-list.show {
   max-height: 500px;
   opacity: 1;
@@ -239,7 +235,7 @@ strong {
   font-weight: 600;
 }
 
-/* Navigation Buttons */
+/* Before / Next Page */
 .navigation-buttons {
   display: flex;
   justify-content: space-between;
@@ -321,6 +317,7 @@ footer p {
   opacity: 1;
   pointer-events: auto;
 }
+
 /* Responsive Typography */
 @media (max-width: 768px) {
   h1 {
@@ -418,3 +415,4 @@ footer p {
     position: static;
   }
 }
+
