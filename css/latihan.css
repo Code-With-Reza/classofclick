@@ -33,7 +33,7 @@ section.hero h1 {
 /* Gambar tambahan di bawah deskripsi */
 .hero-image-bawah img {
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
   height: auto;
 }
 
