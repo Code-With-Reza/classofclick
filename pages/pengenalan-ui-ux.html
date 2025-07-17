@@ -102,9 +102,9 @@
                         <p class="pengenalan-desc mb-4">
                         Apakah sebelumnya kamu pernah mendengar istilah UI/UX?<br>
                         UI (User Interface) dan UX (User Experience) adalah dua istilah yang sering digunakan dalam dunia desain produk digital.
-                        Untuk mengenal UI/UX lebih dalam, mari kita pelajari pada halaman ini!<br>
-                        Klik salah satu tombol untuk melihat penjelasan singkat tentang UI/UX
+                        Untuk mengenal UI/UX lebih dalam, mari kita pelajari pada halaman ini!
                         </p>
+                        <p>Klik salah satu tombol untuk melihat penjelasan singkat tentang UI/UX:</p>
             <!-- Tombol -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
             <button class="btn-ui" onclick="openModal('modal-ui')">
@@ -150,6 +150,12 @@
             <p><b>Desain UI memastikan antarmuka terlihat menarik dan estetis, sedangkan desain UX memastikan pengalaman pengguna positif dan memuaskan. 
                 Dalam kombinasi yang baik, keduanya dapat meningkatkan kepuasan pengguna, efektivitas penggunaan produk, dan kesuksesan produk secara keseluruhan.</b></p>
         </div>
+        <div class="video-intro" style="text-align: center;">
+            <p><b>Pengen penjelasan yang lebih visual?</b><br> Yuk, tonton video berikut ini!</p>
+        </div>
+        <div class="video-wrapper" style="margin-top: 2rem;">
+            <iframe src="https://www.youtube.com/embed/D2Ipi15spno?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+        </div>
     </section>
 
     <!-- Perbedaan UI & UX -->
@@ -160,7 +166,7 @@
                 <img src="../img/otak-kiri-01.png" alt="Otak Kiri" />
             </div>
             <div class="buttons">
-                <button onclick="tampilJawaban('tujuan')">Tujuan</button>
+                <button class="hint-button" onclick="tampilJawaban('tujuan')">Tujuan</button>
                 <button onclick="tampilJawaban('fokus')">Fokus</button>
                 <button onclick="tampilJawaban('aspek')">Aspek</button>
                 <button onclick="tampilJawaban('tools')">Tools</button>
@@ -276,6 +282,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- CTA Prompt -->
+        <div class="cta-prompt" style="text-align: center; margin-top: 100px;">
+            <p><strong>Apakah kamu sudah cukup mengenal apa itu UI/UX?</strong><br>
+            Kalau sudah, yuk lanjut ke materi berikutnya!</p>
+        </div>
+        
         <div class="navigation-buttons">
             <a href="../index.html" class="nav-button prev">◀ Sebelumnya</a>
             <a href="elemen-ui.html" class="nav-button next">Berikutnya ▶</a>

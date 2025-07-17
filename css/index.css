@@ -30,7 +30,7 @@ section.hero {
   margin-bottom: 40px;
 }
 
-.hero-text .cta {
+.cta {
   background-color: #ea5937;
   color: #fff;
   padding: 12px 24px;
@@ -40,8 +40,12 @@ section.hero {
   transition: background-color 0.3s ease;
 }
 
-.hero-text .cta:hover {
+.cta:hover {
   background-color: #d94a2b;
+}
+
+[id^="about"] {
+  scroll-margin-top: 100px;
 }
 
 .hero-image-bawah img {
@@ -56,7 +60,6 @@ section.hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -65,6 +68,7 @@ section.hero {
   background-size: 700px;
   background-position: center;
   padding: 60px 20px;
+  flex-direction: column;
 }
 
 .about-text {
@@ -227,6 +231,8 @@ section.hero {
 .carousel-nav.right {
   right: -24px;
 }
+
+
 
 /* ---------- Responsive (max-width: 768px) ---------- */
 @media (max-width: 768px) {

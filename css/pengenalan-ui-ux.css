@@ -118,7 +118,7 @@
 /* Yellow Box Penjelasan UI/UX */
 .yellow-box {
   padding: 60px 20px;
-  background-image: url("../img/bg-biru2.png");
+  background-image: url("../img/bg-kuning2.png");
   background-repeat: repeat;
   background-size: 500px;
 }
@@ -139,9 +139,32 @@
   margin-bottom: 80px;
 }
 
+.video-wrapper {
+  margin-top: 2rem;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.video-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: none;
+}
+
+
 /* Perbedaan UI-UX */
 .perbedaan {
-  margin: 150px auto;
+  margin: 100px auto;
 }
 .containers {
   display: flex;
@@ -195,6 +218,17 @@ button:hover {
   background-color: #ea5937;
   color: #ffffff;
 }
+
+/*tambahan*/
+.hint-button {
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
 
 .jawaban-pair {
   position: absolute;
@@ -260,7 +294,6 @@ button:hover {
   line-height: 1;
 }
 
-
 /* Responsive Perbedaan UI-UX */
 @media (max-width: 768px) {
   .containers {
@@ -314,7 +347,7 @@ button:hover {
 /* Section Mengapa UI dan UX Penting */
 .importance-section {
   text-align: center;
-  padding: 100px 20px;
+  padding: 100px 20px 50px 20px;
   background-image: url("../img/bg-kuning2.png");
   background-repeat: repeat;
   background-size: 500px;
@@ -371,4 +404,54 @@ button:hover {
   background: #ebac0e;
   color: white;
   transform: rotateY(180deg);
+}
+
+
+/*tambahan*/
+/* Flip card pertama tetap punya border berjalan */
+.flip-card:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.flip-card:first-child::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border: 2px solid #EBAC0E;
+    border-radius: 10px;
+    animation: border-run 2s linear infinite;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Tetap muncul walaupun flipped */
+.flip-card:first-child.flipped::before {
+    opacity: 1;
+}
+
+/* Animasi border berjalan */
+@keyframes border-run {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    25% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+    }
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    75% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.flip-card:first-child.flipped::before {
+    display: none;
 }

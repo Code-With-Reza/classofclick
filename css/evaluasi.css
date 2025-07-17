@@ -12,3 +12,8 @@ p {
   display: block;
   margin: 32px auto;
 }
+
+.cta-prompt p{
+  text-align: center;
+  margin-top: 40px;
+}
