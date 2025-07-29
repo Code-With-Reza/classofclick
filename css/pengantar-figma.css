@@ -43,6 +43,29 @@ h1 {
   text-align: justify;
   margin-bottom: 40px;
 }
+/* Tambahan */
+.video-frame {
+  margin-top: 2rem;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.video-frame:hover {
+  transform: scale(1.02);
+}
+
+.video-frame iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: none;
+}
 
 /* Subab Mengapa Figma */
 .why-figma-section {
@@ -82,6 +105,8 @@ h1 {
 .why-figma-text h2 {
   margin-bottom: 16px;
 }
+
+
 
 /* Subab Kelebihan dan Kekurangan */
 .kelebihan-kekurangan {
@@ -161,6 +186,62 @@ h1 {
 }
 .card.flipped .card-back {
   transform: rotateY(0deg);
+}
+
+/* Tambahan untuk border berjalan pada card pertama */
+/* Tambahan: border berjalan untuk card pertama */
+#card1 {
+    position: relative;
+    z-index: 1;
+}
+
+#card1::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border: 2px solid #EBAC0E;
+    border-radius: 10px;
+    animation: border-run 2s linear infinite;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Tetap muncul walaupun flipped */
+#card1.flipped::before {
+    opacity: 1;
+}
+
+/* Hilang kalau flipped (pilih salah satu: opacity atau display) */
+#card1.flipped::before {
+    display: none;
+}
+
+/* Animasi border berjalan pakai clip-path */
+@keyframes border-run {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    25% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+    }
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    75% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+/* Hilangkan saat flipped */
+#card1.flipped::before {
+  opacity: 0;
 }
 
 /* Bisa Tidak Bisa */
