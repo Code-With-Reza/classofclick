@@ -35,15 +35,12 @@
   min-width: 300px;
   padding: 0 10px;
 }
-
 .ui-text h1 {
   margin-bottom: 10px;
 }
-
 .ui-text .highlight {
   color: orange;
 }
-
 .ui-text p {
   line-height: 1.6;
   text-align: justify;
@@ -55,7 +52,6 @@
   min-width: 280px;
   text-align: center;
 }
-
 .ui-image img {
   max-width: 100%;
   height: auto;
@@ -65,48 +61,9 @@
 .ui-subsection {
   margin-top: 40px;
 }
-
 .ui-subsection p {
   line-height: 1.6;
   text-align: justify;
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-  #slider {
-    height: 50vw;
-    min-height: 220px;
-  }
-  #slider label {
-    width: 90%;
-    padding: 16px;
-  }
-  #slider .slide-content i {
-    font-size: 10vw;
-  }
-  #slider h2 {
-    font-size: 5vw !important;
-  }
-  #slider p {
-    font-size: 2.5vw;
-  }
-  .icon-img {
-    width: clamp(50px, 18vw, 100px);
-  }
-  .elemen-input,
-  .elemen-nav,
-  .elemen-informasi,
-  .elemen-wadah,
-  .elemen-visual {
-    margin-bottom: 128px;
-  }
-  .slide-content img {
-    width: 24px;
-    height: 24px;
-  }
-  .slide-content p {
-    font-size: 16px;
-  }
 }
 
 /* Hide Radio Input */
@@ -174,7 +131,46 @@
   word-break: break-word;
 }
 
+/* Responsive Styles */
+@media (max-width: 600px) {
+  #slider {
+    height: 50vw;
+    min-height: 220px;
+  }
+  #slider label {
+    width: 90%;
+    padding: 16px;
+  }
+  #slider .slide-content i {
+    font-size: 10vw;
+  }
+  #slider h2 {
+    font-size: 5vw !important;
+  }
+  #slider p {
+    font-size: 2.5vw;
+  }
+  .icon-img {
+    width: clamp(50px, 18vw, 100px);
+  }
+  .elemen-input,
+  .elemen-nav,
+  .elemen-informasi,
+  .elemen-wadah,
+  .elemen-visual {
+    margin-bottom: 128px;
+  }
+  .slide-content img {
+    width: 24px;
+    height: 24px;
+  }
+  .slide-content p {
+    font-size: 16px;
+  }
+}
+
 /* Slide Elemen Input */
+/* Grup 1 – Paling belakang kiri */
 #s1:checked ~ #slide4,
 #s2:checked ~ #slide5,
 #s3:checked ~ #slide1,
@@ -183,6 +179,7 @@
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
   transform: translate3d(-30%, 0, -200px);
 }
+/* Grup 2 – Belakang kiri dekat */
 #s1:checked ~ #slide5,
 #s2:checked ~ #slide1,
 #s3:checked ~ #slide2,
@@ -191,6 +188,7 @@
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   transform: translate3d(-15%, 0, -100px);
 }
+/* Grup 3 – Tengah (aktif / paling depan) */
 #s1:checked ~ #slide1,
 #s2:checked ~ #slide2,
 #s3:checked ~ #slide3,
@@ -199,6 +197,7 @@
   box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
   transform: translate3d(0, 0, 0);
 }
+/* Grup 4 – Belakang kanan dekat */
 #s1:checked ~ #slide2,
 #s2:checked ~ #slide3,
 #s3:checked ~ #slide4,
@@ -207,6 +206,7 @@
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   transform: translate3d(15%, 0, -100px);
 }
+/* Grup 5 – Paling belakang kanan */
 #s1:checked ~ #slide3,
 #s2:checked ~ #slide4,
 #s3:checked ~ #slide5,

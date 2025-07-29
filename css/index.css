@@ -148,7 +148,7 @@ section.hero {
   line-height: 1.6;
 }
 
-/* Carousel Section */
+/* Kenapa Belajar UI/UX itu Asik Banget Section */
 .carousel-section {
   padding: 160px 0;
   text-align: center;
@@ -157,29 +157,25 @@ section.hero {
   background-repeat: repeat;
   background-size: 700px;
 }
-
 .carousel-heading {
   color: #063559;
   margin-bottom: 48px;
   font-size: 2.25rem;
   font-weight: 800;
 }
-
 .carousel-wrapper {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
   padding: 0 2rem;
 }
-
 .carousel-box {
-  background-color: #ffffff; /* putih */
-  border: 1.5px solid #ffeba9; /* warna soft dari palet kamu */
+  background-color: #ffffff;
+  border: 1.5px solid #ffeba9;
   border-radius: 20px;
   padding: 48px 32px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); /* lembut aja */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
 }
-
 .carousel-img-icon {
   width: 48px;
   height: 48px;
@@ -188,27 +184,23 @@ section.hero {
   margin-left: auto;
   margin-right: auto;
 }
-
 .carousel-box h3 {
   color: #ea5937;
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 16px;
 }
-
 .carousel-box p {
   color: #333;
   font-size: 1rem;
   line-height: 1.6;
 }
-
-/* Tombol Panah */
 .carousel-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #fff; /* soft yellow, beda dari box putih */
-  border: 1.5px solid #ffeba9; /* kasih tepi halus */
+  background-color: #fff;
+  border: 1.5px solid #ffeba9;
   width: 48px;
   height: 48px;
   border-radius: 12px;
@@ -219,77 +211,61 @@ section.hero {
   z-index: 10;
   transition: background-color 0.3s ease;
 }
-
 .carousel-nav:hover {
-  background-color: #ffeb99; /* lebih cerah waktu hover */
+  background-color: #ffeb99;
 }
-
 .carousel-nav.left {
   left: -24px;
 }
-
 .carousel-nav.right {
   right: -24px;
 }
-
-
 
 /* ---------- Responsive (max-width: 768px) ---------- */
 @media (max-width: 768px) {
   .carousel-box {
     padding: 32px 20px;
   }
-
   .carousel-nav.left {
     left: -12px;
   }
-
   .carousel-nav.right {
     right: -12px;
   }
-
   section.hero {
     height: auto;
     padding-top: 60px;
     padding-bottom: 40px;
     background-position: center top;
   }
-
   .hero-image-bawah img {
     width: 100vw;
     max-width: none;
     margin-left: calc(-50vw + 50%);
   }
-
   .hero-text a.cta {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
   }
-
   .carousel-section {
     padding: 64px 16px;
   }
-
   .carousel-box {
     padding: 1.5rem 1rem;
     min-height: auto;
   }
-
   .carousel-box h3 {
     font-size: 1.1rem;
   }
-
   .carousel-box p {
     font-size: 0.95rem;
   }
-
   .custom-carousel-buttons {
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
   }
-
   .carousel-btn {
     width: 48px;
     height: 48px;
@@ -308,9 +284,19 @@ section.hero {
 
 /* ---------- Responsive (max-width: 600px) ---------- */
 @media (max-width: 600px) {
-  .hero-yellow {
-    border-radius: 0;
-    margin-top: 0;
+  .features {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+  /* Icon responsive */
+  .carousel-img-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 10px;
   }
 
   .hero-text {
@@ -321,23 +307,7 @@ section.hero {
     text-align: justify;
   }
 
-  .features {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .feature-card {
-    padding: 1.5rem;
-  }
-
   .testimonial-section {
     padding: 0 20px;
-  }
-
-  /* Icon responsive */
-  .carousel-img-icon {
-    width: 32px;
-    height: 32px;
-    margin-bottom: 10px;
   }
 }

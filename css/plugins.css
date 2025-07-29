@@ -1,24 +1,12 @@
-/* Body background (optional) */
-/*
-body {
-  background-image: url("../img/bg-kuning2.png");
-  background-repeat: repeat;
-  background-size: 500px;
-  background-position: top left;
-  background-attachment: fixed;
-}
-*/
-
+/* Hero */
 .hero {
   margin-bottom: 140px;
 }
-
 h1 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
 .plugins-desc {
   text-align: justify;
   margin: 10px auto;
@@ -27,11 +15,11 @@ h1 {
   line-height: 1.6;
 }
 
+/* Isi */
 h2 {
   text-align: center;
   margin: 80px auto 40px auto;
 }
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -40,7 +28,6 @@ h2 {
   margin: 0 auto 50px auto;
   padding: 20px;
 }
-
 .card {
   border: 2px solid #ebac0e;
   border-radius: 20px 0 20px 0; /* kiri atas & kanan bawah membulat */
@@ -49,14 +36,12 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .card h3 {
   text-align: center;
   margin: 0 0 10px;
   font-size: 16px;
   font-weight: bold;
 }
-
 .card p {
   text-align: center;
   font-size: 14px;
@@ -64,19 +49,17 @@ h2 {
   margin: 10px 0;
   padding-top: 10px;
 }
-
 .card a {
-  align-self: center; /* link rata tengah */
+  align-self: center;
   font-weight: bold;
   text-decoration: underline;
   color: #ea5937;
   font-size: 14px;
   margin-top: 10px;
 }
-
 .icon-img {
   display: block;
-  margin: 0 auto 10px auto; /* gambar di tengah */
+  margin: 0 auto 10px auto;
   width: clamp(30px, 10vw, 60px);
   max-width: 60px;
 }

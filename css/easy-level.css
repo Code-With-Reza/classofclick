@@ -12,8 +12,6 @@ h1 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
-/* Deskripsi level mudah */
 .easy-desc {
   text-align: center;
   padding: 0 10px;
@@ -23,14 +21,14 @@ h1 {
   line-height: 1.6;
 }
 
-/* Container pertanyaan */
+/* style umum untuk pertanyaan */
 .questions {
   max-width: 600px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* Box pertanyaan */
+/* style untuk setiap pertanyaan */
 .question {
   background-color: #ffffff;
   margin-bottom: 1.5rem;
@@ -38,7 +36,6 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 8px;
 }
-
 .question p {
   margin-bottom: 8px;
 }

@@ -1,11 +1,9 @@
-/* Judul */
+/* Hero */
 h1 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
-/* Hero Section */
 .hero img {
   width: 100%;
   max-width: 300px;
@@ -13,7 +11,6 @@ h1 {
   margin: 30px auto;
   border-radius: 10px;
 }
-
 .pengantar-desc {
   text-align: center;
   margin: 10px auto;
@@ -23,18 +20,17 @@ h1 {
   max-width: 1200px;
   line-height: 1.6;
 }
-
 .hero-figma {
   background-color: #f1f5f9;
   padding: 40px 20px;
 }
-
 .hero-content {
   display: flex;
   gap: 24px;
   align-items: center;
 }
 
+/* Figma Section */
 .figma {
   max-width: 1200px;
   margin: 0 auto;
@@ -43,41 +39,16 @@ h1 {
   font-family: "Nunito", sans-serif;
   line-height: 1.8;
 }
-
 .content p {
   text-align: justify;
   margin-bottom: 40px;
 }
-
-/* Subab Video Pengantar*/
-.video-pengantar {
-  padding: 4rem 0;
-}
-
-.video-frame {
-  position: relative;
-  width: 100%;
-  max-width: 880px;
-  aspect-ratio: 16 / 9;
-  margin: 2rem auto 0;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.video-frame iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
 
 /* Subab Mengapa Figma */
 .why-figma-section {
   padding: 40px 20px;
   margin-bottom: 30px;
 }
-
 .why-figma-container {
   display: flex;
   align-items: center;
@@ -87,45 +58,29 @@ h1 {
   margin: auto;
   flex-wrap: wrap;
 }
-
 .why-figma-image {
   flex: 1;
   min-width: 300px;
   transform: scale(1);
   transition: transform 0.4s ease;
 }
-
 .why-figma-image:hover {
   transform: scale(1.05);
 }
-
 .why-figma-image img {
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-
 .why-figma-text {
   flex: 1;
   min-width: 300px;
   animation: fadeInRight 1s ease-in-out;
   text-align: justify;
 }
-
 .why-figma-text h2 {
   margin-bottom: 16px;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 /* Subab Kelebihan dan Kekurangan */
@@ -134,7 +89,6 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
 }
-
 .cards-container {
   display: flex;
   margin: 30px auto;
@@ -142,7 +96,6 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .card {
   width: 500px;
   height: 200px;
@@ -150,7 +103,6 @@ h1 {
   cursor: pointer;
   position: relative;
 }
-
 .card-front,
 .card-back {
   width: 100%;
@@ -168,42 +120,35 @@ h1 {
   padding: 20px;
   box-sizing: border-box;
 }
-
 .card-front {
   position: relative;
 }
-
 .icon {
   width: 48px;
   height: 48px;
   display: block;
-  margin: 0 auto 10px; /* auto untuk rata tengah, 10px jarak ke teks */
-  object-fit: contain; /* biar tidak pecah */
+  margin: 0 auto 10px; 
+  object-fit: contain; 
 }
-
 .text {
   font-weight: bold;
 }
-
 .card-back {
   background: #fafafa;
   transform: rotateY(180deg);
   text-align: center;
 }
-
 .card-back ol {
   list-style: none;
   padding-left: 0;
   counter-reset: nomor;
 }
-
 .card-back ol li {
   counter-increment: nomor;
   position: relative;
   padding-left: 24px;
   text-align: left;
 }
-
 .card-back ol li::before {
   content: counter(nomor) ") ";
   position: absolute;
@@ -211,64 +156,18 @@ h1 {
   color: #333;
   font-weight: bold;
 }
-
 .card.flipped .card-front {
   transform: rotateY(-180deg);
 }
-
 .card.flipped .card-back {
   transform: rotateY(0deg);
 }
-
-/* Tambahan untuk border berjalan pada card pertama */
-/* flip effect pakai class */
-#card1 {
-  position: relative;
-  z-index: 1;
-}
-
-#card1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  background: linear-gradient(120deg, #ebac0e, #ffffff, #ebac0e);
-  background-size: 300% 300%;
-  animation: border-animation 2s linear infinite;
-  z-index: 5;
-  pointer-events: none;
-  padding: 2px;
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
-@keyframes border-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-
-/* Hilangkan saat flipped */
-#card1.flipped::before {
-  opacity: 0;
-}
-
 
 /* Bisa Tidak Bisa */
 .bisa-tidak-bisa {
   padding: 60px 20px;
   text-align: center;
 }
-
 .tabel-wrapper {
   display: flex;
   justify-content: center;
@@ -276,36 +175,30 @@ h1 {
   flex-wrap: wrap;
   margin-top: 30px;
 }
-
 table {
   border-collapse: collapse;
   width: 500px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .tabel-bisa th {
   background-color: #ebac0e;
   color: white;
   padding: 12px;
 }
-
 .tabel-tidak-bisa th {
   background-color: #1a3e66;
   color: white;
   padding: 12px;
 }
-
 td {
   padding: 10px;
   border-top: 1px solid #ddd;
 }
-
 .tabel-bisa td b {
   color: #e5b004;
   font-weight: bold;
 }
-
 .tabel-tidak-bisa td b {
   color: #1a3e66;
   font-weight: bold;

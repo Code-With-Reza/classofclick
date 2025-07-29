@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modals = document.querySelectorAll(".modal");
   const closeButtons = document.querySelectorAll(".close");
 
-  // Open modal when button is clicked
+  // Buka modal saat tombol diklik
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const modalId = button.getAttribute("data-modal");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Close modal when close button is clicked
+  // Tutup modal saat tombol tutup diklik
   closeButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       btn.parentElement.parentElement.style.display = "none";

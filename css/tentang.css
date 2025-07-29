@@ -8,7 +8,7 @@
   flex-wrap: wrap;
 }
 
-/* Hero Section */
+/* Tentang COC */
 .hero {
   display: flex;
   align-items: center;
@@ -19,8 +19,6 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
-
-/* Prinsip Description */
 .prinsip-desc {
   color: var(--text-color);
   text-align: justify;
@@ -29,16 +27,12 @@
   gap: 24px;
   padding: 24px 128px;
 }
-
-/* Prinsip Item */
 .prinsip-item {
   display: flex;
   align-items: flex-start;
   gap: 24px;
   line-height: 1.6;
 }
-
-/* Emoji Icon */
 .emoji-icon {
   width: 56px;
   height: 56px;
@@ -46,8 +40,6 @@
   padding-top: 3px;
   object-fit: contain;
 }
-
-/* Hero Image */
 .hero-image {
   flex: 1 1 30%;
   display: flex;
@@ -56,7 +48,6 @@
   margin-bottom: 80px;
   text-align: center;
 }
-
 .hero-image img {
   width: 100%;
   max-width: 600px;
@@ -64,7 +55,7 @@
   margin-top: 50px;
 }
 
-/* Card Styles */
+/* Tentang Pembuat */
 .card {
   background: #ffffff;
   border-radius: 1rem;
@@ -73,8 +64,6 @@
   margin-top: 80px;
   transition: transform 0.3s ease;
 }
-
-/* Card Content */
 .card-content {
   display: flex;
   gap: 2rem;
@@ -82,14 +71,10 @@
   margin: 20px 0;
   flex-wrap: wrap;
 }
-
-/* Heading */
 h2 {
   margin-bottom: 24px;
   text-align: center;
 }
-
-/* Info Grid */
 .info-grid {
   flex: 1 1 45%;
   display: flex;
@@ -98,8 +83,6 @@ h2 {
   width: 100%;
   justify-content: center;
 }
-
-/* Info Box */
 .info-box {
   flex: 1 1 45%;
   background-color: #f9f9f9;
@@ -107,19 +90,15 @@ h2 {
   padding: 1rem 1.2rem;
   border-radius: 0.75rem;
 }
-
 .info-box strong {
   display: block;
   margin-bottom: 0.5rem;
   color: #2e2e2e;
 }
-
-/* Photo */
 .photo {
   flex: 1 1 35%;
   text-align: center;
 }
-
 .photo img {
   width: 100%;
   max-width: 300px;
@@ -128,23 +107,19 @@ h2 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* References Card */
+/* Daftar Referensi */
 .card.references {
   max-width: 1400px;
   width: 100%;
   margin: 80px auto 0 auto;
 }
-
 .card.references h2 {
   margin-bottom: 50px;
 }
-
-/* Reference Section */
 .ref-section {
   margin-left: 60px;
   margin-bottom: 32px;
 }
-
 .ref-section h3 {
   font-size: 20px;
   margin-bottom: 0.75rem;
@@ -153,24 +128,19 @@ h2 {
   gap: 8px;
   color: #ea5937;
 }
-
 .ref-section a {
   text-decoration: none;
   color: #2e2e2e;
 }
-
-/* Reference List */
 .references ul {
   list-style: square;
   padding-left: 50px;
 }
-
 .references li {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-
 .references li::marker {
   color: #ea5937;
 }

@@ -1,21 +1,9 @@
-/* Global Styles */
-
-/*
-body {
-  background-image: url("../img/bg-kuning2.png");
-  background-repeat: repeat;
-  background-size: 500px;
-  background-position: top left;
-  background-attachment: fixed;
-}
-*/
-
+/* Hero */
 h1 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
 .tools-desc {
   text-align: center;
   margin: 10px auto;
@@ -25,7 +13,6 @@ h1 {
   max-width: 1400px;
   line-height: 1.6;
 }
-
 .main-image img {
   max-width: 100%;
   width: 900px;
@@ -33,7 +20,6 @@ h1 {
   display: block;
   margin: 70px auto 40px auto;
 }
-
 .toolbar-desc {
   text-align: center;
   margin: 20px auto;
@@ -42,14 +28,12 @@ h1 {
   color: var(--text-color);
   max-width: 1200px;
 }
-
 .toolbar-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
-
 .tool-btn {
   width: 80px;
   height: 80px;
@@ -65,12 +49,10 @@ h1 {
   align-items: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .tool-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
 .tool-btn img {
   width: 50px;
   height: 50px;
@@ -79,8 +61,7 @@ h1 {
   object-fit: contain;
 }
 
-/* Modal Styles */
-
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -92,7 +73,6 @@ h1 {
   overflow: auto;
   background: rgba(0, 0, 0, 0.5);
 }
-
 .modal-content {
   background-color: #fff;
   margin: 10% auto;
@@ -102,28 +82,24 @@ h1 {
   max-width: 600px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 .modal-header {
   font-size: 24px;
   font-weight: bold;
   color: #ea5937;
   margin-bottom: 10px;
 }
-
 .tool-info {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 10px;
 }
-
 .tool-info img {
   width: 32px;
   height: 32px;
 }
 
-/* Shortcut Yellow Box */
-
+/* Yellow Box */
 .shortcut-yellow-box {
   background-color: #ffcd3c;
   padding: 2rem;
@@ -132,20 +108,17 @@ h1 {
   margin: 100px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
-
 .shortcut-yellow-box h3 {
   text-align: center;
   color: var(--text-color);
   margin-bottom: 80px;
 }
-
 .shortcut-yellow-box img {
   width: 100%;
   max-width: 600px;
   display: block;
   margin: 1rem auto;
 }
-
 .close-btn {
   float: right;
   font-size: 18px;

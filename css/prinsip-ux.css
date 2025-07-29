@@ -1,10 +1,3 @@
-/* Deskripsi Prinsip */
-.prinsip-desc {
-  margin-top: 20px;
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
 /* Section Umum */
 .section {
   display: flex;
@@ -26,19 +19,21 @@
   flex-direction: row;
   gap: 20px;
 }
-
+.prinsip-desc {
+  margin-top: 20px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
 .hero-image,
 .hero-text {
   flex: 1;
   padding: 10px;
 }
-
 .hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .hero-image img {
   width: 100%;
   max-width: 600px;
@@ -54,7 +49,6 @@
   gap: 10px;
   margin: 20px 0;
 }
-
 .tag-row {
   display: flex;
   justify-content: center;
@@ -62,7 +56,6 @@
   gap: 12px;
   width: 100%;
 }
-
 .tag {
   width: 200px;
   text-align: center;
@@ -75,51 +68,42 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
-
 .tag:hover {
   background-color: #d49900;
 }
 
-/* Konten Section */
+/* Isi */
 .section-content {
   flex: 1;
   padding: 20px;
   margin-top: 60px;
 }
-
 .section-content h2 {
   margin-bottom: 20px;
 }
-
 .section.reverse {
   flex-direction: row-reverse;
   background-color: #f9f9f9;
 }
-
 .section-image {
   flex: 1;
   padding: 20px;
   text-align: right;
 }
-
 .section.reverse .section-image {
   text-align: left;
 }
-
 .section-image img {
   width: 100%;
   max-width: 600px;
   margin-top: 60px;
 }
-
 .section-image video {
   width: 100%;
   max-width: 600px;
   margin-top: 60px;
   border-radius: 12px;
 }
-
-/* Paragraf */
 p {
   text-align: justify;
 }

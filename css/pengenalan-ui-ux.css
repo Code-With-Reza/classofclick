@@ -2,7 +2,7 @@
   margin-top: 40px;
 }
 
-/* Deskripsi Pengenalan */
+/* Teks */
 .pengenalan-desc {
   text-align: justify;
   padding: 10px 20px;
@@ -115,7 +115,7 @@
   color: #666;
 }
 
-/* Yellow Box Penjelasan UI/UX */
+/* Penjelasan UI/UX */
 .yellow-box {
   padding: 60px 20px;
   background-image: url("../img/bg-kuning2.png");
@@ -139,6 +139,7 @@
   margin-bottom: 80px;
 }
 
+/* Tambahan */
 .video-wrapper {
   margin-top: 2rem;
   max-width: 880px;
@@ -179,12 +180,6 @@
   width: 400px;
   height: auto;
   display: block;
-}
-.brain-right video {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover; /* opsional, biar video nggak gepeng */
 }
 .buttons {
   display: flex;
@@ -239,7 +234,7 @@ button:hover {
   transform: translate(-50%, -50%);
 }
 #jawaban-kesimpulan {
-  top: 10%; /* atau coba 30% kalau mau lebih naik */
+  top: 10%;
 }
 .jawaban-pair.show {
   display: flex;
@@ -274,12 +269,12 @@ button:hover {
 .jawaban-right ul {
   padding-left: 0;
   margin: 0;
-  list-style: none; /* hapus bullet default */
+  list-style: none; 
 }
 .jawaban-left li,
 .jawaban-right li {
   position: relative;
-  padding-left: 1.5em; /* kasih jarak kiri untuk bullet kustom */
+  padding-left: 1.5em; 
   margin-bottom: 0.75em;
   text-align: left;
 }

@@ -10,18 +10,13 @@ section.hero {
   align-items: center;
   text-align: center;
   color: white;
-  /*padding: 4rem 2rem;*/
   padding-top: 120px;
   margin-top: -16px;
   gap: 1.5rem;
 }
-
-/* Judul */
 section.hero h1 {
   text-align: center;
 }
-
-/* Deskripsi */
 .latihan-desc {
   text-align: center;
   padding: 0 10px;
@@ -29,8 +24,6 @@ section.hero h1 {
   max-width: 900px;
   margin: 0 auto;
 }
-
-/* Gambar tambahan di bawah deskripsi */
 .hero-image-bawah img {
   width: 100%;
   max-width: 600px;
@@ -45,7 +38,6 @@ section.hero h1 {
   gap: 1.5rem;
   flex-wrap: wrap;
 }
-
 .card {
   flex: none;
   width: 300px;
@@ -56,38 +48,34 @@ section.hero h1 {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   color: #000;
 }
-
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
-
 .icon {
   width: 32px;
   height: 32px;
   vertical-align: middle;
   margin-right: 8px;
+  font-size: 1.6rem;
+  display: inline-block;
 }
-
 .card.easy {
   background-color: #f1f5f9;
   border-color: #1e2a38;
   color: #1e2a38;
 }
-
 .card.medium {
   background-color: #fff3d0;
   border: 2px solid #edb427;
   color: #edb427;
 }
-
 .card.hard {
   background-color: #fbe3e3;
   border: 2px solid #9c2b2e;
   color: #9c2b2e;
 }
-
 .card h3 {
   font-weight: 700;
   font-size: 1.5rem;
@@ -97,12 +85,6 @@ section.hero h1 {
   gap: 10px;
   color: inherit;
 }
-
-.icon {
-  font-size: 1.6rem;
-  display: inline-block;
-}
-
 .card .description {
   font-weight: 400;
   font-size: 1rem;
@@ -122,7 +104,6 @@ section.hero h1 {
   align-items: center;
   justify-content: center;
 }
-
 .modal-content {
   background: white;
   padding: 30px;
@@ -133,7 +114,6 @@ section.hero h1 {
   position: relative;
   text-align: justify;
 }
-
 .close {
   position: absolute;
   top: 12px;
@@ -152,7 +132,6 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 }
-
 button {
   padding: 0.75rem 1.5rem;
   background-color: #09203b;
@@ -161,11 +140,9 @@ button {
   border-radius: 0.5rem;
   cursor: pointer;
 }
-
 button:hover {
   background-color: #1a324f;
 }
-
 .error-msg {
   color: red;
   margin-top: 0.5rem;

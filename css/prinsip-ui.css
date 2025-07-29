@@ -1,11 +1,10 @@
+/* Hero */
 .mt-custom {
   margin-top: 40px;
 }
-
 .prinsip-desc {
   color: var(--text-color);
 }
-
 .btn-tag {
   background-color: #f1b600;
   color: white;
@@ -18,16 +17,13 @@
   width: 200px;
   transition: background-color 0.3s ease;
 }
-
 .btn-tag:hover {
   background-color: #d49900;
   color: white;
 }
-
 [id^="section"] {
   scroll-margin-top: 100px;
 }
-
 p {
   text-align: justify;
 }
