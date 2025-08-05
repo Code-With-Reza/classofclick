@@ -34,7 +34,7 @@ function checkAnswer(id) {
     feedback.style.color = "green";
     totalCorrect++;
   } else {
-    feedback.textContent = "❌ Jawaban salah. Coba lagi ya!";
+    feedback.textContent = "❌ Jawaban salah ☹️";
     feedback.style.color = "red";
   }
 
